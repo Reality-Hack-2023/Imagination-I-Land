@@ -282,7 +282,7 @@
                         "peerManagerObject": "32",
                         "cursor": "61",
                         "hostButton": "69",
-                        "joinButton": "71"
+                        "joinButton": "68"
                     }
                 }
             ],
@@ -1043,7 +1043,7 @@
                     "type": "mesh",
                     "mesh": {
                         "mesh": "8",
-                        "material": "25"
+                        "material": "107"
                     }
                 }
             ],
