@@ -280,7 +280,9 @@
                     "type": "network-buttons",
                     "network-buttons": {
                         "peerManagerObject": "32",
-                        "cursor": "61"
+                        "cursor": "61",
+                        "hostButton": "69",
+                        "joinButton": "71"
                     }
                 }
             ],
