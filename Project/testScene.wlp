@@ -1173,7 +1173,7 @@
             "translation": [
                 0.0,
                 0.0,
-                3.8873345
+                -7.1808328
             ],
             "rotation": [
                 0.0,
@@ -2917,46 +2917,6 @@
                 0.0099999,
                 0.0099999
             ]
-        },
-        "bf33073a-bb5d-4d1b-857f-f4e359e49a8f": {
-            "link": {
-                "name": "thumb-tip<Armature",
-                "file": "models\\hand-left.glb"
-            },
-            "parent": "e0ab949f-d7c6-4e2d-b3f9-9d98ad91d968",
-            "skin": "5f83d4f8-232b-4769-b508-7554cf137fc3"
-        },
-        "3ff39ed6-50ac-4e4b-9012-844c048a12dd": {
-            "link": {
-                "name": "thumb-phalanx-distal<Armature",
-                "file": "models\\hand-left.glb"
-            },
-            "parent": "e0ab949f-d7c6-4e2d-b3f9-9d98ad91d968",
-            "skin": "5f83d4f8-232b-4769-b508-7554cf137fc3"
-        },
-        "5138abd3-4fe0-4a92-8d9b-18c7ffd03e22": {
-            "link": {
-                "name": "thumb-phalanx-proximal<Armature",
-                "file": "models\\hand-left.glb"
-            },
-            "parent": "e0ab949f-d7c6-4e2d-b3f9-9d98ad91d968",
-            "skin": "5f83d4f8-232b-4769-b508-7554cf137fc3"
-        },
-        "314ef5f3-afab-4d76-be5c-9473f0dc72d7": {
-            "link": {
-                "name": "thumb-metacarpal<Armature",
-                "file": "models\\hand-left.glb"
-            },
-            "parent": "e0ab949f-d7c6-4e2d-b3f9-9d98ad91d968",
-            "skin": "5f83d4f8-232b-4769-b508-7554cf137fc3"
-        },
-        "33688ec4-3115-470e-9581-c6abf1f6af40": {
-            "link": {
-                "name": "wrist<Armature",
-                "file": "models\\hand-left.glb"
-            },
-            "parent": "e0ab949f-d7c6-4e2d-b3f9-9d98ad91d968",
-            "skin": "5f83d4f8-232b-4769-b508-7554cf137fc3"
         },
         "e91add45-b049-4530-807a-7e3e8c30dc2c": {
             "name": "BlockSpawner",
