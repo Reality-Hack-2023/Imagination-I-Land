@@ -1960,7 +1960,7 @@
                         "particleShooter": "194",
                         "trigger": "167"
                     },
-                    "active": false
+                    "active": true
                 }
             ],
             "parent": null
