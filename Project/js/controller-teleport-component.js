@@ -51,7 +51,11 @@ WL.registerComponent("controller-teleport-component", {
           thumbstickYAxisInput = this.gamepadLeft.axes[3];
           inputLength = Math.abs(thumbstickXAxisInput) + Math.abs(thumbstickYAxisInput);
         }
-
+        if(this.gamepadRight && this.gamepadRight.axes) {
+            thumbstickXAxisInput = this.gamepadRight.axes[2];
+            thumbstickYAxisInput = this.gamepadRight.axes[3];
+            inputLength = Math.abs(thumbstickXAxisInput) + Math.abs(thumbstickYAxisInput);
+        }
         if(!this.isIndicating && this.prevThumbstickYAxisInput >= this.thumbstickActivationThreshhold && thumbstickYAxisInput < this.thumbstickActivationThreshhold) {
           this.isIndicating = true;
           this.cam.getForward(this._tempVec);

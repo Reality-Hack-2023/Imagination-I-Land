@@ -2091,6 +2091,38 @@
                         "handedness": "right"
                     },
                     "active": true
+                },
+                {
+                    "type": "controller-teleport-component",
+                    "controller-teleport-component": {
+                        "peerComponent": "32",
+                        "muteUI": "180",
+                        "mutedColor": "20",
+                        "teleportIndicatorMeshObject": "84",
+                        "camRoot": "14",
+                        "cam": "17",
+                        "floorGroup": 7
+                    },
+                    "active": false
+                },
+                {
+                    "type": "teleport",
+                    "teleport": {
+                        "teleportIndicatorMeshObject": "84",
+                        "camRoot": "14",
+                        "cam": "17",
+                        "eyeLeft": "18",
+                        "eyeRight": "19",
+                        "floorGroup": 7
+                    }
+                },
+                {
+                    "type": "muteVoice",
+                    "muteVoice": {
+                        "peerComponent": "32",
+                        "muteUI": "180",
+                        "mutedColor": "20"
+                    }
                 }
             ],
             "translation": [
@@ -2237,7 +2269,7 @@
                         "mutedColor": "20",
                         "peerComponent": "32"
                     },
-                    "active": true
+                    "active": false
                 },
                 {
                     "type": "collision",
@@ -2254,6 +2286,25 @@
                     "cursor": {
                         "cursorRayObject": "30e72ee4-8bf5-4860-b0bf-0a86a3f26f36",
                         "cursorObject": "87"
+                    }
+                },
+                {
+                    "type": "teleport",
+                    "teleport": {
+                        "teleportIndicatorMeshObject": "84",
+                        "camRoot": "14",
+                        "cam": "17",
+                        "eyeLeft": "18",
+                        "eyeRight": "19",
+                        "floorGroup": 7
+                    }
+                },
+                {
+                    "type": "muteVoice",
+                    "muteVoice": {
+                        "peerComponent": "32",
+                        "muteUI": "180",
+                        "mutedColor": "20"
                     }
                 }
             ],
@@ -2970,7 +3021,7 @@
             ],
             "rotation": [
                 0.0,
-                -1.4551916649452323e-7,
+                -1.4551916649452326e-7,
                 0.0,
                 1.0
             ],
