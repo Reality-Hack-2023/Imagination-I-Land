@@ -1,13 +1,18 @@
-WL.registerComponent('placeScene', {
-    param: {type: WL.Type.Float, default: 1.0},
+WL.registerComponent('playScene', {
+    message: {type: WL.Type.String, default: "It was clicked!"},
+    buttonMeshObject: {type: WL.Type.Object},
 }, {
-    init: function() {
-        console.log('init() with param', this.param);
+    start: function(dt) {
+        /* Get a reference to the "cursor-target" component */
+        const target = this.object.getComponent('cursor-target');
+        this.buttonMeshObject.active = false;
+
+        target.addClickFunction(this.onClick.bind(this));
     },
-    start: function() {
-        console.log('start() with param', this.param);
-    },
-    update: function(dt) {
-        console.log('update() with delta time', dt);
-    },
+
+    onClick: function() {
+        /* Print the message that was configured in the editor) */
+        this.buttonMeshObject.children
+        console.log(this.message);
+    }
 });
