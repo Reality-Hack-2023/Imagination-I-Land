@@ -1958,7 +1958,7 @@
                     "type": "gun_trigger_manager",
                     "gun_trigger_manager": {
                         "particleShooter": "194",
-                        "trigger": "92"
+                        "trigger": "167"
                     },
                     "active": false
                 }
