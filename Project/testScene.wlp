@@ -232,7 +232,7 @@
             ],
             "translation": [
                 0.0,
-                0.0,
+                -0.0071492,
                 0.0
             ],
             "rotation": [
@@ -1974,12 +1974,6 @@
             "parent": "68",
             "components": [
                 {
-                    "type": "text",
-                    "text": {
-                        "text": "Host\n"
-                    }
-                },
-                {
                     "type": "collision",
                     "collision": {
                         "collider": "aabb",
@@ -2024,12 +2018,18 @@
                         "mesh": "7",
                         "material": "20"
                     }
+                },
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "HOST"
+                    }
                 }
             ],
             "translation": [
+                0.0002926,
                 0.0,
-                0.0,
-                -0.0064548
+                -0.0064547
             ],
             "rotation": [
                 0.0,
@@ -2047,12 +2047,6 @@
             "name": "JoinButton",
             "parent": "68",
             "components": [
-                {
-                    "type": "text",
-                    "text": {
-                        "text": "Join\n"
-                    }
-                },
                 {
                     "type": "collision",
                     "collision": {
@@ -2097,6 +2091,12 @@
                     "mesh": {
                         "mesh": "7",
                         "material": "20"
+                    }
+                },
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "JOIN"
                     }
                 }
             ],
@@ -2162,35 +2162,6 @@
                 1.0
             ]
         },
-        "162": {
-            "name": "HostButtonBG",
-            "parent": "161",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "7",
-                        "material": "20"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                -1.8511228,
-                -0.0064547
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.3262313,
-                0.2,
-                1.0
-            ]
-        },
         "163": {
             "name": "Change SkyBox",
             "parent": "165",
@@ -2240,9 +2211,9 @@
                 }
             ],
             "translation": [
-                -0.1445412,
+                -0.1445409,
                 -0.4642777,
-                0.052002
+                0.0520021
             ],
             "rotation": [
                 0.0,
@@ -2568,11 +2539,14 @@
                         "mesh": "12",
                         "material": "25"
                     }
+                },
+                {
+                    "type": "playbook-toggle"
                 }
             ],
             "translation": [
-                -0.670804,
-                -1.5037671,
+                0.7033824,
+                -0.5339349,
                 0.052002
             ],
             "rotation": [
@@ -2676,7 +2650,7 @@
             ]
         },
         "185": {
-            "name": "Mesh.000",
+            "name": "Background",
             "parent": "165",
             "components": [
                 {
@@ -2689,8 +2663,8 @@
             ],
             "translation": [
                 0.0,
-                0.0000107,
-                -1.1920928955078125e-7
+                0.0,
+                -1.043081283569336e-7
             ],
             "rotation": [
                 0.5,
@@ -2699,9 +2673,9 @@
                 0.4999999
             ],
             "scale": [
-                1.0,
-                0.25,
-                4.0
+                0.6,
+                0.3499999,
+                2.0
             ]
         }
     },
