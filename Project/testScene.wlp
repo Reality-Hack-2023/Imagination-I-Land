@@ -1812,48 +1812,6 @@
                 2.0
             ]
         },
-        "192": {
-            "link": {
-                "name": "RoomBaked_Baked_0",
-                "file": "models\\theroom.glb"
-            },
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                -0.707131,
-                0.0,
-                0.0,
-                0.7070824
-            ],
-            "scale": [
-                1.4599999,
-                1.4599947,
-                1.4599947
-            ],
-            "components": [
-                null,
-                {
-                    "type": "physx",
-                    "physx": {
-                        "shape": "box",
-                        "capsule": {
-                            "radius": 1.75
-                        },
-                        "box": {
-                            "extents": [
-                                1.0,
-                                1.0,
-                                1.5
-                            ]
-                        },
-                        "static": true
-                    }
-                }
-            ]
-        },
         "194": {
             "name": "particleShooter",
             "components": [
