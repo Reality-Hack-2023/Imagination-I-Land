@@ -1362,6 +1362,61 @@
                 0.0099999,
                 0.0099999
             ]
+        },
+        "255": {
+            "link": {
+                "name": "BubbleGun_Material.001_0",
+                "file": "models\\moji_gun (1).glb"
+            },
+            "translation": [
+                -1.2184497,
+                1.3187094,
+                -3.5847406
+            ],
+            "rotation": [
+                -0.7241395,
+                0.0,
+                0.0,
+                0.6896535
+            ],
+            "scale": [
+                1.7842532,
+                1.7842539,
+                1.7842539
+            ]
+        },
+        "256": {
+            "name": "particleShooter",
+            "components": [
+                {
+                    "type": "emoji_particle_shooter",
+                    "emoji_particle_shooter": {
+                        "mesh": "269",
+                        "material": "268",
+                        "particleScale": 0.0049999,
+                        "gun": "255",
+                        "initialSpeed": 8.0
+                    },
+                    "active": false
+                }
+            ],
+            "parent": "255",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.7241395,
+                0.0,
+                0.0,
+                0.6896535
+            ],
+            "scale": [
+                0.5604586,
+                0.5604583,
+                0.5604583
+            ]
         }
     },
     "meshes": {
@@ -1438,6 +1493,24 @@
                 "name": "QuestControllerRight",
                 "file": "glb\\static-quest-controllers.glb"
             }
+        },
+        "254": {
+            "link": {
+                "name": "BubbleGun_Material.001_0.002",
+                "file": "models\\moji_gun (1).glb"
+            }
+        },
+        "262": {
+            "link": {
+                "name": "mesh_0_Material.001_0.002",
+                "file": "models\\devil_emoji (2).glb"
+            }
+        },
+        "269": {
+            "link": {
+                "name": "mesh_0_Material.001_0.001",
+                "file": "models\\devil_emoji (1).glb"
+            }
         }
     },
     "textures": {
@@ -1477,6 +1550,48 @@
                 "name": "texture_1",
                 "file": "glb\\static-quest-controllers.glb"
             }
+        },
+        "250": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\moji_gun (1).glb"
+            }
+        },
+        "251": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\moji_gun (1).glb"
+            }
+        },
+        "252": {
+            "link": {
+                "name": "texture_2",
+                "file": "models\\moji_gun (1).glb"
+            }
+        },
+        "259": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\devil_emoji (2).glb"
+            }
+        },
+        "260": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\devil_emoji (2).glb"
+            }
+        },
+        "266": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\devil_emoji (1).glb"
+            }
+        },
+        "267": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\devil_emoji (1).glb"
+            }
         }
     },
     "images": {
@@ -1505,6 +1620,48 @@
                 1024,
                 1024
             ]
+        },
+        "247": {
+            "link": {
+                "name": "Image_2",
+                "file": "models\\moji_gun (1).glb"
+            }
+        },
+        "248": {
+            "link": {
+                "name": "Image_1",
+                "file": "models\\moji_gun (1).glb"
+            }
+        },
+        "249": {
+            "link": {
+                "name": "Image_01",
+                "file": "models\\moji_gun (1).glb"
+            }
+        },
+        "257": {
+            "link": {
+                "name": "Image_0",
+                "file": "models\\devil_emoji (2).glb"
+            }
+        },
+        "258": {
+            "link": {
+                "name": "Image_1",
+                "file": "models\\devil_emoji (2).glb"
+            }
+        },
+        "264": {
+            "link": {
+                "name": "Image_0",
+                "file": "models\\devil_emoji (1).glb"
+            }
+        },
+        "265": {
+            "link": {
+                "name": "Image_1",
+                "file": "models\\devil_emoji (1).glb"
+            }
         }
     },
     "materials": {
@@ -1622,6 +1779,24 @@
             "link": {
                 "name": "skel_controller_materials_controllerMTL",
                 "file": "glb\\static-quest-controllers.glb"
+            }
+        },
+        "253": {
+            "link": {
+                "name": "Material.010",
+                "file": "models\\moji_gun (1).glb"
+            }
+        },
+        "261": {
+            "link": {
+                "name": "deveil_mogi.001",
+                "file": "models\\devil_emoji (2).glb"
+            }
+        },
+        "268": {
+            "link": {
+                "name": "deveil_mogi",
+                "file": "models\\devil_emoji (1).glb"
             }
         }
     },
@@ -1777,7 +1952,10 @@
         "glb/teleport-indicator.glb",
         "glb/Barrel_01.FBX",
         "fbx/Lentes VR/LentesVR.fbx",
-        "glb/static-quest-controllers.glb"
+        "glb/static-quest-controllers.glb",
+        "models/moji_gun (1).glb",
+        "models/devil_emoji (2).glb",
+        "models/devil_emoji (1).glb"
     ],
     "pipelines": {
         "114": {
