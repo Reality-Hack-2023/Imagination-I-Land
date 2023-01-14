@@ -361,9 +361,9 @@
                 }
             ],
             "translation": [
+                -2.9802322387695313e-8,
                 0.0,
-                0.0,
-                -0.0064548
+                -0.0064547
             ],
             "rotation": [
                 0.0,
@@ -1062,23 +1062,39 @@
                         "mesh": "8",
                         "material": "107"
                     }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "box",
+                        "box": {
+                            "extents": [
+                                2.0,
+                                2.0,
+                                2.0
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "cursor-target"
                 }
             ],
             "translation": [
-                5.3232851,
-                1.2538601,
-                -10.9547767
+                9.9462881,
+                1.2538651,
+                -10.9548225
             ],
             "rotation": [
                 0.0006869,
-                0.6468836,
+                0.6468837,
                 0.0179904,
-                0.7623761
+                0.762376
             ],
             "scale": [
-                1.9999873,
-                1.9999985,
-                1.9999877
+                1.9999868,
+                1.9999848,
+                1.9999868
             ]
         },
         "96": {
@@ -1416,6 +1432,18 @@
                 0.5604586,
                 0.5604583,
                 0.5604583
+            ]
+        },
+        "270": {
+            "name": "Gun_Trigger_Manager",
+            "components": [
+                {
+                    "type": "gun_trigger_manager",
+                    "gun_trigger_manager": {
+                        "particleShooter": "256",
+                        "trigger": "95"
+                    }
+                }
             ]
         }
     },
@@ -1920,7 +1948,8 @@
         "scripting": {
             "sourcePaths": [
                 "/js/editor-components-bundle.js",
-                "js"
+                "js",
+                "js/Gun_Trigger_Manager.js"
             ]
         },
         "rendering": {
