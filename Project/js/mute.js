@@ -1,14 +1,16 @@
 WL.registerComponent('mute', {
-    mute: {type: WL.Type.BOOL, default: true},
+    mute: {type: WL.Type.BOOL},
+    peerComponent: {type: WL.Type.peerComponent},
+
 }, {
-    init: function() {
-      
+  
+    start: function () {
+        this.target = this.object.getComponent('cursor-target') || this.object.addComponent('cursor-target');
+        this.target.addClickFunction(this.onClick.bind(this));
 
     },
-    start: function() {
-        console.log('start() with param', this.param);
-    },
-    update: function(dt) {
-        console.log('update() with delta time', dt);
-    },
+    onClick() {
+        this.peerComponent.toggleMute();
+        console.log("mute upon on click on UI");
+    }
 });

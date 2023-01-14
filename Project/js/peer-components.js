@@ -1,5 +1,4 @@
 let isHost = false;
-let mute = true; 
 WL.registerComponent("peer-manager", {
   serverId: { type: WL.Type.String, default: "THISISAWONDERLANDENGINEPLACEHOLDER" },
   networkSendFrequencyInS: { type: WL.Type.Float, default: 0.01 },
@@ -156,7 +155,6 @@ WL.registerComponent("peer-manager", {
         audio.srcObject = stream;
         audio.autoplay = true;
         // mute functionality 
-        audio.muted = mute; 
         console.log("audio muted is "+audio.muted);
         this.streams[id] = stream;
       });
@@ -362,6 +360,9 @@ WL.registerComponent("peer-manager", {
 
   setOwnMute: function(mute) {
     this.localStream.getTracks()[0].enabled = !mute;
+  },
+  getMute: function() {
+    return this.localStream.getTracks()[0].enabled;
   },
 
   setOtherMute: function(id, mute) {

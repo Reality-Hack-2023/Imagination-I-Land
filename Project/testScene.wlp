@@ -812,7 +812,10 @@
                         "teleportIndicatorMeshObject": "84",
                         "camRoot": "14",
                         "cam": "18",
-                        "floorGroup": 7
+                        "floorGroup": 7,
+                        "muteUI": "180",
+                        "mutedColor": "20",
+                        "peerComponent": "32"
                     }
                 },
                 {
@@ -2213,7 +2216,7 @@
             "translation": [
                 -0.1445409,
                 -0.4642777,
-                0.0520021
+                0.052002
             ],
             "rotation": [
                 0.0,
@@ -2297,7 +2300,7 @@
             "translation": [
                 -0.670804,
                 -0.4445891,
-                0.0612778
+                0.0612777
             ],
             "rotation": [
                 0.0,
@@ -2530,7 +2533,7 @@
                     "type": "changeColor",
                     "changeColor": {
                         "buttonMeshObject": "180",
-                        "hoverMaterial": "25"
+                        "hoverMaterial": "20"
                     }
                 },
                 {
@@ -2541,13 +2544,14 @@
                     }
                 },
                 {
-                    "type": "playbook-toggle"
+                    "type": "mute",
+                    "active": true
                 }
             ],
             "translation": [
-                0.7033824,
-                -0.5339349,
-                0.052002
+                0.6965444,
+                -0.5339138,
+                0.0451566
             ],
             "rotation": [
                 0.0,

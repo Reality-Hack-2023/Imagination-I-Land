@@ -1,4 +1,8 @@
+let defaultMat;
 WL.registerComponent("controller-teleport-component", {
+    peerComponent: {type:WL.Type.Object},
+    muteUI: {type:WL.Type.Object},
+    mutedColor: {type:WL.Type.Material},
     /** Object that will be placed as indiciation for where the player will teleport to. */
     teleportIndicatorMeshObject: {type: WL.Type.Object, default: null},
     /** Root of the player, the object that will be positioned on teleportation. */
@@ -34,6 +38,9 @@ WL.registerComponent("controller-teleport-component", {
     },
     start: function() {
         WL.onXRSessionStart.push(this.setupVREvents.bind(this));
+        this.mesh = this.muteUI.getComponent('mesh');
+        this.defaultMaterial = this.mesh.material;
+        defaultMat =   this.defaultMaterial; 
     },
     update: function() {
         let thumbstickXAxisInput = 0;
@@ -145,6 +152,7 @@ WL.registerComponent("controller-teleport-component", {
         }
 
         s.addEventListener('inputsourceschange' ,function(e) {
+            console.log("input source changed");
           if(e.added && e.added.length) {
             for (var i = 0; i < e.added.length; i++) {
               let inputSource = e.added[i];
@@ -157,6 +165,22 @@ WL.registerComponent("controller-teleport-component", {
           }
         }.bind(this));
 
+        s.addEventListener('squeeze' ,function(e) {
+          let peerManager=  this.peerComponent.getComponent('peer-manager');
+           peerManager.toggleMute();
+            console.log("toggle mute on squeeze");
+            let mat = this.defaultMaterial.clone();
 
-    },
+
+            if(peerManager.getMute()){
+                this.mesh.material =this.mutedColor;
+
+            }else{
+                this.mesh.material = mat;
+
+            }
+
+        }.bind(this));
+    
+    }
 });
