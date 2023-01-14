@@ -1915,23 +1915,19 @@
                 0.0
             ],
             "rotation": [
-                -0.7071311,
+                -0.707131,
                 0.0,
                 0.0,
-                0.7070823
+                0.7070824
             ],
             "scale": [
                 4.6842017,
-                4.6841435,
-                4.6841435
+                4.6841406,
+                4.6841406
             ],
             "components": [
-                null,
                 {
-                    "type": "changeColor",
-                    "changeColor": {
-                        "buttonMeshObject": "192"
-                    }
+                    "active": false
                 }
             ]
         },
