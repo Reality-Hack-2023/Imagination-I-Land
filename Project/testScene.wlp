@@ -1812,48 +1812,6 @@
                 2.0
             ]
         },
-        "192": {
-            "link": {
-                "name": "RoomBaked_Baked_0",
-                "file": "models\\theroom.glb"
-            },
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                -0.707131,
-                0.0,
-                0.0,
-                0.7070824
-            ],
-            "scale": [
-                1.4599999,
-                1.4599947,
-                1.4599947
-            ],
-            "components": [
-                null,
-                {
-                    "type": "physx",
-                    "physx": {
-                        "shape": "box",
-                        "capsule": {
-                            "radius": 1.75
-                        },
-                        "box": {
-                            "extents": [
-                                1.0,
-                                1.0,
-                                1.5
-                            ]
-                        },
-                        "static": true
-                    }
-                }
-            ]
-        },
         "194": {
             "name": "particleShooter",
             "components": [
@@ -1907,18 +1865,18 @@
                 "file": "models\\moji_gun (1).glb"
             },
             "translation": [
-                0.1066578,
-                1.9324135,
-                -0.0607205
+                0.0,
+                0.0,
+                0.0
             ],
             "rotation": [
-                -0.7241395,
-                0.0,
-                0.0,
-                0.6896535
+                -0.6707606,
+                0.2598752,
+                0.2728702,
+                0.6388167
             ],
             "scale": [
-                1.7842532,
+                1.7842533,
                 1.7842539,
                 1.7842539
             ],
@@ -1938,7 +1896,8 @@
                         }
                     }
                 }
-            ]
+            ],
+            "parent": "61"
         },
         "14": {
             "name": "Player",
@@ -3055,6 +3014,50 @@
                 1.0,
                 1.0000002
             ]
+        },
+        "da7aad06-5013-4a52-9954-70ffff54899d": {
+            "link": {
+                "name": "polySurface80.001",
+                "file": "models\\roundtable.glb"
+            },
+            "scale": [
+                0.0149999,
+                0.0149999,
+                0.0099999
+            ]
+        },
+        "74d8161b-3a38-445e-84f6-dc5428bb1d07": {
+            "link": {
+                "name": "polySurface10",
+                "file": "models\\thewall.glb"
+            },
+            "scale": [
+                1.46,
+                1.46,
+                1.46
+            ]
+        },
+        "df4d5830-aa94-43f7-9304-9724357cc397": {
+            "link": {
+                "name": "polySurface14",
+                "file": "models\\floor.glb"
+            },
+            "scale": [
+                1.46,
+                1.46,
+                1.46
+            ]
+        },
+        "90ab31d9-aca7-4d07-84ee-49e4e294b22b": {
+            "link": {
+                "name": "polySurface73.001",
+                "file": "models\\ceiling.glb"
+            },
+            "scale": [
+                0.0149999,
+                0.0149999,
+                0.0149999
+            ]
         }
     },
     "meshes": {
@@ -3264,6 +3267,54 @@
                 "file": "models\\cup_02 (1).glb"
             },
             "importScaling": 0.1
+        },
+        "7805881d-c931-4c57-a887-978148104f67": {
+            "link": {
+                "name": "Mesh.012",
+                "file": "models\\roundtable.glb"
+            }
+        },
+        "afde76ca-39bb-4bb5-80f2-df3ce7272feb": {
+            "link": {
+                "name": "Mesh.012-uv1",
+                "file": "models\\roundtable.glb"
+            }
+        },
+        "069b8e0e-40ee-4df3-b528-d50dc7222852": {
+            "link": {
+                "name": "Mesh.013",
+                "file": "models\\thewall.glb"
+            }
+        },
+        "4a7a3507-ba16-46a9-9928-135c9aa4d175": {
+            "link": {
+                "name": "Mesh.013-uv1",
+                "file": "models\\thewall.glb"
+            }
+        },
+        "4308f0ed-bd46-4fde-b578-f66d4916c881": {
+            "link": {
+                "name": "Mesh.014",
+                "file": "models\\floor.glb"
+            }
+        },
+        "4e41758a-3ee9-4c8a-bede-568fd2ba2662": {
+            "link": {
+                "name": "Mesh.014-uv1",
+                "file": "models\\floor.glb"
+            }
+        },
+        "48f29dac-ffd9-4606-8068-240dd5c60b35": {
+            "link": {
+                "name": "Mesh.015",
+                "file": "models\\ceiling.glb"
+            }
+        },
+        "15cddce9-001e-48b7-9fdc-1101aebae5e8": {
+            "link": {
+                "name": "Mesh.015-uv1",
+                "file": "models\\ceiling.glb"
+            }
         }
     },
     "textures": {
@@ -3393,6 +3444,30 @@
                 "name": "texture_1",
                 "file": "models\\oculus-touch-v2-right.glb"
             }
+        },
+        "6b60bda4-17cd-459f-93be-b4db0786856a": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\roundtable.glb"
+            }
+        },
+        "94e69a53-2c64-4439-95bf-e0d9f9c0b734": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\thewall.glb"
+            }
+        },
+        "cb18e100-827e-4729-83b0-67e1b068b514": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\floor.glb"
+            }
+        },
+        "92145324-cd57-4f1f-a739-cc24c578ec03": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\ceiling.glb"
+            }
         }
     },
     "images": {
@@ -3502,6 +3577,30 @@
             "link": {
                 "name": "Image_1",
                 "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "1b0b7b65-3a2d-4211-92bf-de28f0a5cde0": {
+            "link": {
+                "name": "Baked",
+                "file": "models\\roundtable.glb"
+            }
+        },
+        "8c6b5037-ede4-440d-93a7-af0db88bdf78": {
+            "link": {
+                "name": "Baked",
+                "file": "models\\thewall.glb"
+            }
+        },
+        "7886549c-0149-4236-b778-de1302939781": {
+            "link": {
+                "name": "Baked",
+                "file": "models\\floor.glb"
+            }
+        },
+        "0cc6c1c5-f9cb-4a74-8e80-f89425824043": {
+            "link": {
+                "name": "Baked",
+                "file": "models\\ceiling.glb"
             }
         }
     },
@@ -3755,6 +3854,30 @@
             "link": {
                 "name": "up_2",
                 "file": "models\\cup_02 (1).glb"
+            }
+        },
+        "5090605f-d9c4-40a9-949a-03eb71d71395": {
+            "link": {
+                "name": "Baked.005",
+                "file": "models\\roundtable.glb"
+            }
+        },
+        "6fa45081-701f-4be8-a0f5-9f2ae4bc0101": {
+            "link": {
+                "name": "Baked.006",
+                "file": "models\\thewall.glb"
+            }
+        },
+        "5320be9b-4a61-463a-bb30-fc63131c101f": {
+            "link": {
+                "name": "Baked.007",
+                "file": "models\\floor.glb"
+            }
+        },
+        "54a972ed-d5ec-47a3-95a8-00fca44721b6": {
+            "link": {
+                "name": "Baked.008",
+                "file": "models\\ceiling.glb"
             }
         }
     },
@@ -4014,7 +4137,11 @@
         "models/cup_01.glb",
         "models/cup_02.glb",
         "models/Hackathon_2023-01-14_19.34.53.gltf",
-        "models/cup_02 (1).glb"
+        "models/cup_02 (1).glb",
+        "models/roundtable.glb",
+        "models/thewall.glb",
+        "models/floor.glb",
+        "models/ceiling.glb"
     ],
     "pipelines": {
         "114": {
