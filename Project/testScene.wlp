@@ -3287,6 +3287,9 @@
                     "bounded-floor": false
                 }
             }
+        },
+        "editor": {
+            "ids": "uuid"
         }
     },
     "animations": {},
