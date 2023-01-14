@@ -1,82 +1,64 @@
 {
     "objects": {
-        "14": {
-            "name": "Player",
+        "15": {
+            "name": "FloorPlane",
             "components": [
                 {
-                    "type": "wasd-controls",
-                    "wasd-controls": {
-                        "headObject": "17"
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "20"
                     }
                 }
             ],
             "translation": [
-                -3.2591099,
-                0.3167249,
-                1.7569211
+                0.0,
+                0.0,
+                0.0000061
             ],
             "rotation": [
+                -0.7072539,
                 0.0,
-                -0.3768199,
                 0.0,
-                0.9262865
+                0.7069596
             ],
             "scale": [
-                0.9999998,
-                1.0,
-                0.9999998
-            ]
-        },
-        "17": {
-            "name": "NonVrCamera",
-            "parent": "14",
-            "components": [
-                {
-                    "type": "view"
-                },
-                {
-                    "type": "mouse-look"
-                },
-                {
-                    "type": "cursor"
-                }
-            ]
-        },
-        "18": {
-            "name": "EyeLeft",
-            "parent": "14",
-            "components": [
-                {
-                    "type": "view"
-                },
-                {
-                    "type": "input",
-                    "input": {
-                        "type": "eye left"
-                    }
-                }
-            ]
-        },
-        "19": {
-            "name": "EyeRight",
-            "parent": "14",
-            "components": [
-                {
-                    "type": "view"
-                },
-                {
-                    "type": "input",
-                    "input": {
-                        "type": "eye right"
-                    }
-                },
-                {
-                    "type": "howler-audio-listener"
-                }
+                300.0,
+                300.0010375,
+                300.0000915
             ]
         },
         "21": {
             "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.1,
+                        "shadows": false
+                    },
+                    "active": true
+                }
+            ],
+            "translation": [
+                0.0,
+                3.0,
+                2.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "23": {
+            "name": "Light.000",
             "components": [
                 {
                     "type": "light",
@@ -86,9 +68,9 @@
                 }
             ],
             "translation": [
-                0.0,
+                -1.0,
                 3.0,
-                2.0
+                -1.0
             ],
             "rotation": [
                 0.0,
@@ -698,95 +680,6 @@
                 0.075
             ]
         },
-        "61": {
-            "name": "RightHand",
-            "parent": "14",
-            "components": [
-                {
-                    "type": "input",
-                    "input": {
-                        "type": "ray right"
-                    }
-                },
-                {
-                    "type": "cursor",
-                    "cursor": {
-                        "cursorRayObject": "85",
-                        "cursorObject": "87",
-                        "handedness": "right"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                1.0,
-                1.0,
-                1.0
-            ]
-        },
-        "62": {
-            "name": "LeftHand",
-            "parent": "14",
-            "components": [
-                {
-                    "type": "input",
-                    "input": {
-                        "type": "ray left"
-                    }
-                },
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "22"
-                    }
-                },
-                {
-                    "type": "controller-teleport-component",
-                    "controller-teleport-component": {
-                        "teleportIndicatorMeshObject": "84",
-                        "camRoot": "14",
-                        "cam": "18",
-                        "floorGroup": 7
-                    }
-                },
-                {
-                    "type": "collision",
-                    "collision": {
-                        "sphere": {
-                            "radius": 0.075
-                        },
-                        "groups": 4
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.075,
-                0.075,
-                0.075
-            ]
-        },
         "63": {
             "name": "Mesh",
             "parent": "34",
@@ -1025,16 +918,16 @@
                         "collider": "aabb",
                         "aabb": {
                             "extents": [
-                                5.0,
+                                23.1000003,
                                 1.0,
-                                5.0
+                                15.8999996
                             ]
                         }
                     }
                 }
             ],
             "translation": [
-                0.0,
+                -2.0,
                 -1.0,
                 0.0
             ],
@@ -1048,238 +941,6 @@
                 0.9999998,
                 1.0000195,
                 0.9999998
-            ]
-        },
-        "74": {
-            "name": "Limit",
-            "parent": "73",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                5.0,
-                1.0110658,
-                5.0000076
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.1,
-                0.1,
-                0.1
-            ]
-        },
-        "75": {
-            "name": "Limit",
-            "parent": "73",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                1.0110658,
-                5.0000076
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.1,
-                0.1,
-                0.1
-            ]
-        },
-        "76": {
-            "name": "Limit",
-            "parent": "73",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                -5.0,
-                1.0110658,
-                5.0000076
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.1,
-                0.1,
-                0.1
-            ]
-        },
-        "77": {
-            "name": "Limit",
-            "parent": "73",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                5.0,
-                1.0114749,
-                -4.9999933
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.1,
-                0.1,
-                0.1
-            ]
-        },
-        "78": {
-            "name": "Limit",
-            "parent": "73",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                1.0114749,
-                -4.9999933
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.1,
-                0.1,
-                0.1
-            ]
-        },
-        "79": {
-            "name": "Limit",
-            "parent": "73",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                -5.0,
-                1.0114749,
-                -4.9999933
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.1,
-                0.1,
-                0.1
-            ]
-        },
-        "80": {
-            "name": "Limit",
-            "parent": "73",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                5.0,
-                1.0112706,
-                0.0000073
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.1,
-                0.1,
-                0.1
-            ]
-        },
-        "81": {
-            "name": "Limit",
-            "parent": "73",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                -5.0,
-                1.0112706,
-                0.0000073
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.1,
-                0.1,
-                0.1
             ]
         },
         "84": {
@@ -1312,102 +973,6 @@
                 0.2
             ]
         },
-        "85": {
-            "name": "Cursor",
-            "parent": "61",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "25"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                -0.5
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.002,
-                0.002,
-                0.5
-            ]
-        },
-        "86": {
-            "name": "Indicator",
-            "parent": "61",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "22"
-                    }
-                },
-                {
-                    "type": "collision",
-                    "collision": {
-                        "groups": 4,
-                        "sphere": {
-                            "radius": 0.075
-                        }
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.075,
-                0.075,
-                0.075
-            ]
-        },
-        "87": {
-            "name": "CursorDot",
-            "parent": "61",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "25"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.0099999,
-                0.0099999,
-                0.0099999
-            ]
-        },
         "88": {
             "name": "Environment",
             "components": [
@@ -1438,7 +1003,9 @@
                 {
                     "type": "skybox",
                     "skybox": {
-                        "skyMat": "146"
+                        "skyMat": "146",
+                        "light1": "21",
+                        "light2": "23"
                     }
                 },
                 {
@@ -1492,7 +1059,8 @@
                     "type": "skybox",
                     "skybox": {
                         "skyMat": "146"
-                    }
+                    },
+                    "active": false
                 }
             ],
             "translation": [
@@ -1525,9 +1093,9 @@
                 }
             ],
             "translation": [
-                1.7988269,
-                0.6551989,
-                2.4463241
+                1.8029663,
+                0.7031537,
+                2.4229779
             ],
             "rotation": [
                 0.0,
@@ -1536,9 +1104,9 @@
                 0.9751479
             ],
             "scale": [
-                0.4999994,
+                0.4999993,
                 0.5,
-                0.4999995
+                0.4999994
             ]
         },
         "92": {
@@ -1550,22 +1118,6 @@
                     "mesh": {
                         "mesh": "8",
                         "material": "20"
-                    }
-                },
-                {
-                    "type": "cursor-target"
-                },
-                {
-                    "type": "collision",
-                    "collision": {
-                        "collider": "box",
-                        "box": {
-                            "extents": [
-                                3.0,
-                                3.0,
-                                3.0
-                            ]
-                        }
                     }
                 }
             ],
@@ -1584,35 +1136,6 @@
                 3.0000002,
                 3.0000002,
                 3.0
-            ]
-        },
-        "93": {
-            "name": "Cube",
-            "parent": "88",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "20"
-                    }
-                }
-            ],
-            "translation": [
-                -3.4153366,
-                1.7105165,
-                9.063982
-            ],
-            "rotation": [
-                -0.0923767,
-                -0.2171862,
-                0.3803482,
-                0.8942213
-            ],
-            "scale": [
-                1.2000019,
-                1.2000037,
-                1.1999996
             ]
         },
         "94": {
@@ -1673,244 +1196,12 @@
                 1.9999877
             ]
         },
-        "96": {
-            "name": "Limit",
-            "parent": "73",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                5.0,
-                1.0111683,
-                2.5000081
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.1,
-                0.1,
-                0.1
-            ]
-        },
-        "97": {
-            "name": "Limit",
-            "parent": "73",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                -5.0,
-                1.0111683,
-                2.5000081
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.1,
-                0.1,
-                0.1
-            ]
-        },
-        "98": {
-            "name": "Limit",
-            "parent": "73",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                5.0,
-                1.0113729,
-                -2.4999921
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.1,
-                0.1,
-                0.1
-            ]
-        },
-        "99": {
-            "name": "Limit",
-            "parent": "73",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                -5.0,
-                1.0113729,
-                -2.4999921
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.1,
-                0.1,
-                0.1
-            ]
-        },
-        "100": {
-            "name": "Limit",
-            "parent": "73",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                -2.5000002,
-                1.0110658,
-                5.0000076
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.1,
-                0.1,
-                0.1
-            ]
-        },
-        "101": {
-            "name": "Limit",
-            "parent": "73",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                -2.5000002,
-                1.0114749,
-                -4.9999933
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.1,
-                0.1,
-                0.1
-            ]
-        },
-        "102": {
-            "name": "Limit",
-            "parent": "73",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                2.5000002,
-                1.0110658,
-                5.0000076
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.1,
-                0.1,
-                0.1
-            ]
-        },
-        "103": {
-            "name": "Limit",
-            "parent": "73",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                2.5000002,
-                1.0114749,
-                -4.9999933
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.1,
-                0.1,
-                0.1
-            ]
-        },
         "150": {
             "name": "UI",
             "translation": [
                 0.0,
                 0.0,
-                -4.8087949
+                3.8873345
             ],
             "rotation": [
                 0.0,
@@ -2094,51 +1385,6 @@
                 1.0
             ]
         },
-        "161": {
-            "name": "Button",
-            "parent": "150",
-            "components": [
-                {
-                    "type": "text",
-                    "text": {
-                        "text": "Host\n"
-                    }
-                },
-                {
-                    "type": "collision",
-                    "collision": {
-                        "collider": "aabb",
-                        "aabb": {
-                            "extents": [
-                                1.0,
-                                0.2,
-                                0.05
-                            ]
-                        },
-                        "groups": 2
-                    }
-                },
-                {
-                    "type": "cursor-target"
-                }
-            ],
-            "translation": [
-                0.0,
-                2.6271691,
-                -3.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                1.0,
-                1.0,
-                1.0
-            ]
-        },
         "163": {
             "name": "Change SkyBox",
             "parent": "165",
@@ -2184,13 +1430,14 @@
                     "type": "skybox",
                     "skybox": {
                         "skyMat": "22"
-                    }
+                    },
+                    "active": false
                 }
             ],
             "translation": [
                 -0.1445409,
                 -0.4642777,
-                0.0520021
+                0.052002
             ],
             "rotation": [
                 0.0,
@@ -2274,7 +1521,7 @@
             "translation": [
                 -0.670804,
                 -0.4445891,
-                0.0612778
+                0.0612777
             ],
             "rotation": [
                 0.0,
@@ -2507,8 +1754,9 @@
                     "type": "changeColor",
                     "changeColor": {
                         "buttonMeshObject": "180",
-                        "hoverMaterial": "25"
-                    }
+                        "hoverMaterial": "20"
+                    },
+                    "active": false
                 },
                 {
                     "type": "mesh",
@@ -2518,13 +1766,14 @@
                     }
                 },
                 {
-                    "type": "playbook-toggle"
+                    "type": "mute",
+                    "active": false
                 }
             ],
             "translation": [
-                0.7033824,
-                -0.5339349,
-                0.052002
+                0.6965444,
+                -0.5339138,
+                0.0451566
             ],
             "rotation": [
                 0.0,
@@ -2672,9 +1921,18 @@
                 0.7070823
             ],
             "scale": [
-                1.0,
-                1.0,
-                1.0
+                4.6842017,
+                4.6841435,
+                4.6841435
+            ],
+            "components": [
+                null,
+                {
+                    "type": "changeColor",
+                    "changeColor": {
+                        "buttonMeshObject": "192"
+                    }
+                }
             ]
         },
         "194": {
@@ -2718,7 +1976,8 @@
                     "gun_trigger_manager": {
                         "particleShooter": "194",
                         "trigger": "92"
-                    }
+                    },
+                    "active": false
                 }
             ],
             "parent": null
@@ -2729,9 +1988,9 @@
                 "file": "models\\moji_gun (1).glb"
             },
             "translation": [
-                0.1275213,
-                5.0844378,
-                -0.3482062
+                0.1426997,
+                5.6918992,
+                0.6519799
             ],
             "rotation": [
                 -0.7241395,
@@ -2745,20 +2004,115 @@
                 1.7842539
             ]
         },
-        "23": {
-            "name": "Light.000",
+        "14": {
+            "name": "Player",
             "components": [
                 {
-                    "type": "light",
-                    "light": {
-                        "attenuation": 0.1
+                    "type": "wasd-controls",
+                    "wasd-controls": {
+                        "headObject": "17"
                     }
                 }
             ],
             "translation": [
-                -1.0,
-                3.0,
-                -1.0
+                -3.2591099,
+                0.3167249,
+                1.7569211
+            ],
+            "rotation": [
+                0.0,
+                -0.3768199,
+                0.0,
+                0.9262865
+            ],
+            "scale": [
+                0.9999998,
+                1.0,
+                0.9999998
+            ]
+        },
+        "17": {
+            "name": "NonVrCamera",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view",
+                    "active": true
+                },
+                {
+                    "type": "mouse-look"
+                },
+                {
+                    "type": "cursor"
+                }
+            ]
+        },
+        "18": {
+            "name": "EyeLeft",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view",
+                    "active": true
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye left"
+                    },
+                    "active": true
+                }
+            ]
+        },
+        "19": {
+            "name": "EyeRight",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view",
+                    "active": true
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye right"
+                    },
+                    "active": true
+                },
+                {
+                    "type": "howler-audio-listener",
+                    "active": true,
+                    "howler-audio-listener": {
+                        "spatial": true
+                    }
+                }
+            ]
+        },
+        "61": {
+            "name": "RightHand",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "ray right"
+                    },
+                    "active": true
+                },
+                {
+                    "type": "cursor",
+                    "cursor": {
+                        "cursorRayObject": "85",
+                        "cursorObject": "87",
+                        "handedness": "right"
+                    },
+                    "active": true
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
             ],
             "rotation": [
                 0.0,
@@ -2772,468 +2126,843 @@
                 1.0
             ]
         },
-        "604f92b4-2cde-441f-a6fb-1d94b0296f94": {
-            "link": {
-                "name": "Armature",
-                "file": "models\\hand-left.glb"
-            },
-            "parent": "62"
-        },
-        "d45f1b84-2792-4161-8569-77c4d38d70d2": {
-            "link": {
-                "name": "l_handMeshNode<Armature",
-                "file": "models\\hand-left.glb"
-            },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+        "85": {
+            "name": "Cursor",
+            "parent": "61",
             "components": [
                 {
+                    "type": "mesh",
                     "mesh": {
-                        "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+                        "mesh": "8",
+                        "material": "25"
                     }
+                }
+            ],
+            "translation": [
+                -0.0005297,
+                0.0,
+                0.6920895
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.0019999,
+                0.002,
+                0.4999999
+            ]
+        },
+        "86": {
+            "name": "Indicator",
+            "parent": null,
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "25"
+                    },
+                    "active": true
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "groups": 4,
+                        "sphere": {
+                            "radius": 0.075
+                        }
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.3768199,
+                0.0,
+                0.9262865
+            ],
+            "scale": [
+                0.075,
+                0.075,
+                0.075
+            ]
+        },
+        "87": {
+            "name": "CursorDot",
+            "parent": null,
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "25"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.3768199,
+                0.0,
+                0.9262865
+            ],
+            "scale": [
+                0.0099999,
+                0.0099999,
+                0.0099999
+            ]
+        },
+        "62": {
+            "name": "LeftHand",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "ray left"
+                    },
+                    "active": true
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    },
+                    "active": true
+                },
+                {
+                    "type": "controller-teleport-component",
+                    "controller-teleport-component": {
+                        "teleportIndicatorMeshObject": "84",
+                        "camRoot": "14",
+                        "cam": "18",
+                        "floorGroup": 7,
+                        "muteUI": "180",
+                        "mutedColor": "20",
+                        "peerComponent": "32"
+                    },
+                    "active": true
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.075
+                        },
+                        "groups": 4
+                    },
+                    "active": true
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.075,
+                0.075,
+                0.075
+            ]
+        },
+        "daa805a5-c9ea-405b-a951-26b331bfe1b6": {
+            "name": "ControllerLeft",
+            "parent": "14",
+            "components": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "hand left"
+                    }
+                },
+                {
+                    "type": "vr-mode-active-switch",
+                    "active": true
+                }
+            ],
+            "translation": [
+                0.1251226,
+                1.4332751,
+                -0.9590799
+            ],
+            "rotation": [
+                0.0,
+                0.3768199,
+                0.0,
+                0.9262865
+            ],
+            "scale": [
+                1.0000001,
+                1.0,
+                1.0000001
+            ]
+        },
+        "bc5b903e-a46a-47cc-be2a-2647b0ed1015": {
+            "link": {
+                "name": "root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "daa805a5-c9ea-405b-a951-26b331bfe1b6",
+            "name": "ControllerModelLeft",
+            "translation": [
+                -0.0117514,
+                0.0008869,
+                0.0161192
+            ],
+            "rotation": [
+                -0.0,
+                0.7316615,
+                0.6816681,
+                3.196286257889369e-8
+            ],
+            "scale": [
+                0.9999998,
+                0.9999999,
+                0.9999997
+            ]
+        },
+        "fb95b9af-2aa0-4c26-810f-8603db8a0e29": {
+            "link": {
+                "name": "controller<root",
+                "file": "models\\oculus-touch-v2-left.glb"
+            },
+            "parent": "bc5b903e-a46a-47cc-be2a-2647b0ed1015",
+            "components": [
+                {
+                    "active": false
                 }
             ]
         },
-        "6ee8b426-7ff6-4e74-a91c-633b83bfa200": {
+        "d0809c62-3545-4d81-9b31-d963747c1116": {
             "link": {
-                "name": "xr_standard_trigger_pressed_max<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "thumbrest_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94"
+            "parent": "bc5b903e-a46a-47cc-be2a-2647b0ed1015"
         },
-        "919dc430-e562-48a8-bdd9-840386de3e80": {
+        "803190fa-8356-4d94-bb5e-3e4576798f0b": {
             "link": {
-                "name": "xr_standard_trigger_pressed_min<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "thumbrest_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94"
+            "parent": "bc5b903e-a46a-47cc-be2a-2647b0ed1015"
         },
-        "e913d0a1-319f-44fa-98c3-7de8bd663d16": {
+        "e8f925e4-521b-4452-92b2-adfddd506c73": {
             "link": {
-                "name": "xr_standard_trigger_pressed_value<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "thumbrest_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94"
+            "parent": "bc5b903e-a46a-47cc-be2a-2647b0ed1015"
         },
-        "eff3f27e-c687-4d6c-8175-ea87b51c0344": {
+        "8b0721e0-e554-4030-ad99-b8324fe2e179": {
             "link": {
-                "name": "pinky-finger-tip<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "x_button_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
-            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+            "parent": "bc5b903e-a46a-47cc-be2a-2647b0ed1015"
         },
-        "e3bd3ae3-219a-4c65-ae6d-93db9f5ce574": {
+        "634d4ec0-3408-4ab5-addb-1803649f7cab": {
             "link": {
-                "name": "pinky-finger-phalanx-distal<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "x_button_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
-            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+            "parent": "bc5b903e-a46a-47cc-be2a-2647b0ed1015"
         },
-        "ea95d020-2095-4030-9881-2d0521ce5b0c": {
+        "a2d20724-eab4-4adb-bde1-94e3ecde65e7": {
             "link": {
-                "name": "pinky-finger-phalanx-intermediate<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "x_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
-            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+            "parent": "bc5b903e-a46a-47cc-be2a-2647b0ed1015"
         },
-        "03cd6357-752a-4762-b75a-1e01fa187b6a": {
+        "a8287b18-08cf-44d8-9f24-749a2d5312ac": {
             "link": {
-                "name": "pinky-finger-phalanx-proximal<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "x_button<x_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
-            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+            "parent": "a2d20724-eab4-4adb-bde1-94e3ecde65e7"
         },
-        "1a4ed34c-0f03-4b42-92f3-8a0b437b70cc": {
+        "142090cd-8194-4924-8307-b27d7fc43f98": {
             "link": {
-                "name": "pinky-finger-metacarpal<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "xr_standard_squeeze_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
-            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+            "parent": "bc5b903e-a46a-47cc-be2a-2647b0ed1015"
         },
-        "fab2de57-9283-4603-aece-c67a6b8682a0": {
+        "8db7aa39-4d3f-4236-acbf-b1b8756e42cf": {
             "link": {
-                "name": "ring-finger-tip<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "xr_standard_squeeze_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
-            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+            "parent": "bc5b903e-a46a-47cc-be2a-2647b0ed1015"
         },
-        "3b7f2371-618f-4174-881b-ae50aae106f5": {
+        "943c308d-65f0-4e73-8ae1-7b30bd01e222": {
             "link": {
-                "name": "ring-finger-phalanx-distal<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "xr_standard_squeeze_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
-            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+            "parent": "bc5b903e-a46a-47cc-be2a-2647b0ed1015"
         },
-        "11cffe00-6480-4d3c-ae7b-4d33a9fb3a11": {
+        "ec090c43-045f-4bbe-89f5-7e2e0f713457": {
             "link": {
-                "name": "ring-finger-phalanx-intermediate<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "squeeze<xr_standard_squeeze_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
-            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+            "parent": "943c308d-65f0-4e73-8ae1-7b30bd01e222"
         },
-        "fc870186-bbd0-45aa-bcfa-85948330256c": {
+        "1fadefea-b60a-478d-a888-7db9ece932d8": {
             "link": {
-                "name": "ring-finger-phalanx-proximal<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "xr_standard_thumbstick_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
-            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+            "parent": "bc5b903e-a46a-47cc-be2a-2647b0ed1015"
         },
-        "ecb0c1a0-cc31-4837-a1c3-04138939c64f": {
+        "1a112ce6-b1ea-401d-9ca0-71faef176934": {
             "link": {
-                "name": "ring-finger-metacarpal<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "xr_standard_thumbstick_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
-            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+            "parent": "bc5b903e-a46a-47cc-be2a-2647b0ed1015"
         },
-        "b51682fd-1539-43a8-a395-479ce8e4a0a8": {
+        "ddf3a05f-4454-430f-94e3-ab255fdc1253": {
             "link": {
-                "name": "middle-finger-tip<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
-            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+            "parent": "bc5b903e-a46a-47cc-be2a-2647b0ed1015"
         },
-        "7a16e60a-26b2-4824-885f-5f2327e0611e": {
+        "cfebb339-42ca-4a3f-a039-b5c539315a49": {
             "link": {
-                "name": "middle-finger-phalanx-distal<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "xr_standard_thumbstick_xaxis_pressed_max<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
-            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+            "parent": "ddf3a05f-4454-430f-94e3-ab255fdc1253"
         },
-        "185e2c91-645e-4e7d-860a-ee1c0a6819df": {
+        "2a940c1d-6450-4a46-8f9a-d566ae4fdd54": {
             "link": {
-                "name": "middle-finger-phalanx-intermediate<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "xr_standard_thumbstick_xaxis_pressed_min<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
-            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+            "parent": "ddf3a05f-4454-430f-94e3-ab255fdc1253"
         },
-        "47ecec06-b290-4193-9079-f90716d262d7": {
+        "2f32ea43-0604-4a37-83f9-1e8b1aa6b925": {
             "link": {
-                "name": "middle-finger-phalanx-proximal<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
-            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+            "parent": "ddf3a05f-4454-430f-94e3-ab255fdc1253"
         },
-        "a2569ec0-d26a-4e80-82b4-f5dc26e9c849": {
+        "66042368-a3d0-4494-923d-17e037c38812": {
             "link": {
-                "name": "middle-finger-metacarpal<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "xr_standard_thumbstick_yaxis_pressed_max<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
-            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+            "parent": "2f32ea43-0604-4a37-83f9-1e8b1aa6b925"
         },
-        "209c9310-a9cf-4166-8a72-5ee2551856a2": {
+        "751216e6-f4e0-41aa-adcb-e9b8cc501cba": {
             "link": {
-                "name": "index-finger-tip<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "xr_standard_thumbstick_yaxis_pressed_min<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
-            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+            "parent": "2f32ea43-0604-4a37-83f9-1e8b1aa6b925"
         },
-        "c2532890-1d20-4831-91d4-7701aac31d9d": {
+        "1cd3086d-3664-459e-8bf2-8542e031cf16": {
             "link": {
-                "name": "index-finger-phalanx-distal<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "xr_standard_thumbstick_yaxis_pressed_value<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
-            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+            "parent": "2f32ea43-0604-4a37-83f9-1e8b1aa6b925"
         },
-        "b154dd98-c195-4a97-be4a-479f3fe777b6": {
+        "401e98c1-6249-43ad-8886-23ffa38a4cb4": {
             "link": {
-                "name": "index-finger-phalanx-intermediate<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "thumbstick<xr_standard_thumbstick_yaxis_pressed_value<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
-            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+            "parent": "1cd3086d-3664-459e-8bf2-8542e031cf16"
         },
-        "285dfea4-2ebc-4840-833e-856972ea3857": {
+        "71c05f25-44c1-4804-9912-5a6cf5ef9a0a": {
             "link": {
-                "name": "index-finger-phalanx-proximal<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "xr_standard_trigger_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
-            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+            "parent": "bc5b903e-a46a-47cc-be2a-2647b0ed1015"
         },
-        "b8336e3c-c82c-4d7d-a729-6601bc210046": {
+        "a7c80ee6-f953-4abd-a052-908581b24342": {
             "link": {
-                "name": "index-finger-metacarpal<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "xr_standard_trigger_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
-            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+            "parent": "bc5b903e-a46a-47cc-be2a-2647b0ed1015"
         },
-        "276be4e3-8799-4a28-b0a8-e3950c12d573": {
+        "c7d1ced1-f045-489d-83a7-e1837021ec76": {
             "link": {
-                "name": "thumb-tip<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "xr_standard_trigger_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
-            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+            "parent": "bc5b903e-a46a-47cc-be2a-2647b0ed1015"
         },
-        "b96b54a3-7d9b-41dc-85f4-34c67cfac64c": {
+        "6d852910-d0b4-4b12-83dd-61af07418b6e": {
             "link": {
-                "name": "thumb-phalanx-distal<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "trigger<xr_standard_trigger_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
-            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+            "parent": "c7d1ced1-f045-489d-83a7-e1837021ec76"
         },
-        "0a35572e-e0b2-4454-a1e3-5046538e0d8c": {
+        "b7acd1d3-23e7-497e-b676-98528de00fd8": {
             "link": {
-                "name": "thumb-phalanx-proximal<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "y_button_pressed_max<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
-            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+            "parent": "bc5b903e-a46a-47cc-be2a-2647b0ed1015"
         },
-        "8964cda1-d877-4bec-8228-6113da7f0a23": {
+        "114624e2-71d1-4a08-b435-8cae1f2af532": {
             "link": {
-                "name": "thumb-metacarpal<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "y_button_pressed_min<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
-            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+            "parent": "bc5b903e-a46a-47cc-be2a-2647b0ed1015"
         },
-        "0c906bde-46ab-4218-8c55-b1f47e7fc11b": {
+        "a3b9263c-4781-4b8f-9d6c-6f5880fd9b0a": {
             "link": {
-                "name": "wrist<Armature",
-                "file": "models\\hand-left.glb"
+                "name": "y_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
-            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+            "parent": "bc5b903e-a46a-47cc-be2a-2647b0ed1015"
         },
-        "9efb669c-c043-41bf-8da1-b63b1ce58508": {
+        "4539d7b3-f612-436b-9885-4921979196a9": {
             "link": {
-                "name": "Armature",
-                "file": "models\\hand-right.glb"
+                "name": "y_button<y_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-left.glb"
             },
-            "parent": "61"
+            "parent": "a3b9263c-4781-4b8f-9d6c-6f5880fd9b0a"
         },
-        "8b94386c-ca60-4108-bc7e-d14b0417af39": {
+        "fa6791d9-5b53-492c-97aa-251e6424af9e": {
+            "name": "ControllerRight",
+            "parent": "14",
+            "components": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "hand right"
+                    }
+                },
+                {
+                    "type": "vr-mode-active-switch",
+                    "active": true
+                }
+            ],
+            "translation": [
+                0.1251226,
+                1.4332751,
+                -0.9590799
+            ],
+            "rotation": [
+                0.0,
+                0.3768199,
+                0.0,
+                0.9262865
+            ],
+            "scale": [
+                1.0000001,
+                1.0,
+                1.0000001
+            ]
+        },
+        "25e2c4eb-ca80-419b-8110-9e4205dc5beb": {
             "link": {
-                "name": "r_handMeshNode<Armature",
-                "file": "models\\hand-right.glb"
+                "name": "root",
+                "file": "models\\oculus-touch-v2-right.glb"
             },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "parent": "fa6791d9-5b53-492c-97aa-251e6424af9e",
+            "name": "ControllerModelRight",
+            "translation": [
+                0.0097994,
+                -0.0006203,
+                0.0177838
+            ],
+            "rotation": [
+                -0.0,
+                0.999921,
+                -0.0125658,
+                -4.174509058429976e-7
+            ],
+            "scale": [
+                0.9993978,
+                0.9993963,
+                1.0000015
+            ]
+        },
+        "27a5bea9-74c2-4889-b3f5-651a377f750f": {
+            "link": {
+                "name": "a_button_pressed_max<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "25e2c4eb-ca80-419b-8110-9e4205dc5beb"
+        },
+        "2c4f7e4f-d3d0-40a9-8046-7a1bae12564f": {
+            "link": {
+                "name": "a_button_pressed_min<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "25e2c4eb-ca80-419b-8110-9e4205dc5beb"
+        },
+        "8109fdef-0934-4f27-8c6d-ca324b817dc0": {
+            "link": {
+                "name": "a_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "25e2c4eb-ca80-419b-8110-9e4205dc5beb"
+        },
+        "b581be75-d587-4000-acbb-723ed8e2d91c": {
+            "link": {
+                "name": "a_button<a_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "8109fdef-0934-4f27-8c6d-ca324b817dc0"
+        },
+        "d00196d0-5bd5-4371-87cb-7aa1e72a5e68": {
+            "link": {
+                "name": "b_button_pressed_max<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "25e2c4eb-ca80-419b-8110-9e4205dc5beb"
+        },
+        "6f53c33c-cc45-44f5-aaf9-884d3ed3dbeb": {
+            "link": {
+                "name": "b_button_pressed_min<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "25e2c4eb-ca80-419b-8110-9e4205dc5beb"
+        },
+        "832ae097-5722-48e2-91fc-d66b3c3eb5e1": {
+            "link": {
+                "name": "b_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "25e2c4eb-ca80-419b-8110-9e4205dc5beb"
+        },
+        "c53324bc-c572-45d2-8bff-74ddc86b2b87": {
+            "link": {
+                "name": "b_button<b_button_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "832ae097-5722-48e2-91fc-d66b3c3eb5e1"
+        },
+        "ce5e7804-2797-43bb-a9c3-eb84a8ad6e6a": {
+            "link": {
+                "name": "controller<root",
+                "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "parent": "25e2c4eb-ca80-419b-8110-9e4205dc5beb",
             "components": [
                 {
-                    "mesh": {
-                        "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
-                    }
+                    "active": false
                 }
             ]
         },
-        "5b6416bd-7a9d-478b-9f2d-b97e32a00054": {
+        "3c446181-8a64-429d-b453-fff375912e8e": {
             "link": {
-                "name": "wrist<Armature",
-                "file": "models\\hand-right.glb"
+                "name": "thumbrest_pressed_max<root",
+                "file": "models\\oculus-touch-v2-right.glb"
             },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
-            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+            "parent": "25e2c4eb-ca80-419b-8110-9e4205dc5beb"
         },
-        "be87933e-4bc1-4fc0-bf65-511695644f64": {
+        "11cc9905-a2b1-43a1-a6b6-22b6ff585343": {
             "link": {
-                "name": "thumb-metacarpal<Armature",
-                "file": "models\\hand-right.glb"
+                "name": "thumbrest_pressed_min<root",
+                "file": "models\\oculus-touch-v2-right.glb"
             },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
-            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+            "parent": "25e2c4eb-ca80-419b-8110-9e4205dc5beb"
         },
-        "5ea9608e-0052-4f6c-a0d5-aeef8973007d": {
+        "55def26e-8406-432a-9383-ab30fd01a70e": {
             "link": {
-                "name": "thumb-phalanx-proximal<Armature",
-                "file": "models\\hand-right.glb"
+                "name": "thumbrest_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
             },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
-            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+            "parent": "25e2c4eb-ca80-419b-8110-9e4205dc5beb"
         },
-        "04c16135-f7a2-4e9c-a49d-db3a4aea0eb6": {
+        "4be4b88c-bda7-4a22-963f-234d3e8ee288": {
             "link": {
-                "name": "thumb-phalanx-distal<Armature",
-                "file": "models\\hand-right.glb"
+                "name": "xr_standard_squeeze_pressed_max<root",
+                "file": "models\\oculus-touch-v2-right.glb"
             },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
-            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+            "parent": "25e2c4eb-ca80-419b-8110-9e4205dc5beb"
         },
-        "35395293-e526-4bc6-bc11-d04227a09604": {
+        "70727dd0-ca59-471d-8279-5b8a671e35df": {
             "link": {
-                "name": "thumb-tip<Armature",
-                "file": "models\\hand-right.glb"
+                "name": "xr_standard_squeeze_pressed_min<root",
+                "file": "models\\oculus-touch-v2-right.glb"
             },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
-            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+            "parent": "25e2c4eb-ca80-419b-8110-9e4205dc5beb"
         },
-        "fd57e783-8c65-4376-a281-6912f636a5dd": {
+        "1208e492-862b-436f-a4fb-cc63d022ca22": {
             "link": {
-                "name": "index-finger-metacarpal<Armature",
-                "file": "models\\hand-right.glb"
+                "name": "xr_standard_squeeze_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
             },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
-            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+            "parent": "25e2c4eb-ca80-419b-8110-9e4205dc5beb"
         },
-        "bc30b846-d40c-444e-ab05-3206b19faa12": {
+        "b0e5373f-5167-48e5-94da-148000b9def7": {
             "link": {
-                "name": "index-finger-phalanx-proximal<Armature",
-                "file": "models\\hand-right.glb"
+                "name": "squeeze<xr_standard_squeeze_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
             },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
-            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+            "parent": "1208e492-862b-436f-a4fb-cc63d022ca22"
         },
-        "24b1eefc-36a5-4e5a-b8a0-71a84cc3f54c": {
+        "a74c8823-3ee5-4fb0-b1b3-bd411a08a2fd": {
             "link": {
-                "name": "index-finger-phalanx-intermediate<Armature",
-                "file": "models\\hand-right.glb"
+                "name": "xr_standard_thumbstick_pressed_max<root",
+                "file": "models\\oculus-touch-v2-right.glb"
             },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
-            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+            "parent": "25e2c4eb-ca80-419b-8110-9e4205dc5beb"
         },
-        "467a3a71-05f6-4416-817c-d5ca5e728490": {
+        "c2ae5bf6-4578-41c3-844d-704ab268d51a": {
             "link": {
-                "name": "index-finger-phalanx-distal<Armature",
-                "file": "models\\hand-right.glb"
+                "name": "xr_standard_thumbstick_pressed_min<root",
+                "file": "models\\oculus-touch-v2-right.glb"
             },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
-            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+            "parent": "25e2c4eb-ca80-419b-8110-9e4205dc5beb"
         },
-        "23c90f47-3767-4520-8cff-450368a5fdc9": {
+        "a4411da8-b852-482a-bcfc-a9af9113d974": {
             "link": {
-                "name": "index-finger-tip<Armature",
-                "file": "models\\hand-right.glb"
+                "name": "xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
             },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
-            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+            "parent": "25e2c4eb-ca80-419b-8110-9e4205dc5beb"
         },
-        "9495b148-32f4-4fe4-9a68-4d6912a9453e": {
+        "421336e6-20c4-4def-8827-eab2ea6122fa": {
             "link": {
-                "name": "middle-finger-metacarpal<Armature",
-                "file": "models\\hand-right.glb"
+                "name": "xr_standard_thumbstick_xaxis_pressed_max<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
             },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
-            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+            "parent": "a4411da8-b852-482a-bcfc-a9af9113d974"
         },
-        "09e161ae-b41e-487f-abc4-a5ca00652204": {
+        "31e32608-e7fb-47ec-a0b2-f55c55ce295d": {
             "link": {
-                "name": "middle-finger-phalanx-proximal<Armature",
-                "file": "models\\hand-right.glb"
+                "name": "xr_standard_thumbstick_xaxis_pressed_min<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
             },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
-            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+            "parent": "a4411da8-b852-482a-bcfc-a9af9113d974"
         },
-        "c86053df-394e-47f9-b25d-61e5299269db": {
+        "29c3e187-cdcf-4801-b018-fbd5f3835082": {
             "link": {
-                "name": "middle-finger-phalanx-intermediate<Armature",
-                "file": "models\\hand-right.glb"
+                "name": "xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
             },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
-            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+            "parent": "a4411da8-b852-482a-bcfc-a9af9113d974"
         },
-        "241e36b9-e312-438e-9e17-dccd90535960": {
+        "71af8693-d6c0-4258-9985-5f987b82f173": {
             "link": {
-                "name": "middle-finger-phalanx-distal<Armature",
-                "file": "models\\hand-right.glb"
+                "name": "xr_standard_thumbstick_yaxis_pressed_max<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
             },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
-            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+            "parent": "29c3e187-cdcf-4801-b018-fbd5f3835082"
         },
-        "84faa59e-669a-4989-82f6-6c1186e9b312": {
+        "f1ce04e4-57ab-4fce-8e3c-e872b2efd0cb": {
             "link": {
-                "name": "middle-finger-tip<Armature",
-                "file": "models\\hand-right.glb"
+                "name": "xr_standard_thumbstick_yaxis_pressed_min<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
             },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
-            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+            "parent": "29c3e187-cdcf-4801-b018-fbd5f3835082"
         },
-        "53fcecbc-fa6b-4417-a94d-0fb01121e4cf": {
+        "cd73ba46-1f1b-41e8-b524-1318eda745c0": {
             "link": {
-                "name": "ring-finger-metacarpal<Armature",
-                "file": "models\\hand-right.glb"
+                "name": "xr_standard_thumbstick_yaxis_pressed_value<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
             },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
-            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+            "parent": "29c3e187-cdcf-4801-b018-fbd5f3835082"
         },
-        "975db6b3-356d-4102-8be6-51d655e3bead": {
+        "a5cfa620-0da8-4ea2-95c6-061cf0d8ef78": {
             "link": {
-                "name": "ring-finger-phalanx-proximal<Armature",
-                "file": "models\\hand-right.glb"
+                "name": "thumbstick<xr_standard_thumbstick_yaxis_pressed_value<xr_standard_thumbstick_xaxis_pressed_value<xr_standard_thumbstick_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
             },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
-            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+            "parent": "cd73ba46-1f1b-41e8-b524-1318eda745c0"
         },
-        "3635361f-3273-4f05-a657-9fa0f372453c": {
+        "4bf8bc91-dfc8-4eb3-9f33-babc9696d878": {
             "link": {
-                "name": "ring-finger-phalanx-intermediate<Armature",
-                "file": "models\\hand-right.glb"
+                "name": "xr_standard_trigger_pressed_max<root",
+                "file": "models\\oculus-touch-v2-right.glb"
             },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
-            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+            "parent": "25e2c4eb-ca80-419b-8110-9e4205dc5beb"
         },
-        "1c635510-5a94-43b4-96c0-eeef85bb3b44": {
+        "c7e13d64-2196-4fe1-ba50-b3fec4fee7ad": {
             "link": {
-                "name": "ring-finger-phalanx-distal<Armature",
-                "file": "models\\hand-right.glb"
+                "name": "xr_standard_trigger_pressed_min<root",
+                "file": "models\\oculus-touch-v2-right.glb"
             },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
-            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+            "parent": "25e2c4eb-ca80-419b-8110-9e4205dc5beb"
         },
-        "c1f15484-2eb3-4a59-80e0-1d759162f725": {
+        "54bbe020-5e9d-4c86-8cce-926a0c6ffa72": {
             "link": {
-                "name": "ring-finger-tip<Armature",
-                "file": "models\\hand-right.glb"
+                "name": "xr_standard_trigger_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
             },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
-            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+            "parent": "25e2c4eb-ca80-419b-8110-9e4205dc5beb"
         },
-        "8b76a7f4-45e4-4a09-bcb8-3bcf4fb0cbe3": {
+        "1ed786d2-cec2-4ada-8604-b2f9b50ed156": {
             "link": {
-                "name": "pinky-finger-metacarpal<Armature",
-                "file": "models\\hand-right.glb"
+                "name": "trigger<xr_standard_trigger_pressed_value<root",
+                "file": "models\\oculus-touch-v2-right.glb"
             },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
-            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+            "parent": "54bbe020-5e9d-4c86-8cce-926a0c6ffa72"
         },
-        "1401e01d-8e5b-425c-afa0-83efcbf18b8b": {
-            "link": {
-                "name": "pinky-finger-phalanx-proximal<Armature",
-                "file": "models\\hand-right.glb"
-            },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
-            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        "93387a1d-44f2-41d5-9561-2aa6e8ffa135": {
+            "name": "3DCursorHitLeft",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "25"
+                    }
+                }
+            ],
+            "parent": null,
+            "translation": [
+                0.0,
+                0.0388117,
+                1.5585094
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.0099999,
+                0.0099999,
+                0.0099999
+            ]
         },
-        "3d4b2895-4c2a-48b3-8bf9-0f2015ebb81b": {
-            "link": {
-                "name": "pinky-finger-phalanx-intermediate<Armature",
-                "file": "models\\hand-right.glb"
-            },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
-            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        "1664c026-42c8-4d66-8f25-d97d3d1a64a3": {
+            "name": "3DCursorHitRight",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "25"
+                    }
+                }
+            ],
+            "parent": null,
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.0099999,
+                0.0099999,
+                0.0099999
+            ]
         },
-        "aa0ed27e-8713-4fc4-884a-7356d276faba": {
-            "link": {
-                "name": "pinky-finger-phalanx-distal<Armature",
-                "file": "models\\hand-right.glb"
-            },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
-            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
-        },
-        "d1d5f643-67e4-404b-b058-49763dcd49fd": {
-            "link": {
-                "name": "pinky-finger-tip<Armature",
-                "file": "models\\hand-right.glb"
-            },
-            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
-            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        "30e72ee4-8bf5-4860-b0bf-0a86a3f26f36": {
+            "name": "Cursor",
+            "parent": "62",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "25"
+                    }
+                }
+            ],
+            "translation": [
+                -0.0000724,
+                9.5367431640625e-7,
+                -8.4364776
+            ],
+            "rotation": [
+                0.0,
+                -1.746230005039706e-8,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.0266666,
+                0.0266666,
+                6.666666
+            ]
         }
     },
     "meshes": {
@@ -3322,13 +3051,85 @@
                 "file": "models\\devil_emoji (1).glb"
             }
         },
-        "8a5c2d60-031c-4d15-ae3d-d0582e1046ae": {
+        "1a17522a-4ec2-4bb2-8c6d-b893b561a58e": {
+            "link": {
+                "name": "controller_plyShape",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "c68a7b42-f467-4470-a876-b02e87ff45e4": {
+            "link": {
+                "name": "controller_plyShape.003",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "3e851044-7161-47b0-93bc-fc84361e9f13": {
+            "link": {
+                "name": "controller_plyShape.005",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "96d58b86-478e-442a-831a-48b1efc59cd5": {
+            "link": {
+                "name": "controller_plyShape.006",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "3ba053dc-7217-49ba-9a16-42fc5f6172e3": {
+            "link": {
+                "name": "controller_plyShape.004",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "3c4be034-ea32-4158-8d6c-07d373e1c97f": {
+            "link": {
+                "name": "controller_plyShape.002",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "099eaf76-597a-4b94-8448-71a5a4ed8f52": {
+            "link": {
+                "name": "controller_plyShape.004",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "e9874216-765b-4c73-b961-5937193d3ec0": {
+            "link": {
+                "name": "controller_plyShape.005",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "70884852-3a96-4d82-b842-27f05dfdbd5c": {
+            "link": {
+                "name": "controller_plyShape",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "53841998-f9c4-4e0b-9579-8a81dae2e328": {
+            "link": {
+                "name": "controller_plyShape.002",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "e3f7f26d-78c2-42da-b564-c6e1de48fb65": {
+            "link": {
+                "name": "controller_plyShape.003",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "b8cb38f3-b702-4167-b271-fa3e42180662": {
+            "link": {
+                "name": "controller_plyShape.001",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "71335794-a148-4edb-a1d7-1e9434a23035": {
             "link": {
                 "name": "Mesh",
                 "file": "models\\hand-left.glb"
             }
         },
-        "4a08d6fd-1e20-4fac-86c8-9eb8691442c1": {
+        "45970128-3ffd-4040-8094-613be6dc8696": {
             "link": {
                 "name": "Mesh.001",
                 "file": "models\\hand-right.glb"
@@ -3396,6 +3197,30 @@
                 "name": "texture_1",
                 "file": "models\\devil_emoji (1).glb"
             }
+        },
+        "1752a1af-8643-4abd-ba3d-5cd639212aeb": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "7a504969-80ab-4a3a-9afb-4f0db162f40f": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "d4b2dcdb-a1c9-4a71-b1b9-b9deea5d5533": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "ddd6fecc-7ba6-41bc-af55-bb1b5d5a06d1": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
         }
     },
     "images": {
@@ -3439,6 +3264,30 @@
             "link": {
                 "name": "Image_1",
                 "file": "models\\devil_emoji (1).glb"
+            }
+        },
+        "9ee7d50d-837c-4cab-87cd-bdd6a993bf9a": {
+            "link": {
+                "name": "Image_0",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "4edb872d-7bf0-491e-81ae-53f0b8f13c25": {
+            "link": {
+                "name": "Image_1",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "9e4c0b7d-5526-4eaa-8351-dc74a1838fa6": {
+            "link": {
+                "name": "Image_0",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "dd128189-c8f2-4299-bfca-4f32b95681e6": {
+            "link": {
+                "name": "Image_1",
+                "file": "models\\oculus-touch-v2-right.glb"
             }
         }
     },
@@ -3617,13 +3466,25 @@
                 "file": "models\\devil_emoji (1).glb"
             }
         },
-        "f129ca8a-8b22-4d8b-9010-440ecef52c4d": {
+        "edab55a9-c219-4933-910b-993cae27e90f": {
+            "link": {
+                "name": "skel_controller_materials_controllerMTL1",
+                "file": "models\\oculus-touch-v2-left.glb"
+            }
+        },
+        "cf754284-6162-456f-ab6f-e652ce029521": {
+            "link": {
+                "name": "skel_controller_materials_controllerMTL",
+                "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "4f2069a0-690f-474e-9136-9e5c31937b90": {
             "link": {
                 "name": "Default_Material",
                 "file": "models\\hand-left.glb"
             }
         },
-        "ba1efe07-4d42-4821-8c32-eaff90cd9825": {
+        "e17a262f-e782-4ad4-8886-46b49685a1a4": {
             "link": {
                 "name": "lambert2",
                 "file": "models\\hand-right.glb"
@@ -3785,70 +3646,86 @@
     },
     "animations": {},
     "skins": {
-        "65cbe295-b2ce-41cf-b0db-220f3426edbf": {
+        "211": {
             "link": {
                 "name": "Armature",
                 "file": "models\\hand-left.glb"
             },
-            "joints": [
-                "eff3f27e-c687-4d6c-8175-ea87b51c0344",
-                "e3bd3ae3-219a-4c65-ae6d-93db9f5ce574",
-                "ea95d020-2095-4030-9881-2d0521ce5b0c",
-                "03cd6357-752a-4762-b75a-1e01fa187b6a",
-                "1a4ed34c-0f03-4b42-92f3-8a0b437b70cc",
-                "fab2de57-9283-4603-aece-c67a6b8682a0",
-                "3b7f2371-618f-4174-881b-ae50aae106f5",
-                "11cffe00-6480-4d3c-ae7b-4d33a9fb3a11",
-                "fc870186-bbd0-45aa-bcfa-85948330256c",
-                "ecb0c1a0-cc31-4837-a1c3-04138939c64f",
-                "b51682fd-1539-43a8-a395-479ce8e4a0a8",
-                "7a16e60a-26b2-4824-885f-5f2327e0611e",
-                "185e2c91-645e-4e7d-860a-ee1c0a6819df",
-                "47ecec06-b290-4193-9079-f90716d262d7",
-                "a2569ec0-d26a-4e80-82b4-f5dc26e9c849",
-                "209c9310-a9cf-4166-8a72-5ee2551856a2",
-                "c2532890-1d20-4831-91d4-7701aac31d9d",
-                "b154dd98-c195-4a97-be4a-479f3fe777b6",
-                "285dfea4-2ebc-4840-833e-856972ea3857",
-                "b8336e3c-c82c-4d7d-a729-6601bc210046",
-                "276be4e3-8799-4a28-b0a8-e3950c12d573",
-                "b96b54a3-7d9b-41dc-85f4-34c67cfac64c",
-                "0a35572e-e0b2-4454-a1e3-5046538e0d8c",
-                "8964cda1-d877-4bec-8228-6113da7f0a23",
-                "0c906bde-46ab-4218-8c55-b1f47e7fc11b"
-            ]
+            "joints": []
         },
-        "b60b5826-9303-426d-804a-dc8b72f2ba2b": {
+        "212": {
             "link": {
                 "name": "Armature",
                 "file": "models\\hand-right.glb"
             },
+            "joints": []
+        },
+        "a248d310-1dd5-4a6f-9eac-ea48399c0e0a": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "name": "HandLeftSkin",
             "joints": [
-                "5b6416bd-7a9d-478b-9f2d-b97e32a00054",
-                "be87933e-4bc1-4fc0-bf65-511695644f64",
-                "5ea9608e-0052-4f6c-a0d5-aeef8973007d",
-                "04c16135-f7a2-4e9c-a49d-db3a4aea0eb6",
-                "35395293-e526-4bc6-bc11-d04227a09604",
-                "fd57e783-8c65-4376-a281-6912f636a5dd",
-                "bc30b846-d40c-444e-ab05-3206b19faa12",
-                "24b1eefc-36a5-4e5a-b8a0-71a84cc3f54c",
-                "467a3a71-05f6-4416-817c-d5ca5e728490",
-                "23c90f47-3767-4520-8cff-450368a5fdc9",
-                "9495b148-32f4-4fe4-9a68-4d6912a9453e",
-                "09e161ae-b41e-487f-abc4-a5ca00652204",
-                "c86053df-394e-47f9-b25d-61e5299269db",
-                "241e36b9-e312-438e-9e17-dccd90535960",
-                "84faa59e-669a-4989-82f6-6c1186e9b312",
-                "53fcecbc-fa6b-4417-a94d-0fb01121e4cf",
-                "975db6b3-356d-4102-8be6-51d655e3bead",
-                "3635361f-3273-4f05-a657-9fa0f372453c",
-                "1c635510-5a94-43b4-96c0-eeef85bb3b44",
-                "c1f15484-2eb3-4a59-80e0-1d759162f725",
-                "8b76a7f4-45e4-4a09-bcb8-3bcf4fb0cbe3",
-                "1401e01d-8e5b-425c-afa0-83efcbf18b8b",
-                "3d4b2895-4c2a-48b3-8bf9-0f2015ebb81b",
-                "aa0ed27e-8713-4fc4-884a-7356d276faba",
-                "d1d5f643-67e4-404b-b058-49763dcd49fd"
+                "754092fe-d7ac-4a4c-8a6b-8c1e4eb0a042",
+                "e5d6ed15-b318-4809-bf9c-34a9cc29387a",
+                "b3347a34-211f-4de8-b443-3b1d6f17bd56",
+                "8975f257-b31b-46a2-ab60-c95d2fda6032",
+                "98e6647f-6443-47ce-bb55-cda1b8fff3fb",
+                "bfcec09e-03f6-41fc-bad0-e1924ba7087d",
+                "0c3c54e7-2244-4a18-950c-e27891f1b945",
+                "2e9eeee3-8b6c-49dd-8838-58c95403bf95",
+                "73a24d9e-4d59-4fb8-88a4-312e422ad2fb",
+                "7c190e6d-5e65-4a34-808f-54a0bdd3e330",
+                "b6ad1fcc-4c83-4b0d-99c6-d050c607d442",
+                "c57310ea-e920-489e-b6d8-9bc90f6b9567",
+                "89bb54ce-d852-4289-be80-774d96c72c64",
+                "cd6b02d2-27ef-4bbf-aafa-a98905964ee4",
+                "82a3de5f-1ad5-442b-8ff8-e18e23057f13",
+                "7adf83b6-abec-4335-a2aa-86bce2b9456b",
+                "ef3e8092-e292-40c9-9af7-1f7b57e17ccf",
+                "2d2bb17a-de02-4290-8c2d-083c0662ad10",
+                "3829ccb6-b911-4704-8032-0ae82f8ae6fd",
+                "9bda9a7e-45c6-40f1-a398-adf52890e1da",
+                "dfde7252-f627-49bd-9729-bd0f71139387",
+                "7632b7a6-65d5-4da3-b839-f46d3bebfce9",
+                "b95094e9-9c54-46d3-b180-9ff02ba6bdf9",
+                "f2a82045-2ad7-42a9-8417-111c509484fb",
+                "6bfcfcf8-0546-4f59-b258-98eef5621bfb"
+            ]
+        },
+        "6a5618dc-4634-4ad9-81f6-1dab85c6b6fd": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "name": "HandRightSkin",
+            "joints": [
+                "001a25f4-79b8-418f-95df-3f055dd35a83",
+                "1f4d5aa1-e461-498d-b656-108e5c060691",
+                "bf708880-51a4-4baa-933b-1b776648eb7c",
+                "ffd1801a-8d88-476e-b21e-67974790cafa",
+                "f80b05af-2af3-4524-84e1-07fb9cc3f0c0",
+                "1a931192-7825-4269-874c-d9f20749df31",
+                "2cc21f05-39fd-40a6-9b7b-4241cb7779d2",
+                "09724bed-bd62-43ce-b180-ef4c101fb978",
+                "d58af271-a113-4962-852e-ca35e2e9bcf7",
+                "b011b81a-d759-4bfa-aa6a-0535e8304a41",
+                "b84cf8ab-0a9d-471e-8cfb-63e0e8d5fb85",
+                "08037b6f-7cba-4e86-b483-4cf5b070f33b",
+                "11f01034-2514-4a13-8078-85afe5744ac3",
+                "cacbd993-bb8a-482f-8dd5-f48ecbeedafb",
+                "7ce13f8e-2c7b-4161-b0e4-a6c66670c50f",
+                "cca1eb10-d944-4f80-b877-c758972da327",
+                "98e9fa76-66f1-4f26-8729-f014513a4e21",
+                "b4e4866e-c615-4e18-acba-c34004c3e9b7",
+                "7adb7a28-a404-4e9d-aae7-99ce578b3ecf",
+                "2ba74cea-f202-4708-b8f2-7ca98b076a1c",
+                "38204292-d11a-4f13-baaf-0fbfb1476cf0",
+                "c9a03a9e-839b-4449-affb-ee84ff747785",
+                "ec2637e0-1036-42d8-864c-d6f41acac378",
+                "1aa1ad6d-27be-428f-a733-1cf6efd38b0d",
+                "212eff78-902c-4205-b1d4-dd29fd3d12a4"
             ]
         }
     },
@@ -3859,6 +3736,8 @@
         "models/theroom.glb",
         "models/moji_gun (1).glb",
         "models/devil_emoji (1).glb",
+        "models/oculus-touch-v2-left.glb",
+        "models/oculus-touch-v2-right.glb",
         "models/hand-left.glb",
         "models/hand-right.glb"
     ],
