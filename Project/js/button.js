@@ -40,8 +40,13 @@ WL.registerComponent('changeColor', {
         if (input && input.xrInputSource) {
             const gamepad = input.xrInputSource.gamepad;
             if (gamepad && gamepad.hapticActuators) gamepad.hapticActuators[0].pulse(strength, duration);
+           
         }
     },
+    
+    
+    //grip to mute and unmute 
+    
 
     onUnHover: function (_, cursor) {
         this.mesh.material = this.defaultMaterial;

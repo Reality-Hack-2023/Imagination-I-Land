@@ -757,7 +757,10 @@
                         "teleportIndicatorMeshObject": "84",
                         "camRoot": "14",
                         "cam": "18",
-                        "floorGroup": 7
+                        "floorGroup": 7,
+                        "muteUI": "180",
+                        "mutedColor": "20",
+                        "peerComponent": "32"
                     }
                 },
                 {
@@ -1906,7 +1909,23 @@
             ]
         },
         "150": {
-            "name": "UI"
+            "name": "UI",
+            "translation": [
+                0.0,
+                0.0,
+                3.8873345
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
         },
         "152": {
             "name": "bg",
@@ -2078,51 +2097,6 @@
                 1.0
             ]
         },
-        "161": {
-            "name": "Button",
-            "parent": "150",
-            "components": [
-                {
-                    "type": "text",
-                    "text": {
-                        "text": "Host\n"
-                    }
-                },
-                {
-                    "type": "collision",
-                    "collision": {
-                        "collider": "aabb",
-                        "aabb": {
-                            "extents": [
-                                1.0,
-                                0.2,
-                                0.05
-                            ]
-                        },
-                        "groups": 2
-                    }
-                },
-                {
-                    "type": "cursor-target"
-                }
-            ],
-            "translation": [
-                0.0,
-                2.6271691,
-                -3.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                1.0,
-                1.0,
-                1.0
-            ]
-        },
         "163": {
             "name": "Change SkyBox",
             "parent": "165",
@@ -2174,7 +2148,7 @@
             "translation": [
                 -0.1445409,
                 -0.4642777,
-                0.0520021
+                0.052002
             ],
             "rotation": [
                 0.0,
@@ -2258,7 +2232,7 @@
             "translation": [
                 -0.670804,
                 -0.4445891,
-                0.0612778
+                0.0612777
             ],
             "rotation": [
                 0.0,
@@ -2491,7 +2465,7 @@
                     "type": "changeColor",
                     "changeColor": {
                         "buttonMeshObject": "180",
-                        "hoverMaterial": "25"
+                        "hoverMaterial": "20"
                     }
                 },
                 {
@@ -2502,13 +2476,14 @@
                     }
                 },
                 {
-                    "type": "playbook-toggle"
+                    "type": "mute",
+                    "active": true
                 }
             ],
             "translation": [
-                0.7033824,
-                -0.5339349,
-                0.052002
+                0.6965444,
+                -0.5339138,
+                0.0451566
             ],
             "rotation": [
                 0.0,
