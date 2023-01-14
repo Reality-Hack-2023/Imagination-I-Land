@@ -964,7 +964,7 @@
             ]
         },
         "69": {
-            "name": "Obj 1",
+            "name": "SpawnCup",
             "parent": "165",
             "components": [
                 {
@@ -1461,15 +1461,15 @@
                 }
             ],
             "translation": [
-                -5.9939327,
-                1.469788,
-                5.9603204
+                -6.5112333,
+                1.4697879,
+                6.96244
             ],
             "rotation": [
                 0.0,
-                -0.2360143,
+                -0.2360142,
                 0.0,
-                0.9717495
+                0.9717496
             ],
             "scale": [
                 1.1999998,
@@ -2231,8 +2231,8 @@
             ],
             "translation": [
                 -0.670804,
-                -0.4445891,
-                0.0612777
+                -0.4445731,
+                0.0612778
             ],
             "rotation": [
                 0.0,
@@ -2287,14 +2287,14 @@
                 {
                     "type": "text",
                     "text": {
-                        "text": "OBJECT 1 "
+                        "text": "SPAWN CUP"
                     }
                 }
             ],
             "scale": [
-                2.0,
-                2.0,
-                2.0
+                3.0,
+                3.0,
+                3.0
             ]
         },
         "173": {
@@ -2634,6 +2634,26 @@
                 1.4599999,
                 1.4599947,
                 1.4599947
+            ],
+            "components": [
+                null,
+                {
+                    "type": "physx",
+                    "physx": {
+                        "shape": "box",
+                        "capsule": {
+                            "radius": 1.75
+                        },
+                        "box": {
+                            "extents": [
+                                1.0,
+                                1.0,
+                                1.5
+                            ]
+                        },
+                        "static": true
+                    }
+                }
             ]
         },
         "194": {
@@ -3193,6 +3213,35 @@
             },
             "parent": "e0ab949f-d7c6-4e2d-b3f9-9d98ad91d968",
             "skin": "5f83d4f8-232b-4769-b508-7554cf137fc3"
+        },
+        "e91add45-b049-4530-807a-7e3e8c30dc2c": {
+            "name": "BlockSpawner",
+            "translation": [
+                -0.3249813,
+                2.7837145,
+                0.0448411
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "spawn-cup",
+                    "spawn-cup": {
+                        "cupMesh": "0fcbd590-5e9b-4e78-99bb-4849c573289f",
+                        "cupSpawnButton": "69",
+                        "cupMaterial": "14e5f7a0-35a3-4714-8593-67c08457f201"
+                    }
+                }
+            ]
         }
     },
     "meshes": {
@@ -3292,6 +3341,44 @@
                 "name": "Mesh.001",
                 "file": "models\\hand-right.glb"
             }
+        },
+        "3baad012-723e-40ce-8bb3-1f328fe5a8ec": {
+            "link": {
+                "name": "Object_2.001",
+                "file": "models\\cup_01.glb"
+            }
+        },
+        "dd9c5731-8705-44fa-a6a0-c6051a897be9": {
+            "link": {
+                "name": "Object_2.001-uv1",
+                "file": "models\\cup_01.glb"
+            }
+        },
+        "432a5729-c251-4acd-a555-ef5072891375": {
+            "link": {
+                "name": "Object_2.001-uv2",
+                "file": "models\\cup_01.glb"
+            }
+        },
+        "e2752f16-3691-4678-9df8-28c7a69792d4": {
+            "link": {
+                "name": "Object_2.001-uv3",
+                "file": "models\\cup_01.glb"
+            }
+        },
+        "3d048cd8-66da-4455-90c1-470e6e0bc818": {
+            "link": {
+                "name": "��up 2_��up 2_0",
+                "file": "models\\cup_02.glb"
+            },
+            "importScaling": 0.1
+        },
+        "0fcbd590-5e9b-4e78-99bb-4849c573289f": {
+            "link": {
+                "name": "��up 2_��up 2_0",
+                "file": "models\\cup_02 (1).glb"
+            },
+            "importScaling": 0.1
         }
     },
     "textures": {
@@ -3355,6 +3442,48 @@
                 "name": "texture_1",
                 "file": "models\\devil_emoji (1).glb"
             }
+        },
+        "85773d81-2bf9-4079-bba5-32b603b52c7f": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\cup_01.glb"
+            }
+        },
+        "e53bd4eb-95f6-434c-a8be-65b5d0b3fa60": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\cup_01.glb"
+            }
+        },
+        "cdc8b0f3-fffb-4b4f-b62a-4624d30bafbd": {
+            "link": {
+                "name": "texture_2",
+                "file": "models\\cup_01.glb"
+            }
+        },
+        "80c98f45-5c6d-4eb9-abd8-c1e97621a3c8": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\cup_02.glb"
+            }
+        },
+        "a90db75a-7175-46ea-ab64-4eb5a18035fb": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\cup_02.glb"
+            }
+        },
+        "5a5b1a86-ba26-4511-a6af-b25757808c96": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\cup_02 (1).glb"
+            }
+        },
+        "efa86c44-f2ec-4199-bea2-6c4762a4f98b": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\cup_02 (1).glb"
+            }
         }
     },
     "images": {
@@ -3398,6 +3527,48 @@
             "link": {
                 "name": "Image_1",
                 "file": "models\\devil_emoji (1).glb"
+            }
+        },
+        "95b62587-c545-4d73-8173-c0afcbff5482": {
+            "link": {
+                "name": "Image_2",
+                "file": "models\\cup_01.glb"
+            }
+        },
+        "58c86f08-04d3-4057-b33c-d7161357b0ed": {
+            "link": {
+                "name": "Image_0",
+                "file": "models\\cup_01.glb"
+            }
+        },
+        "7c053441-399c-4547-8571-286ca5401c37": {
+            "link": {
+                "name": "Image_1",
+                "file": "models\\cup_01.glb"
+            }
+        },
+        "ee775aee-cd90-449f-86d1-24f802448451": {
+            "link": {
+                "name": "Image_7",
+                "file": "models\\cup_02.glb"
+            }
+        },
+        "87a77700-e02f-4c5e-b5c9-818390498906": {
+            "link": {
+                "name": "Image_6",
+                "file": "models\\cup_02.glb"
+            }
+        },
+        "79bd9782-9105-459d-a814-4b9763222862": {
+            "link": {
+                "name": "Image_7",
+                "file": "models\\cup_02 (1).glb"
+            }
+        },
+        "2643d7c8-6e32-4659-b3fa-43c7a196e6ca": {
+            "link": {
+                "name": "Image_6",
+                "file": "models\\cup_02 (1).glb"
             }
         }
     },
@@ -3587,6 +3758,54 @@
                 "name": "lambert2",
                 "file": "models\\hand-right.glb"
             }
+        },
+        "0388778d-bf63-4c9f-84b7-3c7a97739950": {
+            "link": {
+                "name": "MergedBake_Bake1",
+                "file": "models\\cup_01.glb"
+            }
+        },
+        "3d2969df-e9cf-4d6b-ae64-59ab13a95fa1": {
+            "link": {
+                "name": "up_2",
+                "file": "models\\cup_02.glb"
+            }
+        },
+        "b5c348eb-d113-4576-a401-05217da4b927": {
+            "link": {
+                "name": "CircleButton 1 #0000002F",
+                "file": "models\\Hackathon_2023-01-14_19.34.53.gltf"
+            }
+        },
+        "16070442-6b98-408f-b154-02abd599345f": {
+            "link": {
+                "name": "Model 2 MergedBake_Bake1.002 #999999FF",
+                "file": "models\\Hackathon_2023-01-14_19.34.53.gltf"
+            }
+        },
+        "b7134824-3c3a-4048-bc0b-f013c987656d": {
+            "link": {
+                "name": "CircleButton 8 #CCCCCCFF",
+                "file": "models\\Hackathon_2023-01-14_19.34.53.gltf"
+            }
+        },
+        "a6dc5f73-7d20-498c-8396-2da65258f14e": {
+            "link": {
+                "name": "UnlitTransparentBuiltIn",
+                "file": "models\\Hackathon_2023-01-14_19.34.53.gltf"
+            }
+        },
+        "49334975-0e8e-4b17-94d5-5dc9045e64cb": {
+            "link": {
+                "name": "Model 20 Material.010 #666666FF",
+                "file": "models\\Hackathon_2023-01-14_19.34.53.gltf"
+            }
+        },
+        "14e5f7a0-35a3-4714-8593-67c08457f201": {
+            "link": {
+                "name": "up_2",
+                "file": "models\\cup_02 (1).glb"
+            }
         }
     },
     "shaders": {
@@ -3736,10 +3955,14 @@
                     "local-floor": true,
                     "bounded-floor": false
                 }
-            }
+            },
+            "visualizePhysX": true
         },
         "editor": {
             "ids": "uuid"
+        },
+        "physx": {
+            "enable": true
         }
     },
     "animations": {},
@@ -3918,7 +4141,11 @@
         "models/moji_gun (1).glb",
         "models/devil_emoji (1).glb",
         "models/hand-left.glb",
-        "models/hand-right.glb"
+        "models/hand-right.glb",
+        "models/cup_01.glb",
+        "models/cup_02.glb",
+        "models/Hackathon_2023-01-14_19.34.53.gltf",
+        "models/cup_02 (1).glb"
     ],
     "pipelines": {
         "114": {
