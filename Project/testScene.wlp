@@ -1,0 +1,3150 @@
+{
+    "objects": {
+        "14": {
+            "name": "Player",
+            "components": [
+                {
+                    "type": "wasd-controls",
+                    "wasd-controls": {
+                        "headObject": "17"
+                    }
+                }
+            ],
+            "translation": [
+                -3.2591099,
+                0.3167249,
+                1.7569211
+            ],
+            "rotation": [
+                0.0,
+                -0.3768199,
+                0.0,
+                0.9262865
+            ],
+            "scale": [
+                0.9999998,
+                1.0,
+                0.9999998
+            ]
+        },
+        "15": {
+            "name": "FloorPlane",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "20"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0000061
+            ],
+            "rotation": [
+                -0.7072539,
+                0.0,
+                0.0,
+                0.7069596
+            ],
+            "scale": [
+                300.0,
+                300.0010375,
+                300.0000915
+            ]
+        },
+        "17": {
+            "name": "NonVrCamera",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "mouse-look"
+                },
+                {
+                    "type": "cursor"
+                }
+            ]
+        },
+        "18": {
+            "name": "EyeLeft",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye left"
+                    }
+                }
+            ]
+        },
+        "19": {
+            "name": "EyeRight",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye right"
+                    }
+                },
+                {
+                    "type": "howler-audio-listener"
+                }
+            ]
+        },
+        "21": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.1
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                3.0,
+                2.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "23": {
+            "name": "Light.000",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.1
+                    }
+                }
+            ],
+            "translation": [
+                -1.0,
+                3.0,
+                -1.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "32": {
+            "name": "PeerNetworkedPlayerPool",
+            "components": [
+                {
+                    "type": "peer-networked-player-pool"
+                },
+                {
+                    "type": "peer-manager",
+                    "peer-manager": {
+                        "playerHead": "19",
+                        "networkPlayerPool": "32",
+                        "networkSendFrequencyInS": 0.0099999,
+                        "playerRightHand": "61",
+                        "playerLeftHand": "62",
+                        "voiceEnabled": true,
+                        "serverId": "MITHACK"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "33": {
+            "name": "PeerNetworkedPlayer",
+            "parent": "32",
+            "components": [
+                {
+                    "type": "peer-networked-player"
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "34": {
+            "name": "Head",
+            "parent": "33",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "26"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.2,
+                0.2,
+                0.2
+            ]
+        },
+        "36": {
+            "name": "LeftHand",
+            "parent": "33",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.075,
+                0.075,
+                0.075
+            ]
+        },
+        "37": {
+            "name": "RightHand",
+            "parent": "33",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.075,
+                0.075,
+                0.075
+            ]
+        },
+        "45": {
+            "name": "PeerNetworkedPlayer",
+            "parent": "32",
+            "components": [
+                {
+                    "type": "peer-networked-player"
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "46": {
+            "name": "Head",
+            "parent": "45",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "26"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.2,
+                0.2,
+                0.2
+            ]
+        },
+        "47": {
+            "name": "LeftHand",
+            "parent": "45",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.075,
+                0.075,
+                0.075
+            ]
+        },
+        "48": {
+            "name": "RightHand",
+            "parent": "45",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.075,
+                0.075,
+                0.075
+            ]
+        },
+        "49": {
+            "name": "PeerNetworkedPlayer",
+            "parent": "32",
+            "components": [
+                {
+                    "type": "peer-networked-player"
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "50": {
+            "name": "Head",
+            "parent": "49",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "26"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.2,
+                0.2,
+                0.2
+            ]
+        },
+        "51": {
+            "name": "LeftHand",
+            "parent": "49",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.075,
+                0.075,
+                0.075
+            ]
+        },
+        "52": {
+            "name": "RightHand",
+            "parent": "49",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.075,
+                0.075,
+                0.075
+            ]
+        },
+        "53": {
+            "name": "PeerNetworkedPlayer",
+            "parent": "32",
+            "components": [
+                {
+                    "type": "peer-networked-player"
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "54": {
+            "name": "Head",
+            "parent": "53",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "26"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.2,
+                0.2,
+                0.2
+            ]
+        },
+        "55": {
+            "name": "LeftHand",
+            "parent": "53",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.075,
+                0.075,
+                0.075
+            ]
+        },
+        "56": {
+            "name": "RightHand",
+            "parent": "53",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.075,
+                0.075,
+                0.075
+            ]
+        },
+        "57": {
+            "name": "PeerNetworkedPlayer",
+            "parent": "32",
+            "components": [
+                {
+                    "type": "peer-networked-player"
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "58": {
+            "name": "Head",
+            "parent": "57",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "26"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.2,
+                0.2,
+                0.2
+            ]
+        },
+        "59": {
+            "name": "LeftHand",
+            "parent": "57",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.075,
+                0.075,
+                0.075
+            ]
+        },
+        "60": {
+            "name": "RightHand",
+            "parent": "57",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.075,
+                0.075,
+                0.075
+            ]
+        },
+        "61": {
+            "name": "RightHand",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "ray right"
+                    }
+                },
+                {
+                    "type": "cursor",
+                    "cursor": {
+                        "cursorRayObject": "85",
+                        "cursorObject": "87",
+                        "handedness": "right"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "62": {
+            "name": "LeftHand",
+            "parent": "14",
+            "components": [
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "ray left"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                },
+                {
+                    "type": "controller-teleport-component",
+                    "controller-teleport-component": {
+                        "teleportIndicatorMeshObject": "84",
+                        "camRoot": "14",
+                        "cam": "18",
+                        "floorGroup": 7
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.075
+                        },
+                        "groups": 4
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.075,
+                0.075,
+                0.075
+            ]
+        },
+        "63": {
+            "name": "Mesh",
+            "parent": "34",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                -1.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.0999998,
+                0.0999998,
+                0.0999998
+            ]
+        },
+        "64": {
+            "name": "Mesh",
+            "parent": "46",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                -1.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.0999998,
+                0.0999998,
+                0.0999998
+            ]
+        },
+        "65": {
+            "name": "Mesh",
+            "parent": "54",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                -1.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.0999998,
+                0.0999998,
+                0.0999998
+            ]
+        },
+        "66": {
+            "name": "Mesh",
+            "parent": "50",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                -1.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.0999998,
+                0.0999998,
+                0.0999998
+            ]
+        },
+        "67": {
+            "name": "Mesh",
+            "parent": "58",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                -1.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.0999998,
+                0.0999998,
+                0.0999998
+            ]
+        },
+        "68": {
+            "name": "NetworkButtonContainer",
+            "components": [
+                {
+                    "type": "network-buttons",
+                    "network-buttons": {
+                        "peerManagerObject": "32",
+                        "cursor": "61"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                -3.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "69": {
+            "name": "Obj 1",
+            "parent": "165",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.2,
+                                0.2,
+                                0.05
+                            ]
+                        },
+                        "groups": 2
+                    }
+                },
+                {
+                    "type": "cursor-target",
+                    "active": true
+                },
+                {
+                    "type": "changeColor",
+                    "changeColor": {
+                        "buttonMeshObject": "69",
+                        "hoverMaterial": "25"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "26"
+                    }
+                }
+            ],
+            "translation": [
+                -0.1353256,
+                0.4314947,
+                0.052002
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.2,
+                0.4,
+                0.2
+            ]
+        },
+        "73": {
+            "name": "FloorCollision",
+            "parent": null,
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "groups": 128,
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                5.0,
+                                1.0,
+                                5.0
+                            ]
+                        }
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                -1.0,
+                0.0
+            ],
+            "rotation": [
+                -0.0000203,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.9999998,
+                1.0000195,
+                0.9999998
+            ]
+        },
+        "74": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "translation": [
+                5.0,
+                1.0110658,
+                5.0000076
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.1,
+                0.1,
+                0.1
+            ]
+        },
+        "75": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                1.0110658,
+                5.0000076
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.1,
+                0.1,
+                0.1
+            ]
+        },
+        "76": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "translation": [
+                -5.0,
+                1.0110658,
+                5.0000076
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.1,
+                0.1,
+                0.1
+            ]
+        },
+        "77": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "translation": [
+                5.0,
+                1.0114749,
+                -4.9999933
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.1,
+                0.1,
+                0.1
+            ]
+        },
+        "78": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                1.0114749,
+                -4.9999933
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.1,
+                0.1,
+                0.1
+            ]
+        },
+        "79": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "translation": [
+                -5.0,
+                1.0114749,
+                -4.9999933
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.1,
+                0.1,
+                0.1
+            ]
+        },
+        "80": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "translation": [
+                5.0,
+                1.0112706,
+                0.0000073
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.1,
+                0.1,
+                0.1
+            ]
+        },
+        "81": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "translation": [
+                -5.0,
+                1.0112706,
+                0.0000073
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.1,
+                0.1,
+                0.1
+            ]
+        },
+        "84": {
+            "link": {
+                "name": "teleport-indicator",
+                "file": "glb\\teleport-indicator.glb"
+            },
+            "name": "TeleportIndicator",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "25"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                -0.466731,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.2,
+                0.2,
+                0.2
+            ]
+        },
+        "85": {
+            "name": "Cursor",
+            "parent": "61",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "25"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                -0.5
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.002,
+                0.002,
+                0.5
+            ]
+        },
+        "86": {
+            "name": "Indicator",
+            "parent": "61",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "22"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "groups": 4,
+                        "sphere": {
+                            "radius": 0.075
+                        }
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.075,
+                0.075,
+                0.075
+            ]
+        },
+        "87": {
+            "name": "CursorDot",
+            "parent": "61",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "25"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.0099999,
+                0.0099999,
+                0.0099999
+            ]
+        },
+        "88": {
+            "name": "Environment",
+            "components": [
+                {
+                    "type": "howler-audio-source",
+                    "howler-audio-source": {
+                        "loop": true,
+                        "autoplay": true,
+                        "volume": 0.15,
+                        "spatial": false,
+                        "src": "audio/infinitepeace.mp3"
+                    },
+                    "active": true
+                }
+            ]
+        },
+        "89": {
+            "name": "Sphere",
+            "parent": null,
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "25"
+                    }
+                },
+                {
+                    "type": "skybox",
+                    "skybox": {
+                        "skyMat": "146"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 1.5
+                        }
+                    }
+                },
+                {
+                    "type": "changeColor",
+                    "changeColor": {
+                        "buttonMeshObject": "89",
+                        "hoverMaterial": "26"
+                    }
+                }
+            ],
+            "translation": [
+                -5.9939327,
+                1.469788,
+                5.9603204
+            ],
+            "rotation": [
+                0.0,
+                -0.2360143,
+                0.0,
+                0.9717495
+            ],
+            "scale": [
+                1.1999998,
+                1.2,
+                1.1999998
+            ]
+        },
+        "90": {
+            "name": "Cube",
+            "parent": "88",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                },
+                {
+                    "type": "collision"
+                },
+                {
+                    "type": "skybox",
+                    "skybox": {
+                        "skyMat": "146"
+                    }
+                }
+            ],
+            "translation": [
+                8.4494266,
+                0.2917783,
+                5.8693304
+            ],
+            "rotation": [
+                0.0000022,
+                -0.0309459,
+                -0.0000714,
+                0.999521
+            ],
+            "scale": [
+                1.3,
+                1.2999997,
+                1.2999998
+            ]
+        },
+        "91": {
+            "name": "Cube",
+            "parent": "88",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "11",
+                        "material": "20"
+                    }
+                }
+            ],
+            "translation": [
+                1.7988269,
+                0.6551989,
+                2.4463241
+            ],
+            "rotation": [
+                0.0,
+                0.2215546,
+                0.0,
+                0.9751479
+            ],
+            "scale": [
+                0.4999994,
+                0.5,
+                0.4999995
+            ]
+        },
+        "92": {
+            "name": "Cube",
+            "parent": "88",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "20"
+                    }
+                }
+            ],
+            "translation": [
+                -10.4223871,
+                2.2617557,
+                -9.3290863
+            ],
+            "rotation": [
+                0.0000119,
+                -0.069134,
+                0.0001722,
+                0.9976073
+            ],
+            "scale": [
+                3.0000002,
+                3.0000002,
+                3.0000002
+            ]
+        },
+        "93": {
+            "name": "Cube",
+            "parent": "88",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "20"
+                    }
+                }
+            ],
+            "translation": [
+                -3.4153366,
+                1.7105165,
+                9.063982
+            ],
+            "rotation": [
+                -0.0923767,
+                -0.2171862,
+                0.3803482,
+                0.8942213
+            ],
+            "scale": [
+                1.2000019,
+                1.2000037,
+                1.1999996
+            ]
+        },
+        "94": {
+            "name": "Cube",
+            "parent": "88",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "20"
+                    }
+                }
+            ],
+            "translation": [
+                9.7103681,
+                1.2538591,
+                -1.1148992
+            ],
+            "rotation": [
+                -0.0059012,
+                0.325418,
+                0.0170088,
+                0.9453988
+            ],
+            "scale": [
+                1.9999872,
+                1.9999998,
+                1.9999872
+            ]
+        },
+        "95": {
+            "name": "Cube",
+            "parent": "88",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "25"
+                    }
+                }
+            ],
+            "translation": [
+                5.3232851,
+                1.2538601,
+                -10.9547767
+            ],
+            "rotation": [
+                0.0006869,
+                0.6468836,
+                0.0179904,
+                0.7623761
+            ],
+            "scale": [
+                1.9999873,
+                1.9999985,
+                1.9999877
+            ]
+        },
+        "96": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "translation": [
+                5.0,
+                1.0111683,
+                2.5000081
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.1,
+                0.1,
+                0.1
+            ]
+        },
+        "97": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "translation": [
+                -5.0,
+                1.0111683,
+                2.5000081
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.1,
+                0.1,
+                0.1
+            ]
+        },
+        "98": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "translation": [
+                5.0,
+                1.0113729,
+                -2.4999921
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.1,
+                0.1,
+                0.1
+            ]
+        },
+        "99": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "translation": [
+                -5.0,
+                1.0113729,
+                -2.4999921
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.1,
+                0.1,
+                0.1
+            ]
+        },
+        "100": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "translation": [
+                -2.5000002,
+                1.0110658,
+                5.0000076
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.1,
+                0.1,
+                0.1
+            ]
+        },
+        "101": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "translation": [
+                -2.5000002,
+                1.0114749,
+                -4.9999933
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.1,
+                0.1,
+                0.1
+            ]
+        },
+        "102": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "translation": [
+                2.5000002,
+                1.0110658,
+                5.0000076
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.1,
+                0.1,
+                0.1
+            ]
+        },
+        "103": {
+            "name": "Limit",
+            "parent": "73",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "26"
+                    }
+                }
+            ],
+            "translation": [
+                2.5000002,
+                1.0114749,
+                -4.9999933
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.1,
+                0.1,
+                0.1
+            ]
+        },
+        "150": {
+            "name": "UI"
+        },
+        "151": {
+            "name": "Toggle Mute",
+            "parent": "150",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Mute"
+                    }
+                }
+            ]
+        },
+        "152": {
+            "name": "bg",
+            "parent": "150",
+            "components": [
+                {
+                    "type": "mesh"
+                }
+            ]
+        },
+        "153": {
+            "name": "knob",
+            "parent": "150",
+            "components": [
+                {
+                    "type": "mesh"
+                }
+            ]
+        },
+        "154": {
+            "name": "container",
+            "parent": "150"
+        },
+        "157": {
+            "name": "HostButton",
+            "parent": "68",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Host\n"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                1.0,
+                                0.2,
+                                0.05
+                            ]
+                        },
+                        "groups": 2
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                }
+            ],
+            "translation": [
+                0.0,
+                2.6271691,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "158": {
+            "name": "HostButtonBG",
+            "parent": "157",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "20"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                -0.0064548
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                0.2,
+                1.0
+            ]
+        },
+        "159": {
+            "name": "JoinButton",
+            "parent": "68",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Join\n"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                1.0,
+                                0.2,
+                                0.05
+                            ]
+                        },
+                        "groups": 2
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                }
+            ],
+            "translation": [
+                0.0,
+                2.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "160": {
+            "name": "JoinButtonBG",
+            "parent": "159",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "20"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                -0.0104874
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                0.2,
+                1.0
+            ]
+        },
+        "161": {
+            "name": "Button",
+            "parent": "150",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Host\n"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                1.0,
+                                0.2,
+                                0.05
+                            ]
+                        },
+                        "groups": 2
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                }
+            ],
+            "translation": [
+                0.0,
+                2.6271691,
+                -3.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "162": {
+            "name": "HostButtonBG",
+            "parent": "161",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "20"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                -1.8511228,
+                -0.0064547
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.3262313,
+                0.2,
+                1.0
+            ]
+        },
+        "163": {
+            "name": "Change SkyBox",
+            "parent": "165",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.3,
+                                0.2,
+                                0.05
+                            ]
+                        },
+                        "groups": 2,
+                        "box": {
+                            "extents": [
+                                0.2,
+                                0.2,
+                                0.1
+                            ]
+                        }
+                    },
+                    "active": true
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "26"
+                    },
+                    "active": true
+                },
+                {
+                    "type": "changeColor",
+                    "changeColor": {
+                        "buttonMeshObject": "163",
+                        "hoverMaterial": "25"
+                    }
+                },
+                {
+                    "type": "skybox",
+                    "skybox": {
+                        "skyMat": "22"
+                    }
+                }
+            ],
+            "translation": [
+                -0.1445412,
+                -0.4642777,
+                0.052002
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.2,
+                0.4,
+                0.2
+            ]
+        },
+        "165": {
+            "name": "Panel",
+            "parent": "150",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "20"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                1.0414477,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                0.5,
+                1.0
+            ]
+        },
+        "167": {
+            "name": "Wand",
+            "parent": "165",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.3,
+                                0.2,
+                                0.05
+                            ]
+                        },
+                        "groups": 2
+                    }
+                },
+                {
+                    "type": "cursor-target",
+                    "active": true
+                },
+                {
+                    "type": "changeColor",
+                    "changeColor": {
+                        "buttonMeshObject": "167",
+                        "hoverMaterial": "25"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "12",
+                        "material": "25"
+                    }
+                }
+            ],
+            "translation": [
+                -0.670804,
+                -0.4445891,
+                0.0612778
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.25,
+                0.5,
+                0.25
+            ]
+        },
+        "169": {
+            "name": "Text",
+            "parent": "167",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "WAND"
+                    }
+                }
+            ],
+            "scale": [
+                2.0,
+                2.0,
+                2.0
+            ]
+        },
+        "170": {
+            "name": "Text.000",
+            "parent": "163",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Change Skybox\n"
+                    }
+                }
+            ],
+            "scale": [
+                2.0,
+                2.0,
+                2.0
+            ]
+        },
+        "171": {
+            "name": "Text.001",
+            "parent": "69",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "OBJECT 1 "
+                    }
+                }
+            ],
+            "scale": [
+                2.0,
+                2.0,
+                2.0
+            ]
+        },
+        "173": {
+            "name": "Obj 2",
+            "parent": "165",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.2,
+                                0.2,
+                                0.05
+                            ]
+                        },
+                        "groups": 2
+                    }
+                },
+                {
+                    "type": "cursor-target",
+                    "active": true
+                },
+                {
+                    "type": "changeColor",
+                    "changeColor": {
+                        "buttonMeshObject": "173",
+                        "hoverMaterial": "25"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "26"
+                    }
+                }
+            ],
+            "translation": [
+                0.3122028,
+                0.4314947,
+                0.052002
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.2,
+                0.4,
+                0.2
+            ]
+        },
+        "174": {
+            "name": "Text.001",
+            "parent": "173",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "OBJECT 2"
+                    }
+                }
+            ],
+            "scale": [
+                2.0,
+                2.0,
+                2.0
+            ]
+        },
+        "175": {
+            "name": "Obj 3",
+            "parent": "165",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.2,
+                                0.2,
+                                0.05
+                            ]
+                        },
+                        "groups": 2
+                    }
+                },
+                {
+                    "type": "cursor-target",
+                    "active": true
+                },
+                {
+                    "type": "changeColor",
+                    "changeColor": {
+                        "buttonMeshObject": "175",
+                        "hoverMaterial": "25"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "26"
+                    }
+                }
+            ],
+            "translation": [
+                0.7476474,
+                0.4314947,
+                0.052002
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.2,
+                0.4,
+                0.2
+            ]
+        },
+        "176": {
+            "name": "Text.001",
+            "parent": "175",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "OBJECT 1 "
+                    }
+                }
+            ],
+            "scale": [
+                2.0,
+                2.0,
+                2.0
+            ]
+        },
+        "180": {
+            "name": "Mute/Unmute",
+            "parent": "165",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.3,
+                                0.2,
+                                0.05
+                            ]
+                        },
+                        "groups": 2
+                    }
+                },
+                {
+                    "type": "cursor-target",
+                    "active": true
+                },
+                {
+                    "type": "changeColor",
+                    "changeColor": {
+                        "buttonMeshObject": "180",
+                        "hoverMaterial": "25"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "12",
+                        "material": "25"
+                    }
+                }
+            ],
+            "translation": [
+                -0.670804,
+                0.5132911,
+                0.052002
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.2,
+                0.4,
+                0.2
+            ]
+        },
+        "181": {
+            "name": "Text",
+            "parent": "180",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "MUTE/UNMUTE"
+                    }
+                }
+            ],
+            "scale": [
+                2.0,
+                2.0,
+                2.0
+            ]
+        }
+    },
+    "meshes": {
+        "7": {
+            "link": {
+                "name": "PrimitivePlane",
+                "file": "default"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "PrimitiveCube",
+                "file": "default"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "PrimitiveSphere",
+                "file": "default"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "PrimitiveCone",
+                "file": "default"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "PrimitiveCylinder",
+                "file": "default"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "PrimitiveCircle",
+                "file": "default"
+            }
+        },
+        "83": {
+            "link": {
+                "name": "teleport-indicator-mesh",
+                "file": "glb\\teleport-indicator.glb"
+            }
+        },
+        "108": {
+            "link": {
+                "name": "mesh_0",
+                "file": "glb\\Barrel_01.FBX"
+            }
+        },
+        "129": {
+            "link": {
+                "name": "barrel_biohazard",
+                "file": "glb\\Barrel_01.FBX"
+            }
+        }
+    },
+    "textures": {
+        "t0": {
+            "link": {
+                "name": "DefaultTexture",
+                "file": "default"
+            },
+            "name": "DefaultFont"
+        },
+        "104": {
+            "link": {
+                "name": "texture_0",
+                "file": "glb\\Barrel_01.FBX"
+            }
+        },
+        "105": {
+            "link": {
+                "name": "texture_1",
+                "file": "glb\\Barrel_01.FBX"
+            }
+        },
+        "106": {
+            "link": {
+                "name": "texture_2",
+                "file": "glb\\Barrel_01.FBX"
+            }
+        }
+    },
+    "images": {
+        "f0": {
+            "link": {
+                "name": "DefaultImage",
+                "file": "default"
+            }
+        }
+    },
+    "materials": {
+        "DefaultFontMaterial": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            },
+            "Text": {
+                "font": "145"
+            }
+        },
+        "20": {
+            "name": "White",
+            "Phong": {
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.99993744699168e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 1
+            },
+            "pipeline": "123"
+        },
+        "22": {
+            "name": "Pink",
+            "Phong": {
+                "diffuseColor": [
+                    0.9098039,
+                    0.0,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999899930335232e-7,
+                    9.999911299019004e-7,
+                    9.999999974752427e-7,
+                    1.0
+                ],
+                "shininess": 10,
+                "ambientColor": [
+                    0.317647,
+                    0.0,
+                    0.2165777,
+                    1.0
+                ]
+            },
+            "pipeline": "144",
+            "Sky": {
+                "colorStop3": [
+                    0.690196,
+                    0.1055593,
+                    0.1055593,
+                    0.0039215
+                ],
+                "colorStop2": [
+                    0.545098,
+                    0.3227835,
+                    0.3227835,
+                    0.0039215
+                ],
+                "colorStop1": [
+                    0.6834451,
+                    0.1163859,
+                    0.690196,
+                    0.0039215
+                ],
+                "colorStop0": [
+                    0.1668281,
+                    0.8608821,
+                    0.8862745,
+                    0.0039215
+                ]
+            }
+        },
+        "25": {
+            "name": "Yellow",
+            "Phong": {
+                "diffuseColor": [
+                    1.0,
+                    0.8039215,
+                    0.0,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.3843137,
+                    0.3089579,
+                    0.0,
+                    1.0
+                ]
+            }
+        },
+        "26": {
+            "name": "Green",
+            "Phong": {
+                "diffuseColor": [
+                    0.1529411,
+                    0.7882353,
+                    0.5411764,
+                    1.0
+                ],
+                "specularColor": [
+                    9.999999974752427e-7,
+                    9.999899930335232e-7,
+                    9.999899930335232e-7,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0,
+                    0.2352941,
+                    0.1437908,
+                    1.0
+                ]
+            }
+        },
+        "107": {
+            "link": {
+                "name": "barrel_biohazard_mat",
+                "file": "glb\\Barrel_01.FBX"
+            }
+        },
+        "146": {
+            "name": "Skybox",
+            "pipeline": "144",
+            "Sky": {
+                "texture": null,
+                "colorStop3": [
+                    0.2503806,
+                    0.7882353,
+                    0.516144,
+                    1.0
+                ],
+                "colorStop2": [
+                    0.1779776,
+                    0.6392157,
+                    0.5578206,
+                    1.0
+                ],
+                "colorStop1": [
+                    0.1411764,
+                    0.6823529,
+                    0.0823529,
+                    1.0
+                ],
+                "colorStop0": [
+                    0.8117647,
+                    0.2928719,
+                    0.5370567,
+                    1.0
+                ]
+            }
+        }
+    },
+    "shaders": {
+        "113": {
+            "link": {
+                "name": "DistanceFieldVector.frag",
+                "file": "default"
+            }
+        },
+        "115": {
+            "link": {
+                "name": "Dynamic.vert",
+                "file": "default"
+            }
+        },
+        "116": {
+            "link": {
+                "name": "Flat.frag",
+                "file": "default"
+            }
+        },
+        "119": {
+            "link": {
+                "name": "MeshVisualizer.frag",
+                "file": "default"
+            }
+        },
+        "121": {
+            "link": {
+                "name": "Static.frag",
+                "file": "default"
+            }
+        },
+        "122": {
+            "link": {
+                "name": "Phong.frag",
+                "file": "default"
+            }
+        },
+        "125": {
+            "link": {
+                "name": "Skinning.vert",
+                "file": "default"
+            }
+        },
+        "126": {
+            "link": {
+                "name": "Particle.frag",
+                "file": "default"
+            }
+        },
+        "130": {
+            "link": {
+                "name": "Background.frag",
+                "file": "default"
+            }
+        },
+        "131": {
+            "link": {
+                "name": "Depth.frag",
+                "file": "default"
+            }
+        },
+        "133": {
+            "link": {
+                "name": "FullScreenTriangle.vert",
+                "file": "default"
+            }
+        },
+        "134": {
+            "link": {
+                "name": "Physical.frag",
+                "file": "default"
+            }
+        },
+        "137": {
+            "link": {
+                "name": "Sky.frag",
+                "file": "default"
+            }
+        },
+        "138": {
+            "link": {
+                "name": "Text.frag",
+                "file": "default"
+            }
+        },
+        "140": {
+            "link": {
+                "name": "Text.vert",
+                "file": "default"
+            }
+        },
+        "141": {
+            "link": {
+                "name": "TileFeedback.frag",
+                "file": "default"
+            }
+        },
+        "147": {
+            "link": {
+                "name": "Playbook.frag",
+                "file": "default"
+            }
+        }
+    },
+    "settings": {
+        "project": {
+            "name": "PeerTest",
+            "version": [
+                0,
+                9,
+                5
+            ]
+        },
+        "vr": {
+            "leftEyeObject": "18",
+            "rightEyeObject": "19"
+        },
+        "scripting": {
+            "sourcePaths": [
+                "/js/editor-components-bundle.js",
+                "js"
+            ]
+        },
+        "rendering": {
+            "clearColor": [
+                0.2,
+                0.2,
+                0.2,
+                1.0
+            ],
+            "sky": {
+                "enabled": true,
+                "material": "146"
+            }
+        },
+        "runtime": {
+            "webxr": {
+                "requiredFeatures": {
+                    "local": false,
+                    "local-floor": true,
+                    "bounded-floor": false
+                },
+                "optionalFeatures": {
+                    "local": false,
+                    "local-floor": true,
+                    "bounded-floor": false
+                }
+            }
+        }
+    },
+    "animations": {},
+    "skins": {},
+    "files": [
+        "glb/teleport-indicator.glb",
+        "glb/Barrel_01.FBX"
+    ],
+    "pipelines": {
+        "114": {
+            "link": {
+                "name": "DistanceFieldVector",
+                "file": "default"
+            }
+        },
+        "117": {
+            "link": {
+                "name": "Flat Opaque",
+                "file": "default"
+            }
+        },
+        "118": {
+            "link": {
+                "name": "Flat Opaque Textured",
+                "file": "default"
+            },
+            "features": {
+                "ALPHA_MASKED": true
+            }
+        },
+        "120": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "123": {
+            "link": {
+                "name": "Phong Opaque",
+                "file": "default"
+            }
+        },
+        "124": {
+            "link": {
+                "name": "Phong Opaque Textured",
+                "file": "default"
+            },
+            "features": {
+                "ALPHA_MASKED": true
+            }
+        },
+        "127": {
+            "link": {
+                "name": "Foliage",
+                "file": "default"
+            }
+        },
+        "128": {
+            "link": {
+                "name": "Particle",
+                "file": "default"
+            }
+        },
+        "132": {
+            "link": {
+                "name": "Depth",
+                "file": "default"
+            }
+        },
+        "135": {
+            "link": {
+                "name": "Physical Opaque",
+                "file": "default"
+            }
+        },
+        "136": {
+            "link": {
+                "name": "Physical Opaque Textured",
+                "file": "default"
+            },
+            "features": {
+                "ALPHA_MASKED": true
+            }
+        },
+        "139": {
+            "link": {
+                "name": "Text",
+                "file": "default"
+            }
+        },
+        "142": {
+            "link": {
+                "name": "Phong Normalmapped",
+                "file": "default"
+            }
+        },
+        "143": {
+            "link": {
+                "name": "Phong Lightmapped",
+                "file": "default"
+            }
+        },
+        "144": {
+            "link": {
+                "name": "Sky",
+                "file": "default"
+            },
+            "features": {
+                "TEXTURED": false,
+                "GRADIENT_4_STOPS": true,
+                "GRADIENT": true
+            }
+        },
+        "148": {
+            "link": {
+                "name": "Playbook",
+                "file": "default"
+            }
+        },
+        "149": {
+            "link": {
+                "name": "Playbook Textured",
+                "file": "default"
+            }
+        }
+    },
+    "fonts": {
+        "145": {
+            "link": {
+                "name": "DejaVuSans.ttf",
+                "file": "default"
+            }
+        }
+    }
+}

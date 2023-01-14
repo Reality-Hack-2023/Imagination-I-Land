@@ -871,6 +871,23 @@
                         "mesh": "8",
                         "material": "20"
                     }
+                },
+                {
+                    "type": "button",
+                    "button": {
+                        "buttonMeshObject": "89",
+                        "hoverMaterial": "22"
+                    }
+                },
+                {
+                    "type": "skybox",
+                    "skybox": {
+                        "skyMat": "25"
+                    },
+                    "active": false
+                },
+                {
+                    "type": "collision"
                 }
             ],
             "translation": [
@@ -1325,13 +1342,8 @@
                     "howler-audio-source": {
                         "src": "audio/toms.wav",
                         "volume": 0.4
-                    }
-                },
-                {
-                    "type": "drum",
-                    "drum": {
-                        "networkObject": "32"
-                    }
+                    },
+                    "active": false
                 }
             ],
             "translation": [
@@ -1709,6 +1721,12 @@
                 "name": "TileFeedback.frag",
                 "file": "default"
             }
+        },
+        "242": {
+            "link": {
+                "name": "Playbook.frag",
+                "file": "default"
+            }
         }
     },
     "settings": {
@@ -1858,6 +1876,18 @@
         "240": {
             "link": {
                 "name": "Sky",
+                "file": "default"
+            }
+        },
+        "243": {
+            "link": {
+                "name": "Playbook",
+                "file": "default"
+            }
+        },
+        "244": {
+            "link": {
+                "name": "Playbook Textured",
                 "file": "default"
             }
         }

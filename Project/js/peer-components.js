@@ -1,5 +1,5 @@
 let isHost = false;
-
+let mute = true; 
 WL.registerComponent("peer-manager", {
   serverId: { type: WL.Type.String, default: "THISISAWONDERLANDENGINEPLACEHOLDER" },
   networkSendFrequencyInS: { type: WL.Type.Float, default: 0.01 },
@@ -155,6 +155,9 @@ WL.registerComponent("peer-manager", {
         document.body.appendChild(audio);
         audio.srcObject = stream;
         audio.autoplay = true;
+        // mute functionality 
+        audio.muted = mute; 
+        console.log("audio muted is "+audio.muted);
         this.streams[id] = stream;
       });
     });
@@ -276,6 +279,7 @@ WL.registerComponent("peer-manager", {
       document.body.appendChild(audio);
       audio.srcObject = stream;
       audio.autoplay = true;
+      
       this.streams[id] = stream;
     });
   },
