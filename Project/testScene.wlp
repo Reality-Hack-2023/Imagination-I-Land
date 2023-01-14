@@ -2771,6 +2771,469 @@
                 1.0,
                 1.0
             ]
+        },
+        "604f92b4-2cde-441f-a6fb-1d94b0296f94": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "62"
+        },
+        "d45f1b84-2792-4161-8569-77c4d38d70d2": {
+            "link": {
+                "name": "l_handMeshNode<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "components": [
+                {
+                    "mesh": {
+                        "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+                    }
+                }
+            ]
+        },
+        "6ee8b426-7ff6-4e74-a91c-633b83bfa200": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_max<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94"
+        },
+        "919dc430-e562-48a8-bdd9-840386de3e80": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_min<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94"
+        },
+        "e913d0a1-319f-44fa-98c3-7de8bd663d16": {
+            "link": {
+                "name": "xr_standard_trigger_pressed_value<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94"
+        },
+        "eff3f27e-c687-4d6c-8175-ea87b51c0344": {
+            "link": {
+                "name": "pinky-finger-tip<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+        },
+        "e3bd3ae3-219a-4c65-ae6d-93db9f5ce574": {
+            "link": {
+                "name": "pinky-finger-phalanx-distal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+        },
+        "ea95d020-2095-4030-9881-2d0521ce5b0c": {
+            "link": {
+                "name": "pinky-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+        },
+        "03cd6357-752a-4762-b75a-1e01fa187b6a": {
+            "link": {
+                "name": "pinky-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+        },
+        "1a4ed34c-0f03-4b42-92f3-8a0b437b70cc": {
+            "link": {
+                "name": "pinky-finger-metacarpal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+        },
+        "fab2de57-9283-4603-aece-c67a6b8682a0": {
+            "link": {
+                "name": "ring-finger-tip<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+        },
+        "3b7f2371-618f-4174-881b-ae50aae106f5": {
+            "link": {
+                "name": "ring-finger-phalanx-distal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+        },
+        "11cffe00-6480-4d3c-ae7b-4d33a9fb3a11": {
+            "link": {
+                "name": "ring-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+        },
+        "fc870186-bbd0-45aa-bcfa-85948330256c": {
+            "link": {
+                "name": "ring-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+        },
+        "ecb0c1a0-cc31-4837-a1c3-04138939c64f": {
+            "link": {
+                "name": "ring-finger-metacarpal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+        },
+        "b51682fd-1539-43a8-a395-479ce8e4a0a8": {
+            "link": {
+                "name": "middle-finger-tip<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+        },
+        "7a16e60a-26b2-4824-885f-5f2327e0611e": {
+            "link": {
+                "name": "middle-finger-phalanx-distal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+        },
+        "185e2c91-645e-4e7d-860a-ee1c0a6819df": {
+            "link": {
+                "name": "middle-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+        },
+        "47ecec06-b290-4193-9079-f90716d262d7": {
+            "link": {
+                "name": "middle-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+        },
+        "a2569ec0-d26a-4e80-82b4-f5dc26e9c849": {
+            "link": {
+                "name": "middle-finger-metacarpal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+        },
+        "209c9310-a9cf-4166-8a72-5ee2551856a2": {
+            "link": {
+                "name": "index-finger-tip<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+        },
+        "c2532890-1d20-4831-91d4-7701aac31d9d": {
+            "link": {
+                "name": "index-finger-phalanx-distal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+        },
+        "b154dd98-c195-4a97-be4a-479f3fe777b6": {
+            "link": {
+                "name": "index-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+        },
+        "285dfea4-2ebc-4840-833e-856972ea3857": {
+            "link": {
+                "name": "index-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+        },
+        "b8336e3c-c82c-4d7d-a729-6601bc210046": {
+            "link": {
+                "name": "index-finger-metacarpal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+        },
+        "276be4e3-8799-4a28-b0a8-e3950c12d573": {
+            "link": {
+                "name": "thumb-tip<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+        },
+        "b96b54a3-7d9b-41dc-85f4-34c67cfac64c": {
+            "link": {
+                "name": "thumb-phalanx-distal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+        },
+        "0a35572e-e0b2-4454-a1e3-5046538e0d8c": {
+            "link": {
+                "name": "thumb-phalanx-proximal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+        },
+        "8964cda1-d877-4bec-8228-6113da7f0a23": {
+            "link": {
+                "name": "thumb-metacarpal<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+        },
+        "0c906bde-46ab-4218-8c55-b1f47e7fc11b": {
+            "link": {
+                "name": "wrist<Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "parent": "604f92b4-2cde-441f-a6fb-1d94b0296f94",
+            "skin": "65cbe295-b2ce-41cf-b0db-220f3426edbf"
+        },
+        "9efb669c-c043-41bf-8da1-b63b1ce58508": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "61"
+        },
+        "8b94386c-ca60-4108-bc7e-d14b0417af39": {
+            "link": {
+                "name": "r_handMeshNode<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "components": [
+                {
+                    "mesh": {
+                        "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+                    }
+                }
+            ]
+        },
+        "5b6416bd-7a9d-478b-9f2d-b97e32a00054": {
+            "link": {
+                "name": "wrist<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        },
+        "be87933e-4bc1-4fc0-bf65-511695644f64": {
+            "link": {
+                "name": "thumb-metacarpal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        },
+        "5ea9608e-0052-4f6c-a0d5-aeef8973007d": {
+            "link": {
+                "name": "thumb-phalanx-proximal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        },
+        "04c16135-f7a2-4e9c-a49d-db3a4aea0eb6": {
+            "link": {
+                "name": "thumb-phalanx-distal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        },
+        "35395293-e526-4bc6-bc11-d04227a09604": {
+            "link": {
+                "name": "thumb-tip<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        },
+        "fd57e783-8c65-4376-a281-6912f636a5dd": {
+            "link": {
+                "name": "index-finger-metacarpal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        },
+        "bc30b846-d40c-444e-ab05-3206b19faa12": {
+            "link": {
+                "name": "index-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        },
+        "24b1eefc-36a5-4e5a-b8a0-71a84cc3f54c": {
+            "link": {
+                "name": "index-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        },
+        "467a3a71-05f6-4416-817c-d5ca5e728490": {
+            "link": {
+                "name": "index-finger-phalanx-distal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        },
+        "23c90f47-3767-4520-8cff-450368a5fdc9": {
+            "link": {
+                "name": "index-finger-tip<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        },
+        "9495b148-32f4-4fe4-9a68-4d6912a9453e": {
+            "link": {
+                "name": "middle-finger-metacarpal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        },
+        "09e161ae-b41e-487f-abc4-a5ca00652204": {
+            "link": {
+                "name": "middle-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        },
+        "c86053df-394e-47f9-b25d-61e5299269db": {
+            "link": {
+                "name": "middle-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        },
+        "241e36b9-e312-438e-9e17-dccd90535960": {
+            "link": {
+                "name": "middle-finger-phalanx-distal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        },
+        "84faa59e-669a-4989-82f6-6c1186e9b312": {
+            "link": {
+                "name": "middle-finger-tip<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        },
+        "53fcecbc-fa6b-4417-a94d-0fb01121e4cf": {
+            "link": {
+                "name": "ring-finger-metacarpal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        },
+        "975db6b3-356d-4102-8be6-51d655e3bead": {
+            "link": {
+                "name": "ring-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        },
+        "3635361f-3273-4f05-a657-9fa0f372453c": {
+            "link": {
+                "name": "ring-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        },
+        "1c635510-5a94-43b4-96c0-eeef85bb3b44": {
+            "link": {
+                "name": "ring-finger-phalanx-distal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        },
+        "c1f15484-2eb3-4a59-80e0-1d759162f725": {
+            "link": {
+                "name": "ring-finger-tip<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        },
+        "8b76a7f4-45e4-4a09-bcb8-3bcf4fb0cbe3": {
+            "link": {
+                "name": "pinky-finger-metacarpal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        },
+        "1401e01d-8e5b-425c-afa0-83efcbf18b8b": {
+            "link": {
+                "name": "pinky-finger-phalanx-proximal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        },
+        "3d4b2895-4c2a-48b3-8bf9-0f2015ebb81b": {
+            "link": {
+                "name": "pinky-finger-phalanx-intermediate<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        },
+        "aa0ed27e-8713-4fc4-884a-7356d276faba": {
+            "link": {
+                "name": "pinky-finger-phalanx-distal<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
+        },
+        "d1d5f643-67e4-404b-b058-49763dcd49fd": {
+            "link": {
+                "name": "pinky-finger-tip<Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "parent": "9efb669c-c043-41bf-8da1-b63b1ce58508",
+            "skin": "b60b5826-9303-426d-804a-dc8b72f2ba2b"
         }
     },
     "meshes": {
@@ -2857,6 +3320,18 @@
             "link": {
                 "name": "mesh_0_Material.001_0.001",
                 "file": "models\\devil_emoji (1).glb"
+            }
+        },
+        "8a5c2d60-031c-4d15-ae3d-d0582e1046ae": {
+            "link": {
+                "name": "Mesh",
+                "file": "models\\hand-left.glb"
+            }
+        },
+        "4a08d6fd-1e20-4fac-86c8-9eb8691442c1": {
+            "link": {
+                "name": "Mesh.001",
+                "file": "models\\hand-right.glb"
             }
         }
     },
@@ -3141,6 +3616,18 @@
                 "name": "deveil_mogi",
                 "file": "models\\devil_emoji (1).glb"
             }
+        },
+        "f129ca8a-8b22-4d8b-9010-440ecef52c4d": {
+            "link": {
+                "name": "Default_Material",
+                "file": "models\\hand-left.glb"
+            }
+        },
+        "ba1efe07-4d42-4821-8c32-eaff90cd9825": {
+            "link": {
+                "name": "lambert2",
+                "file": "models\\hand-right.glb"
+            }
         }
     },
     "shaders": {
@@ -3297,14 +3784,83 @@
         }
     },
     "animations": {},
-    "skins": {},
+    "skins": {
+        "65cbe295-b2ce-41cf-b0db-220f3426edbf": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "joints": [
+                "eff3f27e-c687-4d6c-8175-ea87b51c0344",
+                "e3bd3ae3-219a-4c65-ae6d-93db9f5ce574",
+                "ea95d020-2095-4030-9881-2d0521ce5b0c",
+                "03cd6357-752a-4762-b75a-1e01fa187b6a",
+                "1a4ed34c-0f03-4b42-92f3-8a0b437b70cc",
+                "fab2de57-9283-4603-aece-c67a6b8682a0",
+                "3b7f2371-618f-4174-881b-ae50aae106f5",
+                "11cffe00-6480-4d3c-ae7b-4d33a9fb3a11",
+                "fc870186-bbd0-45aa-bcfa-85948330256c",
+                "ecb0c1a0-cc31-4837-a1c3-04138939c64f",
+                "b51682fd-1539-43a8-a395-479ce8e4a0a8",
+                "7a16e60a-26b2-4824-885f-5f2327e0611e",
+                "185e2c91-645e-4e7d-860a-ee1c0a6819df",
+                "47ecec06-b290-4193-9079-f90716d262d7",
+                "a2569ec0-d26a-4e80-82b4-f5dc26e9c849",
+                "209c9310-a9cf-4166-8a72-5ee2551856a2",
+                "c2532890-1d20-4831-91d4-7701aac31d9d",
+                "b154dd98-c195-4a97-be4a-479f3fe777b6",
+                "285dfea4-2ebc-4840-833e-856972ea3857",
+                "b8336e3c-c82c-4d7d-a729-6601bc210046",
+                "276be4e3-8799-4a28-b0a8-e3950c12d573",
+                "b96b54a3-7d9b-41dc-85f4-34c67cfac64c",
+                "0a35572e-e0b2-4454-a1e3-5046538e0d8c",
+                "8964cda1-d877-4bec-8228-6113da7f0a23",
+                "0c906bde-46ab-4218-8c55-b1f47e7fc11b"
+            ]
+        },
+        "b60b5826-9303-426d-804a-dc8b72f2ba2b": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\hand-right.glb"
+            },
+            "joints": [
+                "5b6416bd-7a9d-478b-9f2d-b97e32a00054",
+                "be87933e-4bc1-4fc0-bf65-511695644f64",
+                "5ea9608e-0052-4f6c-a0d5-aeef8973007d",
+                "04c16135-f7a2-4e9c-a49d-db3a4aea0eb6",
+                "35395293-e526-4bc6-bc11-d04227a09604",
+                "fd57e783-8c65-4376-a281-6912f636a5dd",
+                "bc30b846-d40c-444e-ab05-3206b19faa12",
+                "24b1eefc-36a5-4e5a-b8a0-71a84cc3f54c",
+                "467a3a71-05f6-4416-817c-d5ca5e728490",
+                "23c90f47-3767-4520-8cff-450368a5fdc9",
+                "9495b148-32f4-4fe4-9a68-4d6912a9453e",
+                "09e161ae-b41e-487f-abc4-a5ca00652204",
+                "c86053df-394e-47f9-b25d-61e5299269db",
+                "241e36b9-e312-438e-9e17-dccd90535960",
+                "84faa59e-669a-4989-82f6-6c1186e9b312",
+                "53fcecbc-fa6b-4417-a94d-0fb01121e4cf",
+                "975db6b3-356d-4102-8be6-51d655e3bead",
+                "3635361f-3273-4f05-a657-9fa0f372453c",
+                "1c635510-5a94-43b4-96c0-eeef85bb3b44",
+                "c1f15484-2eb3-4a59-80e0-1d759162f725",
+                "8b76a7f4-45e4-4a09-bcb8-3bcf4fb0cbe3",
+                "1401e01d-8e5b-425c-afa0-83efcbf18b8b",
+                "3d4b2895-4c2a-48b3-8bf9-0f2015ebb81b",
+                "aa0ed27e-8713-4fc4-884a-7356d276faba",
+                "d1d5f643-67e4-404b-b058-49763dcd49fd"
+            ]
+        }
+    },
     "files": [
         "glb/teleport-indicator.glb",
         "glb/Barrel_01.FBX",
         "models/button.glb",
         "models/theroom.glb",
         "models/moji_gun (1).glb",
-        "models/devil_emoji (1).glb"
+        "models/devil_emoji (1).glb",
+        "models/hand-left.glb",
+        "models/hand-right.glb"
     ],
     "pipelines": {
         "114": {
