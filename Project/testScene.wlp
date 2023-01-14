@@ -1947,18 +1947,6 @@
         "150": {
             "name": "UI"
         },
-        "151": {
-            "name": "Toggle Mute",
-            "parent": "150",
-            "components": [
-                {
-                    "type": "text",
-                    "text": {
-                        "text": "Mute"
-                    }
-                }
-            ]
-        },
         "152": {
             "name": "bg",
             "parent": "150",
@@ -2275,7 +2263,7 @@
                 {
                     "type": "mesh",
                     "mesh": {
-                        "mesh": "7",
+                        "mesh": "184",
                         "material": "20"
                     }
                 }
@@ -2583,7 +2571,7 @@
             ],
             "translation": [
                 -0.670804,
-                0.5132911,
+                -1.5037671,
                 0.052002
             ],
             "rotation": [
@@ -2593,9 +2581,9 @@
                 1.0
             ],
             "scale": [
-                0.2,
-                0.4,
-                0.2
+                0.25,
+                0.5,
+                0.25
             ]
         },
         "181": {
@@ -2606,6 +2594,77 @@
                     "type": "text",
                     "text": {
                         "text": "MUTE/UNMUTE"
+                    }
+                }
+            ],
+            "scale": [
+                2.0,
+                2.0,
+                2.0
+            ]
+        },
+        "182": {
+            "name": "Throw",
+            "parent": "165",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.3,
+                                0.2,
+                                0.05
+                            ]
+                        },
+                        "groups": 2
+                    }
+                },
+                {
+                    "type": "cursor-target",
+                    "active": true
+                },
+                {
+                    "type": "changeColor",
+                    "changeColor": {
+                        "buttonMeshObject": "182",
+                        "hoverMaterial": "25"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "12",
+                        "material": "25"
+                    }
+                }
+            ],
+            "translation": [
+                -0.670804,
+                0.5132911,
+                0.052002
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.25,
+                0.5,
+                0.25
+            ]
+        },
+        "183": {
+            "name": "Text",
+            "parent": "182",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "THROW"
                     }
                 }
             ],
@@ -2659,17 +2718,18 @@
                 "file": "glb\\teleport-indicator.glb"
             }
         },
-        "108": {
-            "link": {
-                "name": "mesh_0",
-                "file": "glb\\Barrel_01.FBX"
-            }
-        },
         "129": {
             "link": {
                 "name": "barrel_biohazard",
                 "file": "glb\\Barrel_01.FBX"
             }
+        },
+        "184": {
+            "link": {
+                "name": "Cube.001",
+                "file": "models\\button.glb"
+            },
+            "name": "Panel"
         }
     },
     "textures": {
@@ -3019,7 +3079,8 @@
     "skins": {},
     "files": [
         "glb/teleport-indicator.glb",
-        "glb/Barrel_01.FBX"
+        "glb/Barrel_01.FBX",
+        "models/button.glb"
     ],
     "pipelines": {
         "114": {
