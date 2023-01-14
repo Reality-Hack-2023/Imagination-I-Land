@@ -2677,6 +2677,28 @@
                 0.3499999,
                 2.0
             ]
+        },
+        "192": {
+            "link": {
+                "name": "RoomBaked_Baked_0",
+                "file": "models\\theroom.glb"
+            },
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                -0.7071311,
+                0.0,
+                0.0,
+                0.7070823
+            ],
+            "scale": [
+                4.6842017,
+                4.6841435,
+                4.6841435
+            ]
         }
     },
     "meshes": {
@@ -2734,6 +2756,24 @@
                 "file": "models\\button.glb"
             },
             "name": "Panel"
+        },
+        "189": {
+            "link": {
+                "name": "RoomBaked_Baked_0",
+                "file": "models\\theroom.glb"
+            }
+        },
+        "190": {
+            "link": {
+                "name": "RoomBaked_Baked_0-uv1",
+                "file": "models\\theroom.glb"
+            }
+        },
+        "191": {
+            "link": {
+                "name": "RoomBaked_Baked_0-uv2",
+                "file": "models\\theroom.glb"
+            }
         }
     },
     "textures": {
@@ -2761,6 +2801,12 @@
                 "name": "texture_2",
                 "file": "glb\\Barrel_01.FBX"
             }
+        },
+        "187": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\theroom.glb"
+            }
         }
     },
     "images": {
@@ -2768,6 +2814,12 @@
             "link": {
                 "name": "DefaultImage",
                 "file": "default"
+            }
+        },
+        "186": {
+            "link": {
+                "name": "Image_0",
+                "file": "models\\theroom.glb"
             }
         }
     },
@@ -2927,6 +2979,12 @@
                     1.0
                 ]
             }
+        },
+        "188": {
+            "link": {
+                "name": "Baked",
+                "file": "models\\theroom.glb"
+            }
         }
     },
     "shaders": {
@@ -3084,7 +3142,8 @@
     "files": [
         "glb/teleport-indicator.glb",
         "glb/Barrel_01.FBX",
-        "models/button.glb"
+        "models/button.glb",
+        "models/theroom.glb"
     ],
     "pipelines": {
         "114": {
