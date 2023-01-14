@@ -31,7 +31,7 @@ WL.registerComponent('skybox', {
         this.skyMat.colorStop0=[1,1,1,1];
 
         this.lightComponent.color.set([e,d,c]);
-        this.lightComponent2.color.set([e,d,c]);
+        this.lightComponent2.color.set([d,e,c]);
 
 
     }
