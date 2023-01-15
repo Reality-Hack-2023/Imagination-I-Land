@@ -6,18 +6,18 @@ WL.registerComponent('changeColor', {
 }, {
     start: function () {
         this.mesh = this.buttonMeshObject.getComponent('mesh');
-        this.defaultMaterial = this.mesh.material;
         this.peerManager = this.peerComponent.getComponent('peer-manager');
+        this.defaultMaterial = this.mesh.material;
 
         this.target = this.object.getComponent('cursor-target') || this.object.addComponent('cursor-target');
         this.target.addClickFunction(this.onClick.bind(this));
-        
-       this.peerManager.addNetworkDataRecievedCallback("change-color", (d) => {
+
+        this.peerManager.addNetworkDataRecievedCallback("change-color"+this.object.name, (d) => {
             console.log("change color received", d);
             this.setColor(d.color);
             //emoSpawner.spawn();
         });
-        
+
         this.target.addDownFunction(this.onDown.bind(this));
 
         this.target.addHoverFunction(this.onHover.bind(this));
@@ -35,14 +35,17 @@ WL.registerComponent('changeColor', {
         this.mesh.material = mat;
 
     },
+
     onClick: function (_, cursor) {
         const c = Math.random() * 1;
         const d = c * Math.random();
         let color = [c, d, c / d, 1];
         console.log("set color before ", color);
         this.setColor(color);
+
+
         console.log("set color ", color);
-        this.peerManager.sendPackageImmediately("change-color", {color: color});
+        this.peerManager.sendPackageImmediately("change-color"+this.object.name, {color: color});
         if (cursor.type == 'finger-cursor') {
             this.onDown(_, cursor);
         }
@@ -62,10 +65,10 @@ WL.registerComponent('changeColor', {
         }
     },
 
-
-    //grip to mute and unmute
     onUnHover: function (_, cursor) {
-        this.mesh.material = this.defaultMaterial;
+        if (this.mesh.material.diffuseColor == this.hoverMaterial.diffuseColor) {
+            this.mesh.material = this.defaultMaterial;
+        }
         if (cursor.type == 'finger-cursor') {
             this.onUp(_, cursor);
         }
@@ -74,7 +77,10 @@ WL.registerComponent('changeColor', {
     },
 
     onHover: function (_, cursor) {
-        this.mesh.material = this.hoverMaterial;
+        if (this.mesh.material.diffuseColor == this.hoverMaterial.diffuseColor) {
+            this.hoverMaterial = this.mesh.material;
+        }
+
         if (cursor.type == 'finger-cursor') {
             this.onDown(_, cursor);
         }
