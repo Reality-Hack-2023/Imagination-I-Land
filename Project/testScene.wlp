@@ -72,7 +72,7 @@
                         "playerRightHand": "61",
                         "playerLeftHand": "62",
                         "voiceEnabled": true,
-                        "serverId": "sss"
+                        "serverId": "asds"
                     }
                 },
                 {
@@ -1255,7 +1255,7 @@
             ],
             "rotation": [
                 0.0,
-                2.328328996270557e-8,
+                2.3283289962705573e-8,
                 0.0,
                 1.0
             ],
@@ -3804,7 +3804,7 @@
                 }
             },
             "visualizePhysX": true,
-            "visualizeColliders": true
+            "visualizeColliders": false
         },
         "editor": {
             "ids": "uuid"
