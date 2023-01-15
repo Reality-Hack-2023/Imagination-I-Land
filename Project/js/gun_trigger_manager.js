@@ -10,7 +10,6 @@ WL.registerComponent('gun_trigger_manager', {
     start: function () {
         let peerManager = this.peerComponent.getComponent('peer-manager');
 
-        console.log(particleShooterFunction.active)
         this.trigger.getComponent('cursor-target').addDownFunction(function () {
             this.startShoot(true);
             // send message when you are interacting in XR 
