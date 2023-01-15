@@ -339,6 +339,7 @@ WL.registerComponent("peer-manager", {
 
   sendPackage: function(key, data) {
     this.currentDataPackage[key] = data;
+    
   },
 
   sendPackageImmediately: function(key, data) {
