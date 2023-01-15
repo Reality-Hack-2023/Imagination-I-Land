@@ -8,9 +8,25 @@ Use it and customize it for your own game.
 */
 WL.registerComponent('emoji_particle_shooter', {
     /* Mesh for spawned particles */
-    mesh: {type: WL.Type.Mesh, default: null},
+    devil: {type: WL.Type.Mesh, default: null},
     /* Material for spawned particles */
-    material: {type: WL.Type.Material, default: null},
+    devilmat: {type: WL.Type.Material, default: null},
+    /* Mesh for spawned particles */
+    love1: {type: WL.Type.Mesh, default: null},
+    /* Material for spawned particles */
+    love1mat: {type: WL.Type.Material, default: null},
+    /* Mesh for spawned particles */
+    love2: {type: WL.Type.Mesh, default: null},
+    /* Material for spawned particles */
+    love2mat: {type: WL.Type.Material, default: null},
+    /* Mesh for spawned particles */
+    think1: {type: WL.Type.Mesh, default: null},
+    /* Material for spawned particles */
+    think1mat: {type: WL.Type.Material, default: null},
+    /* Mesh for spawned particles */
+    think2: {type: WL.Type.Mesh, default: null},
+    /* Material for spawned particles */
+    think2mat: {type: WL.Type.Material, default: null},
     /* Delay between particle spawns. If below time of a frame, will spawn multiple particles in update. */
     delay: {type: WL.Type.Float, default: 0.04},
     /* Maximum number of particles, once limit is reached, particles are recycled first-in-first-out. */
@@ -21,6 +37,8 @@ WL.registerComponent('emoji_particle_shooter', {
     particleScale: {type: WL.Type.Float, default: 0.1},
     //Parent Object
     gun:{type:WL.Type.Object, default: null},
+
+    changeEmojiButton:{type:WL.Type.Object, default: null},
 }, {
     init: function() {
         this.time = 0.0;
