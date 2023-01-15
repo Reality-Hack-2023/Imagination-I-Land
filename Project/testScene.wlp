@@ -72,15 +72,15 @@
                         "playerRightHand": "61",
                         "playerLeftHand": "62",
                         "voiceEnabled": true,
-                        "serverId": "sss"
+                        "serverId": "Yitingadsadsd"
                     }
                 },
                 {
                     "type": "peer-networked-player-spawner",
                     "peer-networked-player-spawner": {
-                        "headMesh": "8",
+                        "headMesh": "9",
                         "leftHandMesh": "71335794-a148-4edb-a1d7-1e9434a23035",
-                        "headMaterial": "20",
+                        "headMaterial": "DefaultFontMaterial",
                         "leftHandMaterial": "20",
                         "rightHandMesh": "45970128-3ffd-4040-8094-613be6dc8696",
                         "rightHandMaterial": "20"
@@ -99,9 +99,9 @@
                 1.0
             ],
             "scale": [
-                1.0,
-                1.0,
-                1.0
+                0.5,
+                0.5,
+                0.5
             ]
         },
         "68": {
@@ -314,18 +314,18 @@
                 }
             ],
             "translation": [
-                -0.4652587,
-                0.8536036,
-                2.5080609
+                -2.0166954,
+                0.8431437,
+                0.2058098
             ],
             "rotation": [
                 0.0,
                 -0.2360143,
                 0.0,
-                0.9717495
+                0.9717496
             ],
             "scale": [
-                0.1674444,
+                0.1674443,
                 0.349783,
                 0.3497835
             ]
@@ -1112,7 +1112,7 @@
                         "cursorObject": "87",
                         "handedness": "right"
                     },
-                    "active": true
+                    "active": false
                 },
                 {
                     "type": "controller-teleport-component",
@@ -1176,7 +1176,7 @@
                         "mesh": "8",
                         "material": "25"
                     },
-                    "active": false
+                    "active": true
                 }
             ],
             "translation": [
@@ -1206,7 +1206,7 @@
                         "mesh": "9",
                         "material": "25"
                     },
-                    "active": false
+                    "active": true
                 },
                 {
                     "type": "collision",
@@ -1215,7 +1215,8 @@
                         "sphere": {
                             "radius": 0.075
                         }
-                    }
+                    },
+                    "active": false
                 }
             ],
             "translation": [
@@ -1312,7 +1313,8 @@
                     "cursor": {
                         "cursorRayObject": "30e72ee4-8bf5-4860-b0bf-0a86a3f26f36",
                         "cursorObject": "87"
-                    }
+                    },
+                    "active": false
                 },
                 {
                     "type": "teleport",
@@ -1337,20 +1339,20 @@
                 }
             ],
             "translation": [
-                1.1920928955078125e-7,
-                -2.9802322387695313e-8,
+                0.0,
+                -5.960464477539064e-8,
                 -2.384185791015625e-7
             ],
             "rotation": [
                 0.0,
-                0.0,
+                -4.967060363014753e-8,
                 0.0,
                 1.0
             ],
             "scale": [
-                0.0749999,
+                0.0749998,
                 0.075,
-                0.0749999
+                0.0749998
             ]
         },
         "daa805a5-c9ea-405b-a951-26b331bfe1b6": {
@@ -2017,7 +2019,7 @@
                         "mesh": "8",
                         "material": "25"
                     },
-                    "active": false
+                    "active": true
                 }
             ],
             "translation": [
@@ -2472,19 +2474,26 @@
             },
             "scale": [
                 0.7000157,
-                0.7000059,
+                0.7000058,
                 0.7000066
             ],
             "translation": [
-                1.6967334,
-                0.7080535,
-                4.9596948
+                1.6986737,
+                0.7219133,
+                4.9598741
             ],
             "rotation": [
                 0.1901942,
-                0.7272411,
+                0.727241,
                 0.6207185,
                 -0.2228338
+            ],
+            "components": [
+                {
+                    "mesh": {
+                        "material": "25"
+                    }
+                }
             ]
         },
         "4e46412e-7401-486a-9033-64fe79a211de": {
