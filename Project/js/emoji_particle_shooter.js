@@ -50,14 +50,16 @@ WL.registerComponent('emoji_particle_shooter', {
 
         this.objects = WL.scene.addObjects(this.maxParticles, null, this.maxParticles);
 
+        this.changeEmojiButton.addClickFunction(function(){})
+
         for(let i = 0; i < this.maxParticles; ++i) {
             this.velocities.push([0, 0, 0]);
             let obj = this.objects[i];
             obj.name = "particle" + this.count.toString();
             let mesh = obj.addComponent('mesh');
 
-            mesh.mesh = this.mesh;
-            mesh.material = this.material;
+            mesh.mesh = this.devil;
+            mesh.material = this.devilmat;
             /* Most efficient way to hide the mesh */
             obj.scale([0, 0, 0]);
         }
