@@ -45,9 +45,7 @@ WL.registerComponent('changeColor', {
     },
     
     
-    //grip to mute and unmute 
-    
-
+    //grip to mute and unmute
     onUnHover: function (_, cursor) {
         this.mesh.material = this.defaultMaterial;
         if (cursor.type == 'finger-cursor') {

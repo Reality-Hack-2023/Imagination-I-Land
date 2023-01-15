@@ -1,4 +1,5 @@
 let isHost = false;
+
 WL.registerComponent("peer-manager", {
   serverId: { type: WL.Type.String, default: "THISISAWONDERLANDENGINEPLACEHOLDER" },
   networkSendFrequencyInS: { type: WL.Type.Float, default: 0.01 },
@@ -89,11 +90,11 @@ WL.registerComponent("peer-manager", {
       connection.send({ joinedPlayers: Object.keys(this.activePlayers), joined: true});
     });
     connection.on("close", () => this._onHostConnectionClose(connection));
-    connection.on("data", (data) => this._onHostDataRecieved(data, connection));
+    connection.on("data", (data) => this._onHostDataReceived(data, connection));
     this.object.setTranslationWorld([0, 0, 0]);
   },
 
-  _onHostDataRecieved: function(data, connection) {
+  _onHostDataReceived: function(data, connection) {
     if (data.transforms && this.activePlayers[connection.peer]) {
       this.activePlayers[connection.peer].setTransforms(data.transforms);
     }
@@ -154,8 +155,6 @@ WL.registerComponent("peer-manager", {
         document.body.appendChild(audio);
         audio.srcObject = stream;
         audio.autoplay = true;
-        // mute functionality 
-        console.log("audio muted is "+audio.muted);
         this.streams[id] = stream;
       });
     });
@@ -176,7 +175,7 @@ WL.registerComponent("peer-manager", {
     for (const cb of this.connectionEstablishedCallbacks) cb();
   },
 
-  _onClientDataRecieved: function(data) {
+  _onClientDataReceived: function(data) {
     const registeredCallbacksKeys = Object.keys(this.registeredNetworkCallbacks);
     const joined = "joined" in data;
 
@@ -277,7 +276,6 @@ WL.registerComponent("peer-manager", {
       document.body.appendChild(audio);
       audio.srcObject = stream;
       audio.autoplay = true;
-      
       this.streams[id] = stream;
     });
   },
@@ -288,7 +286,7 @@ WL.registerComponent("peer-manager", {
       metadata: { username: "TestName" },
     });
     this.connection.on("open", this._onClientConnected.bind(this));
-    this.connection.on("data", this._onClientDataRecieved.bind(this));
+    this.connection.on("data", this._onClientDataReceived.bind(this));
     this.connection.on("close", this._onClientClose.bind(this));
   },
 
@@ -328,18 +326,27 @@ WL.registerComponent("peer-manager", {
     this.disconnectCallbacks.splice(index, 1);
   },
 
-  addNetworkDataRecievedCallback: function(key, f) {
+  /* @deprecated Function was renamed to correct spelling */
+  addNetworkDataRecievedCallback: function(...args) {
+      return this.addNetworkDataReceivedCallback(...args);
+  },
+
+  addNetworkDataReceivedCallback: function(key, f) {
     this.registeredNetworkCallbacks = this.registeredNetworkCallbacks || {};
     this.registeredNetworkCallbacks[key] = f;
   },
 
-  removeNetworkDataRecievedCallback: function(key) {
+  /* @deprecated Function was renamed to correct spelling */
+  removeNetworkDataRecievedCallback: function(...args) {
+      return this.removeNetworkDataReceivedCallback(...args);
+  },
+
+  removeNetworkDataReceivedCallback: function(key) {
     delete this.registeredNetworkCallbacks[key];
   },
 
   sendPackage: function(key, data) {
     this.currentDataPackage[key] = data;
-    
   },
 
   sendPackageImmediately: function(key, data) {

@@ -56,7 +56,7 @@ WL.registerComponent('emoji_particle_shooter', {
             obj.scale([0, 0, 0]);
         }
 
-        this.changeEmojiButton.addClickFunction(function(){if(this.changeEmojiButton.currentEmoji=='devil'){console.log('woohoo')}else{console.log('nope')}});
+        //this.changeEmojiButton.addClickFunction(function(){if(this.changeEmojiButton.currentEmoji=='devil'){console.log('woohoo')}else{console.log('nope')}});
     },
     update: function(dt) {
         this.time += dt;

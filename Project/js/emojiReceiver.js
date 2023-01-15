@@ -12,18 +12,17 @@ WL.registerComponent('emojiReceiver', {
         // send message when you are interacting in XR 
         //peerManager.sendPackage("emoji","heart");
         
-        peerManager.addNetworkDataRecievedCallback("emoji",()=>{
-            console.log("data received, needs to spawn");
+        peerManager.addNetworkDataRecievedCallback("emoji-start",(d)=>{
+            console.log("emoji start received",d);
             //emoSpawner.spawn();
-        });  
-        
-        peerManager.removeNetworkDataRecievedCallback("emoji",()=>{
-            console.log("data received, needs to REMOVE");
+        });
+        peerManager.addNetworkDataRecievedCallback("emoji-stop",(d)=>{
+            console.log("emoji stop received",d);
+            //emoSpawner.spawn();
         });
 
         console.log('start() with param', this.param);
     },
     update: function(dt) {
-        console.log('update() with delta time', dt);
     },
 });

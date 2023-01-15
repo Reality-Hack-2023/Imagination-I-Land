@@ -75,7 +75,7 @@
                         "playerRightHand": "61",
                         "playerLeftHand": "62",
                         "voiceEnabled": true,
-                        "serverId": "MITHACK"
+                        "serverId": "MITHACK2023"
                     }
                 }
             ],
@@ -1017,93 +1017,6 @@
                 0.3497835
             ]
         },
-        "92": {
-            "name": "Cube",
-            "parent": "88",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "20"
-                    }
-                }
-            ],
-            "translation": [
-                -10.422388,
-                2.2617559,
-                -9.3290882
-            ],
-            "rotation": [
-                0.0000119,
-                -0.0691339,
-                0.0001722,
-                0.9976073
-            ],
-            "scale": [
-                3.0000002,
-                3.0000002,
-                3.0
-            ]
-        },
-        "94": {
-            "name": "Cube",
-            "parent": "88",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "20"
-                    }
-                }
-            ],
-            "translation": [
-                9.7103681,
-                1.2538591,
-                -1.1148992
-            ],
-            "rotation": [
-                -0.0059012,
-                0.325418,
-                0.0170088,
-                0.9453988
-            ],
-            "scale": [
-                1.9999872,
-                1.9999998,
-                1.9999872
-            ]
-        },
-        "95": {
-            "name": "Cube",
-            "parent": "88",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "25"
-                    }
-                }
-            ],
-            "translation": [
-                5.3232851,
-                1.2538601,
-                -10.9547767
-            ],
-            "rotation": [
-                0.0006869,
-                0.6468836,
-                0.0179904,
-                0.7623761
-            ],
-            "scale": [
-                1.9999873,
-                1.9999985,
-                1.9999877
-            ]
-        },
         "150": {
             "name": "UI",
             "translation": [
@@ -1122,28 +1035,6 @@
                 1.0,
                 1.0
             ]
-        },
-        "152": {
-            "name": "bg",
-            "parent": "150",
-            "components": [
-                {
-                    "type": "mesh"
-                }
-            ]
-        },
-        "153": {
-            "name": "knob",
-            "parent": "150",
-            "components": [
-                {
-                    "type": "mesh"
-                }
-            ]
-        },
-        "154": {
-            "name": "container",
-            "parent": "150"
         },
         "157": {
             "name": "HostButton",
@@ -1529,15 +1420,12 @@
                         "mesh": "7",
                         "material": "26"
                     }
-                },
-                {
-                    "type": "setEmoji"
                 }
             ],
             "translation": [
                 0.3122028,
                 0.4314947,
-                0.0520019
+                0.052002
             ],
             "rotation": [
                 0.0,
@@ -1884,7 +1772,8 @@
                     "type": "gun_trigger_manager",
                     "gun_trigger_manager": {
                         "particleShooter": "194",
-                        "trigger": "167"
+                        "trigger": "167",
+                        "peerComponent": "32"
                     },
                     "active": true
                 }
@@ -1897,20 +1786,20 @@
                 "file": "models\\moji_gun (1).glb"
             },
             "translation": [
-                1.1175863789958385e-8,
+                1.11758780008131e-8,
                 1.3049198,
-                -5.960464477539063e-8
+                -5.960464477539064e-8
             ],
             "rotation": [
-                -0.7241398,
-                -1.4901191391913926e-8,
-                8.940705242821423e-8,
+                -0.7241397,
+                -1.4901189615557087e-8,
+                8.940705242821424e-8,
                 0.6896532
             ],
             "scale": [
                 1.7842526,
                 1.7842543,
-                1.7842538
+                1.784254
             ],
             "components": [
                 null,
@@ -3066,11 +2955,16 @@
             },
             "scale": [
                 0.0149999,
-                0.0149999,
-                0.0099999
+                0.0149998,
+                0.0099998
             ],
             "components": [
-                null,
+                {
+                    "active": true,
+                    "mesh": {
+                        "material": "20"
+                    }
+                },
                 {
                     "type": "physx",
                     "physx": {
@@ -3084,7 +2978,50 @@
                         },
                         "static": true
                     }
+                },
+                {
+                    "type": "changeColor",
+                    "changeColor": {
+                        "buttonMeshObject": "da7aad06-5013-4a52-9954-70ffff54899d",
+                        "hoverMaterial": "20"
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "box",
+                        "aabb": {
+                            "extents": [
+                                0.8,
+                                1.0,
+                                0.6999999
+                            ]
+                        },
+                        "box": {
+                            "extents": [
+                                0.5,
+                                0.6999999,
+                                1.0
+                            ]
+                        }
+                    }
                 }
+            ],
+            "name": "table",
+            "parent": "88",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.7071068,
+                0.0,
+                0.0,
+                0.7071067
             ]
         },
         "74d8161b-3a38-445e-84f6-dc5428bb1d07": {
@@ -3096,6 +3033,50 @@
                 1.46,
                 1.46,
                 1.46
+            ],
+            "components": [
+                {
+                    "active": true,
+                    "mesh": {
+                        "material": "20"
+                    }
+                },
+                {
+                    "type": "changeColor",
+                    "changeColor": {
+                        "buttonMeshObject": "74d8161b-3a38-445e-84f6-dc5428bb1d07",
+                        "hoverMaterial": "20"
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "box",
+                        "box": {
+                            "extents": [
+                                5.4,
+                                8.1000003,
+                                7.4
+                            ]
+                        }
+                    }
+                }
+            ],
+            "name": "wall ring",
+            "parent": "88",
+            "translation": [
+                0.0,
+                -0.0001138,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
             ]
         },
         "df4d5830-aa94-43f7-9304-9724357cc397": {
@@ -3107,6 +3088,46 @@
                 1.46,
                 1.46,
                 1.46
+            ],
+            "name": "floor",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "cf754284-6162-456f-ab6f-e652ce029521"
+                    }
+                },
+                {
+                    "type": "changeColor",
+                    "changeColor": {
+                        "buttonMeshObject": "df4d5830-aa94-43f7-9304-9724357cc397",
+                        "hoverMaterial": "20"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                9.3000001,
+                                0.1,
+                                7.3000001
+                            ]
+                        }
+                    }
+                }
+            ],
+            "parent": "88",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
             ]
         },
         "90ab31d9-aca7-4d07-84ee-49e4e294b22b": {
@@ -3116,8 +3137,71 @@
             },
             "scale": [
                 0.0149999,
-                0.0149999,
-                0.0149999
+                0.0149998,
+                0.0149998
+            ],
+            "name": "ceiling",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "aac9e2ad-29fa-4782-85cf-b43a65337d08"
+                    }
+                },
+                {
+                    "type": "changeColor",
+                    "changeColor": {
+                        "buttonMeshObject": "90ab31d9-aca7-4d07-84ee-49e4e294b22b",
+                        "hoverMaterial": "20"
+                    }
+                }
+            ],
+            "parent": "88",
+            "translation": [
+                0.0,
+                0.0,
+                2.384185791015625e-7
+            ],
+            "rotation": [
+                0.7071068,
+                0.0,
+                0.0,
+                0.7071067
+            ]
+        },
+        "7d61dfd1-7992-41db-9125-e970e2e6257b": {
+            "name": "EmojiReceiver",
+            "components": [
+                {
+                    "type": "emojiReceiver",
+                    "emojiReceiver": {
+                        "peerComponent": "32",
+                        "emojiSpawner": "194"
+                    }
+                }
+            ]
+        },
+        "a62a61ce-4c4b-4cf0-804a-4a8aca4da075": {
+            "name": "Collision",
+            "parent": "90ab31d9-aca7-4d07-84ee-49e4e294b22b",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "box",
+                        "box": {
+                            "extents": [
+                                7.3000001,
+                                7.6999998,
+                                0.1
+                            ]
+                        }
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                -346.8999938
             ]
         }
     },
@@ -3732,7 +3816,13 @@
                     9.999999974752427e-7,
                     1.0
                 ],
-                "shininess": 1
+                "shininess": 1,
+                "ambientColor": [
+                    0.6745097,
+                    0.5290272,
+                    0.5290272,
+                    1.0
+                ]
             },
             "pipeline": "123"
         },
@@ -3903,6 +3993,15 @@
             "link": {
                 "name": "skel_controller_materials_controllerMTL",
                 "file": "models\\oculus-touch-v2-right.glb"
+            },
+            "pipeline": "123",
+            "Phong": {
+                "ambientColor": [
+                    0.2278363,
+                    0.1439446,
+                    0.3137254,
+                    1.0
+                ]
             }
         },
         "4f2069a0-690f-474e-9136-9e5c31937b90": {
@@ -4011,7 +4110,8 @@
             "link": {
                 "name": "Heart",
                 "file": "models\\love_emoji.glb"
-            }
+            },
+            "pipeline": "123"
         }
     },
     "shaders": {
