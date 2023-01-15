@@ -8,27 +8,35 @@ WL.registerComponent('gun_trigger_manager', {
 
     },
     start: function () {
-        const particleShooterFunction = this.particleShooter.getComponent("emoji_particle_shooter")
         let peerManager = this.peerComponent.getComponent('peer-manager');
 
         console.log(particleShooterFunction.active)
         this.trigger.getComponent('cursor-target').addDownFunction(function () {
-            particleShooterFunction.active = true;
+            this.startShoot(true);
             // send message when you are interacting in XR 
             peerManager.sendPackageImmediately("emoji-start", {type: "heart"});
             console.log("sending emoji-start");
 
         });
         this.trigger.getComponent('cursor-target').addUpFunction(function () {
-            particleShooterFunction.objects.forEach(object => {
-                object.active = false;
-            });
-            particleShooterFunction.active = false
 
+            this.startShoot(false);
             peerManager.sendPackage("emoji-stop", {type: "heart"});
             console.log("sending emoji-stop");
 
         });
     },
+
+    
+    startShoot:function(start){
+        const particleShooterFunction = this.particleShooter.getComponent("emoji_particle_shooter")
+
+        if(!start){
+            particleShooterFunction.objects.forEach(object => {
+                object.active = false;
+            });
+        }
+        particleShooterFunction.active=start;
+    }
 
 });

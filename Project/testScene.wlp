@@ -72,7 +72,7 @@
                         "playerRightHand": "61",
                         "playerLeftHand": "62",
                         "voiceEnabled": true,
-                        "serverId": "Yitingadsadsd"
+                        "serverId": "asdasd15a6d4as56d4"
                     }
                 },
                 {
@@ -314,20 +314,20 @@
                 }
             ],
             "translation": [
-                -2.0166954,
-                0.8431437,
-                0.2058098
+                -0.8612983,
+                0.8431456,
+                1.9775645
             ],
             "rotation": [
                 0.0,
-                -0.2360143,
+                0.0729807,
                 0.0,
-                0.9717496
+                0.9973333
             ],
             "scale": [
-                0.1674443,
+                0.1674444,
                 0.349783,
-                0.3497835
+                0.3497834
             ]
         },
         "150": {
@@ -507,20 +507,20 @@
             "name": "Panel",
             "parent": "150",
             "translation": [
-                0.0,
-                1.7400299,
-                0.0097026
+                -1.2546507,
+                1.2619948,
+                7.4036893
             ],
             "rotation": [
                 0.0,
+                -0.6301082,
                 0.0,
-                0.0,
-                1.0
+                0.7765072
             ],
             "scale": [
-                1.0,
+                1.000007,
                 0.5,
-                1.0
+                1.000007
             ]
         },
         "167": {
@@ -658,7 +658,7 @@
                 }
             ],
             "translation": [
-                -0.1231804,
+                -0.1231803,
                 -0.4626171,
                 0.165955
             ],
@@ -852,8 +852,8 @@
             ],
             "scale": [
                 0.5999999,
-                0.3499998,
-                1.9999998
+                0.4474837,
+                1.9999997
             ]
         },
         "194": {
@@ -1112,7 +1112,7 @@
                         "cursorObject": "87",
                         "handedness": "right"
                     },
-                    "active": false
+                    "active": true
                 },
                 {
                     "type": "controller-teleport-component",
@@ -1216,7 +1216,7 @@
                             "radius": 0.075
                         }
                     },
-                    "active": false
+                    "active": true
                 }
             ],
             "translation": [
@@ -1340,12 +1340,12 @@
             ],
             "translation": [
                 0.0,
-                -5.960464477539063e-8,
+                -5.960464477539064e-8,
                 -2.384185791015625e-7
             ],
             "rotation": [
                 0.0,
-                -4.9670603630147525e-8,
+                -4.967060363014753e-8,
                 0.0,
                 1.0
             ],
@@ -2141,64 +2141,6 @@
                 0.7071067
             ]
         },
-        "74d8161b-3a38-445e-84f6-dc5428bb1d07": {
-            "link": {
-                "name": "polySurface10",
-                "file": "models\\thewall.glb"
-            },
-            "scale": [
-                1.46,
-                1.46,
-                1.46
-            ],
-            "components": [
-                {
-                    "active": true,
-                    "mesh": {
-                        "material": "20"
-                    }
-                },
-                {
-                    "type": "changeColor",
-                    "changeColor": {
-                        "buttonMeshObject": "74d8161b-3a38-445e-84f6-dc5428bb1d07",
-                        "hoverMaterial": "20",
-                        "peerComponent": "32"
-                    }
-                },
-                {
-                    "type": "cursor-target"
-                },
-                {
-                    "type": "collision",
-                    "collision": {
-                        "collider": "box",
-                        "box": {
-                            "extents": [
-                                5.4,
-                                8.1000003,
-                                7.4
-                            ]
-                        },
-                        "groups": 128
-                    },
-                    "active": true
-                }
-            ],
-            "name": "wall ring",
-            "parent": "88",
-            "translation": [
-                0.0,
-                -0.0001138,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ]
-        },
         "df4d5830-aa94-43f7-9304-9724357cc397": {
             "link": {
                 "name": "polySurface14",
@@ -2228,71 +2170,6 @@
                 0.0,
                 0.0,
                 1.0
-            ]
-        },
-        "90ab31d9-aca7-4d07-84ee-49e4e294b22b": {
-            "link": {
-                "name": "polySurface73.001",
-                "file": "models\\ceiling.glb"
-            },
-            "scale": [
-                0.0149999,
-                0.0149998,
-                0.0149998
-            ],
-            "name": "ceiling",
-            "components": [
-                {
-                    "mesh": {
-                        "material": "aac9e2ad-29fa-4782-85cf-b43a65337d08"
-                    }
-                },
-                {
-                    "type": "changeColor",
-                    "changeColor": {
-                        "buttonMeshObject": "90ab31d9-aca7-4d07-84ee-49e4e294b22b",
-                        "hoverMaterial": "20",
-                        "peerComponent": "32"
-                    },
-                    "active": false
-                }
-            ],
-            "parent": "88",
-            "translation": [
-                0.0,
-                0.0,
-                2.384185791015625e-7
-            ],
-            "rotation": [
-                0.7071068,
-                0.0,
-                0.0,
-                0.7071067
-            ]
-        },
-        "a62a61ce-4c4b-4cf0-804a-4a8aca4da075": {
-            "name": "Collision",
-            "parent": "90ab31d9-aca7-4d07-84ee-49e4e294b22b",
-            "components": [
-                {
-                    "type": "collision",
-                    "collision": {
-                        "collider": "box",
-                        "box": {
-                            "extents": [
-                                7.3000001,
-                                7.6999998,
-                                0.1
-                            ]
-                        }
-                    },
-                    "active": true
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                -346.8999938
             ]
         },
         "e01e6dcf-9885-4a6e-bf0f-6b46eaee37a4": {
