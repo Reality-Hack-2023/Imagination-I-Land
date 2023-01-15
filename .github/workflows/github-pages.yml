@@ -9,7 +9,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Package
-      run: /usr/local/bin/entrypoint.sh WonderlandEditor --accept-eula --windowless --package --project Project/testScene.wlp --output deploy/ --credentials "$WLE_CREDENTIALS"
+      run: |
+        /usr/local/bin/entrypoint.sh WonderlandEditor --accept-eula --windowless --package --project Project/testSceneCopy.wlp --output deploy/ --credentials "$WLE_CREDENTIALS"
+        /usr/local/bin/entrypoint.sh WonderlandEditor --accept-eula --windowless --package --project Project/testScene.wlp --output deploy/ --credentials "$WLE_CREDENTIALS"
       env:
           WLE_CREDENTIALS: ${{ secrets.WLE_CREDENTIALS }}
     - name: Upload package artifact
