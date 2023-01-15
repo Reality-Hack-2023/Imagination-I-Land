@@ -14,12 +14,13 @@ WL.registerComponent('emojiReceiver', {
         
         peerManager.addNetworkDataRecievedCallback("emoji-start",(d)=>{
             console.log("emoji start received",d);
-            //emoSpawner.spawn();
+            emoSpawner.spawn();
         });
         peerManager.addNetworkDataRecievedCallback("emoji-stop",(d)=>{
             console.log("emoji stop received",d);
             //emoSpawner.spawn();
         });
+       
 
         console.log('start() with param', this.param);
     },

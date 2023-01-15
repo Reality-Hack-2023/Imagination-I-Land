@@ -119,6 +119,7 @@ WL.registerComponent('emoji_particle_shooter', {
         const origin = this.gun.getTranslationWorld([])
         
         obj.translate(origin);
+        console.log("spawning, translate to origin "+origin );
 
         this.velocities[index][0] = 0;
         this.velocities[index][1] = 0;

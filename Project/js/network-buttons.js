@@ -11,15 +11,20 @@ WL.registerComponent('network-buttons', {
 
         this.pm.peer.on('error', (e) => {
             console.error(e);
-            this.pm.join();
-            console.log("trying to connect as guest");
+            setTimeout(()=>{
+                this.pm.join();
+                console.log("trying to connect as guest");
 
-            this.pm.peer.on('error', (e) => {
-                console.error(e);
-                this.pm.host();
-                console.log("trying to host again");
-
-            });
+                this.pm.peer.on('error', (e) => {
+                    console.error(e);
+                    setTimeout(()=> {
+                        this.pm.host();
+                        console.log("trying to host again");
+                    },100);
+                });
+                
+            },100);
+            
             
         });
 

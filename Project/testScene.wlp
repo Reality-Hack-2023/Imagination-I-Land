@@ -64,9 +64,6 @@
             "name": "PeerNetworkedPlayerPool",
             "components": [
                 {
-                    "type": "peer-networked-player-pool"
-                },
-                {
                     "type": "peer-manager",
                     "peer-manager": {
                         "playerHead": "19",
@@ -75,7 +72,18 @@
                         "playerRightHand": "61",
                         "playerLeftHand": "62",
                         "voiceEnabled": true,
-                        "serverId": "MITHACK2023"
+                        "serverId": "Yiting"
+                    }
+                },
+                {
+                    "type": "peer-networked-player-spawner",
+                    "peer-networked-player-spawner": {
+                        "headMesh": "8",
+                        "leftHandMesh": "8",
+                        "headMaterial": "20",
+                        "leftHandMaterial": "25",
+                        "rightHandMesh": "8",
+                        "rightHandMaterial": "26"
                     }
                 }
             ],
@@ -94,711 +102,6 @@
                 1.0,
                 1.0,
                 1.0
-            ]
-        },
-        "33": {
-            "name": "PeerNetworkedPlayer",
-            "parent": "32",
-            "components": [
-                {
-                    "type": "peer-networked-player"
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                1.0,
-                1.0,
-                1.0
-            ]
-        },
-        "34": {
-            "name": "Head",
-            "parent": "33",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                -0.0071492,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.2,
-                0.2,
-                0.2
-            ]
-        },
-        "36": {
-            "name": "LeftHand",
-            "parent": "33",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "22"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.075,
-                0.075,
-                0.075
-            ]
-        },
-        "37": {
-            "name": "RightHand",
-            "parent": "33",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "22"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.075,
-                0.075,
-                0.075
-            ]
-        },
-        "45": {
-            "name": "PeerNetworkedPlayer",
-            "parent": "32",
-            "components": [
-                {
-                    "type": "peer-networked-player"
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                1.0,
-                1.0,
-                1.0
-            ]
-        },
-        "46": {
-            "name": "Head",
-            "parent": "45",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.2,
-                0.2,
-                0.2
-            ]
-        },
-        "47": {
-            "name": "LeftHand",
-            "parent": "45",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "22"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.075,
-                0.075,
-                0.075
-            ]
-        },
-        "48": {
-            "name": "RightHand",
-            "parent": "45",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "22"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.075,
-                0.075,
-                0.075
-            ]
-        },
-        "49": {
-            "name": "PeerNetworkedPlayer",
-            "parent": "32",
-            "components": [
-                {
-                    "type": "peer-networked-player"
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                1.0,
-                1.0,
-                1.0
-            ]
-        },
-        "50": {
-            "name": "Head",
-            "parent": "49",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.2,
-                0.2,
-                0.2
-            ]
-        },
-        "51": {
-            "name": "LeftHand",
-            "parent": "49",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "22"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.075,
-                0.075,
-                0.075
-            ]
-        },
-        "52": {
-            "name": "RightHand",
-            "parent": "49",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "22"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.075,
-                0.075,
-                0.075
-            ]
-        },
-        "53": {
-            "name": "PeerNetworkedPlayer",
-            "parent": "32",
-            "components": [
-                {
-                    "type": "peer-networked-player"
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                1.0,
-                1.0,
-                1.0
-            ]
-        },
-        "54": {
-            "name": "Head",
-            "parent": "53",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.2,
-                0.2,
-                0.2
-            ]
-        },
-        "55": {
-            "name": "LeftHand",
-            "parent": "53",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "22"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.075,
-                0.075,
-                0.075
-            ]
-        },
-        "56": {
-            "name": "RightHand",
-            "parent": "53",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "22"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.075,
-                0.075,
-                0.075
-            ]
-        },
-        "57": {
-            "name": "PeerNetworkedPlayer",
-            "parent": "32",
-            "components": [
-                {
-                    "type": "peer-networked-player"
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                1.0,
-                1.0,
-                1.0
-            ]
-        },
-        "58": {
-            "name": "Head",
-            "parent": "57",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.2,
-                0.2,
-                0.2
-            ]
-        },
-        "59": {
-            "name": "LeftHand",
-            "parent": "57",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "22"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.075,
-                0.075,
-                0.075
-            ]
-        },
-        "60": {
-            "name": "RightHand",
-            "parent": "57",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "22"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.075,
-                0.075,
-                0.075
-            ]
-        },
-        "63": {
-            "name": "Mesh",
-            "parent": "34",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "22"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                -1.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.0999998,
-                0.0999998,
-                0.0999998
-            ]
-        },
-        "64": {
-            "name": "Mesh",
-            "parent": "46",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "22"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                -1.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.0999998,
-                0.0999998,
-                0.0999998
-            ]
-        },
-        "65": {
-            "name": "Mesh",
-            "parent": "54",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "22"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                -1.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.0999998,
-                0.0999998,
-                0.0999998
-            ]
-        },
-        "66": {
-            "name": "Mesh",
-            "parent": "50",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "22"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                -1.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.0999998,
-                0.0999998,
-                0.0999998
-            ]
-        },
-        "67": {
-            "name": "Mesh",
-            "parent": "58",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "22"
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                -1.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.0999998,
-                0.0999998,
-                0.0999998
             ]
         },
         "68": {
@@ -855,7 +158,8 @@
                     "type": "changeColor",
                     "changeColor": {
                         "buttonMeshObject": "69",
-                        "hoverMaterial": "25"
+                        "hoverMaterial": "25",
+                        "peerComponent": "32"
                     }
                 },
                 {
@@ -996,7 +300,15 @@
                     "type": "changeColor",
                     "changeColor": {
                         "buttonMeshObject": "89",
-                        "hoverMaterial": "26"
+                        "hoverMaterial": "26",
+                        "peerComponent": "32"
+                    }
+                },
+                {
+                    "type": "emojiReceiver",
+                    "emojiReceiver": {
+                        "peerComponent": "32",
+                        "emojiSpawner": "194"
                     }
                 }
             ],
@@ -1222,7 +534,8 @@
                     "type": "changeColor",
                     "changeColor": {
                         "buttonMeshObject": "163",
-                        "hoverMaterial": "25"
+                        "hoverMaterial": "25",
+                        "peerComponent": "32"
                     }
                 },
                 {
@@ -1306,7 +619,8 @@
                     "type": "changeColor",
                     "changeColor": {
                         "buttonMeshObject": "167",
-                        "hoverMaterial": "25"
+                        "hoverMaterial": "25",
+                        "peerComponent": "32"
                     }
                 },
                 {
@@ -1411,7 +725,8 @@
                     "type": "changeColor",
                     "changeColor": {
                         "buttonMeshObject": "173",
-                        "hoverMaterial": "25"
+                        "hoverMaterial": "25",
+                        "peerComponent": "32"
                     }
                 },
                 {
@@ -1482,7 +797,8 @@
                     "type": "changeColor",
                     "changeColor": {
                         "buttonMeshObject": "175",
-                        "hoverMaterial": "25"
+                        "hoverMaterial": "25",
+                        "peerComponent": "32"
                     }
                 },
                 {
@@ -1574,10 +890,6 @@
                         "mesh": "12",
                         "material": "25"
                     }
-                },
-                {
-                    "type": "mute",
-                    "active": false
                 }
             ],
             "translation": [
@@ -1640,7 +952,8 @@
                     "type": "changeColor",
                     "changeColor": {
                         "buttonMeshObject": "182",
-                        "hoverMaterial": "25"
+                        "hoverMaterial": "25",
+                        "peerComponent": "32"
                     }
                 },
                 {
@@ -1788,7 +1101,7 @@
             "translation": [
                 1.11758780008131e-8,
                 1.3049198,
-                -5.960464477539064e-8
+                -5.960464477539065e-8
             ],
             "rotation": [
                 -0.7241397,
@@ -2857,42 +2170,6 @@
                 0.0099999
             ]
         },
-        "e91add45-b049-4530-807a-7e3e8c30dc2c": {
-            "name": "BlockSpawner",
-            "translation": [
-                -6.0467815,
-                0.1000002,
-                2.1756296
-            ],
-            "rotation": [
-                -0.696887,
-                0.0,
-                0.0,
-                0.7171809
-            ],
-            "components": [
-                {
-                    "type": "spawn-cup",
-                    "spawn-cup": {
-                        "cupMesh": "0fcbd590-5e9b-4e78-99bb-4849c573289f",
-                        "cupSpawnButton": "69",
-                        "cupMaterial": "14e5f7a0-35a3-4714-8593-67c08457f201"
-                    }
-                },
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "0fcbd590-5e9b-4e78-99bb-4849c573289f",
-                        "material": "14e5f7a0-35a3-4714-8593-67c08457f201"
-                    }
-                }
-            ],
-            "scale": [
-                1.0,
-                1.0000003,
-                1.0000003
-            ]
-        },
         "30e72ee4-8bf5-4860-b0bf-0a86a3f26f36": {
             "name": "CursorL",
             "parent": "62",
@@ -2983,7 +2260,8 @@
                     "type": "changeColor",
                     "changeColor": {
                         "buttonMeshObject": "da7aad06-5013-4a52-9954-70ffff54899d",
-                        "hoverMaterial": "20"
+                        "hoverMaterial": "20",
+                        "peerComponent": "32"
                     }
                 },
                 {
@@ -3045,7 +2323,8 @@
                     "type": "changeColor",
                     "changeColor": {
                         "buttonMeshObject": "74d8161b-3a38-445e-84f6-dc5428bb1d07",
-                        "hoverMaterial": "20"
+                        "hoverMaterial": "20",
+                        "peerComponent": "32"
                     }
                 },
                 {
@@ -3100,7 +2379,8 @@
                     "type": "changeColor",
                     "changeColor": {
                         "buttonMeshObject": "df4d5830-aa94-43f7-9304-9724357cc397",
-                        "hoverMaterial": "20"
+                        "hoverMaterial": "20",
+                        "peerComponent": "32"
                     }
                 },
                 {
@@ -3151,7 +2431,8 @@
                     "type": "changeColor",
                     "changeColor": {
                         "buttonMeshObject": "90ab31d9-aca7-4d07-84ee-49e4e294b22b",
-                        "hoverMaterial": "20"
+                        "hoverMaterial": "20",
+                        "peerComponent": "32"
                     }
                 }
             ],
@@ -3195,13 +2476,37 @@
                                 0.1
                             ]
                         }
-                    }
+                    },
+                    "active": false
                 }
             ],
             "translation": [
                 0.0,
                 0.0,
                 -346.8999938
+            ]
+        },
+        "3f3d562b-470a-4c6e-aabe-8e05153eeed0": {
+            "link": {
+                "name": "Sphere016_angry_emoji_0",
+                "file": "glb\\UI assets\\angry_icon.glb"
+            },
+            "parent": "173",
+            "scale": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "translation": [
+                0.4586714,
+                -9.5367431640625e-7,
+                3.5506935
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
             ]
         }
     },
@@ -3484,6 +2789,30 @@
                 "name": "Object_2.1",
                 "file": "models\\love_emoji.glb"
             }
+        },
+        "c3490bd2-c501-460d-b543-1001eb5604db": {
+            "link": {
+                "name": "Sphere016_angry_emoji_0.001",
+                "file": "glb\\UI assets\\angry_icon.glb"
+            }
+        },
+        "81557d7d-c884-4cf3-975c-fe4a6c67e9cc": {
+            "link": {
+                "name": "Sphere016_angry_emoji_0.001-uv1",
+                "file": "glb\\UI assets\\angry_icon.glb"
+            }
+        },
+        "9bda6627-db07-40a6-b544-ea4437f7541b": {
+            "link": {
+                "name": "Sphere016_angry_emoji_0.001.0",
+                "file": "glb\\UI assets\\angry_icon.glb"
+            }
+        },
+        "56fd1ac6-006d-4d0e-b2b8-8927d227af4f": {
+            "link": {
+                "name": "Sphere016_angry_emoji_0.001-uv1.0",
+                "file": "glb\\UI assets\\angry_icon.glb"
+            }
         }
     },
     "textures": {
@@ -3649,6 +2978,12 @@
                 "name": "texture_1",
                 "file": "models\\think_emoji.glb"
             }
+        },
+        "9eaaf57f-a8ae-43ae-8a0d-87aa2d2f40c1": {
+            "link": {
+                "name": "texture_0",
+                "file": "glb\\UI assets\\angry_icon.glb"
+            }
         }
     },
     "images": {
@@ -3794,6 +3129,12 @@
             "link": {
                 "name": "Image_1",
                 "file": "models\\think_emoji.glb"
+            }
+        },
+        "d3f10caa-6e81-4726-8c06-88e3d92fa4d5": {
+            "link": {
+                "name": "Image_1",
+                "file": "glb\\UI assets\\angry_icon.glb"
             }
         }
     },
@@ -4112,6 +3453,18 @@
                 "file": "models\\love_emoji.glb"
             },
             "pipeline": "123"
+        },
+        "f7c68e3b-e8d7-4f49-9298-9b2ca266a54f": {
+            "link": {
+                "name": "angry_emoji.001",
+                "file": "glb\\UI assets\\angry_icon.glb"
+            }
+        },
+        "2ff1fc94-9418-4fc1-ab65-d3f6de782b28": {
+            "link": {
+                "name": "lambert1.002",
+                "file": "glb\\UI assets\\angry_icon.glb"
+            }
         }
     },
     "shaders": {
@@ -4376,7 +3729,8 @@
         "models/floor.glb",
         "models/ceiling.glb",
         "models/think_emoji.glb",
-        "models/love_emoji.glb"
+        "models/love_emoji.glb",
+        "glb/UI assets/angry_icon.glb"
     ],
     "pipelines": {
         "114": {

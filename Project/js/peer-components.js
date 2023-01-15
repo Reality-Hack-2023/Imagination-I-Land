@@ -50,7 +50,7 @@ WL.registerComponent("peer-manager", {
   // Host functions
   //
   host: function() {
-    this.peer = new Peer(this.serverId);
+    this.peer = new Peer(this.serverId,{debug:0});
     this.peer.on("open", this._onHostOpen.bind(this));
     this.peer.on("connection", this._onHostConnected.bind(this));
     this.peer.on("disconnected", this._onDisconnected.bind(this));
