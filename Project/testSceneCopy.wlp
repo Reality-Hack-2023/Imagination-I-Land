@@ -170,10 +170,7 @@
                     }
                 },
                 {
-                    "type": "SceneOnSwitchComponent",
-                    "SceneOnSwitchComponent": {
-                        "scenefile": "TestSceneCopy.bin"
-                    }
+                    "type": "PeerTest"
                 }
             ],
             "translation": [
@@ -2442,6 +2439,34 @@
                 0.0599999,
                 0.0099999
             ]
+        },
+        "057198d4-32c8-4642-a954-98cc487547a3": {
+            "name": "Mesh",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "188"
+                    }
+                }
+            ],
+            "translation": [
+                -1.6931731,
+                1.4255506,
+                -2.9202728
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ]
         }
     },
     "meshes": {
@@ -3723,7 +3748,7 @@
     },
     "settings": {
         "project": {
-            "name": "PeerTest",
+            "name": "TestSceneCopy",
             "version": [
                 0,
                 9,
