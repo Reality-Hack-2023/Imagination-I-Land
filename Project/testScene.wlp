@@ -72,7 +72,7 @@
                         "playerRightHand": "61",
                         "playerLeftHand": "62",
                         "voiceEnabled": true,
-                        "serverId": "Yiting"
+                        "serverId": "sss"
                     }
                 },
                 {
@@ -285,7 +285,8 @@
                     "skybox": {
                         "skyMat": "146",
                         "light1": "21",
-                        "light2": "23"
+                        "light2": "23",
+                        "peerComponent": "32"
                     }
                 },
                 {
@@ -293,7 +294,8 @@
                     "collision": {
                         "sphere": {
                             "radius": 0.4
-                        }
+                        },
+                        "groups": 2
                     }
                 },
                 {
@@ -302,13 +304,6 @@
                         "buttonMeshObject": "89",
                         "hoverMaterial": "26",
                         "peerComponent": "32"
-                    }
-                },
-                {
-                    "type": "emojiReceiver",
-                    "emojiReceiver": {
-                        "peerComponent": "32",
-                        "emojiSpawner": "194"
                     }
                 }
             ],
@@ -557,6 +552,12 @@
                     "mesh": {
                         "mesh": "12",
                         "material": "25"
+                    },
+                    "active": false
+                },
+                {
+                    "mesh": {
+                        "material": "4f2069a0-690f-474e-9136-9e5c31937b90"
                     }
                 }
             ],
@@ -575,23 +576,6 @@
                 0.25,
                 0.5,
                 0.25
-            ]
-        },
-        "169": {
-            "name": "Text",
-            "parent": "167",
-            "components": [
-                {
-                    "type": "text",
-                    "text": {
-                        "text": "WAND"
-                    }
-                }
-            ],
-            "scale": [
-                2.0,
-                2.0,
-                2.0
             ]
         },
         "171": {
@@ -626,7 +610,7 @@
                                 0.05
                             ]
                         },
-                        "groups": 2
+                        "groups": 128
                     },
                     "active": true
                 },
@@ -710,15 +694,24 @@
                     "type": "changeColor",
                     "changeColor": {
                         "buttonMeshObject": "180",
-                        "hoverMaterial": "20"
+                        "hoverMaterial": "20",
+                        "peerComponent": "32"
                     },
-                    "active": false
+                    "active": true
                 },
                 {
                     "type": "mesh",
                     "mesh": {
                         "mesh": "12",
                         "material": "25"
+                    }
+                },
+                {
+                    "type": "muteVoice",
+                    "muteVoice": {
+                        "peerComponent": "32",
+                        "muteUI": "180",
+                        "mutedColor": "20"
                     }
                 }
             ],
@@ -1126,7 +1119,7 @@
                         "cam": "17",
                         "floorGroup": 7
                     },
-                    "active": false
+                    "active": true
                 },
                 {
                     "type": "teleport",
@@ -1137,7 +1130,8 @@
                         "eyeLeft": "18",
                         "eyeRight": "19",
                         "floorGroup": 7
-                    }
+                    },
+                    "active": false
                 },
                 {
                     "type": "muteVoice",
@@ -1145,7 +1139,8 @@
                         "peerComponent": "32",
                         "muteUI": "180",
                         "mutedColor": "20"
-                    }
+                    },
+                    "active": false
                 }
             ],
             "translation": [
@@ -1174,29 +1169,30 @@
                     "mesh": {
                         "mesh": "8",
                         "material": "25"
-                    }
+                    },
+                    "active": false
                 }
             ],
             "translation": [
-                -0.0005297,
-                0.0,
-                0.6920895
+                -0.0005407,
+                0.0000083,
+                0.0831196
             ],
             "rotation": [
                 0.0,
-                0.0,
+                -5.8210570585970345e-8,
                 0.0,
                 1.0
             ],
             "scale": [
-                0.0019999,
+                0.0019998,
                 0.002,
                 0.4999999
             ]
         },
         "86": {
             "name": "Indicator",
-            "parent": null,
+            "parent": "61",
             "components": [
                 {
                     "type": "mesh",
@@ -1204,7 +1200,7 @@
                         "mesh": "9",
                         "material": "25"
                     },
-                    "active": true
+                    "active": false
                 },
                 {
                     "type": "collision",
@@ -1217,9 +1213,9 @@
                 }
             ],
             "translation": [
-                0.0,
-                0.0,
-                0.0
+                1.1070834,
+                -0.3167249,
+                -3.5331232
             ],
             "rotation": [
                 0.0,
@@ -1228,33 +1224,34 @@
                 0.9262865
             ],
             "scale": [
-                0.075,
-                0.075,
-                0.075
+                0.0001499,
+                0.00015,
+                0.0375
             ]
         },
         "87": {
             "name": "CursorDot",
-            "parent": null,
+            "parent": "61",
             "components": [
                 {
                     "type": "mesh",
                     "mesh": {
                         "mesh": "9",
                         "material": "25"
-                    }
+                    },
+                    "active": false
                 }
             ],
             "translation": [
-                0.0,
-                0.0,
-                0.0
+                1.1070837,
+                -0.3167248,
+                -3.5331203
             ],
             "rotation": [
                 0.0,
-                -0.3768199,
+                2.328328996270557e-8,
                 0.0,
-                0.9262865
+                1.0
             ],
             "scale": [
                 0.0099999,
@@ -1320,7 +1317,8 @@
                         "eyeLeft": "18",
                         "eyeRight": "19",
                         "floorGroup": 7
-                    }
+                    },
+                    "active": false
                 },
                 {
                     "type": "muteVoice",
@@ -1328,7 +1326,8 @@
                         "peerComponent": "32",
                         "muteUI": "180",
                         "mutedColor": "20"
-                    }
+                    },
+                    "active": false
                 }
             ],
             "translation": [
@@ -1950,7 +1949,8 @@
                     "mesh": {
                         "mesh": "9",
                         "material": "25"
-                    }
+                    },
+                    "active": true
                 }
             ],
             "parent": null,
@@ -1979,7 +1979,8 @@
                     "mesh": {
                         "mesh": "9",
                         "material": "25"
-                    }
+                    },
+                    "active": true
                 }
             ],
             "parent": null,
@@ -2170,8 +2171,10 @@
                                 8.1000003,
                                 7.4
                             ]
-                        }
-                    }
+                        },
+                        "groups": 128
+                    },
+                    "active": true
                 }
             ],
             "name": "wall ring",
@@ -2204,32 +2207,11 @@
                     "mesh": {
                         "material": "cf754284-6162-456f-ab6f-e652ce029521"
                     }
-                },
-                {
-                    "type": "changeColor",
-                    "changeColor": {
-                        "buttonMeshObject": "df4d5830-aa94-43f7-9304-9724357cc397",
-                        "hoverMaterial": "20",
-                        "peerComponent": "32"
-                    }
-                },
-                {
-                    "type": "collision",
-                    "collision": {
-                        "collider": "aabb",
-                        "aabb": {
-                            "extents": [
-                                9.3000001,
-                                0.1,
-                                7.3000001
-                            ]
-                        }
-                    }
                 }
             ],
             "parent": "88",
             "translation": [
-                0.0,
+                2.9802322387695313e-8,
                 0.0,
                 0.0
             ],
@@ -2263,7 +2245,8 @@
                         "buttonMeshObject": "90ab31d9-aca7-4d07-84ee-49e4e294b22b",
                         "hoverMaterial": "20",
                         "peerComponent": "32"
-                    }
+                    },
+                    "active": false
                 }
             ],
             "parent": "88",
@@ -2277,18 +2260,6 @@
                 0.0,
                 0.0,
                 0.7071067
-            ]
-        },
-        "7d61dfd1-7992-41db-9125-e970e2e6257b": {
-            "name": "EmojiReceiver",
-            "components": [
-                {
-                    "type": "emojiReceiver",
-                    "emojiReceiver": {
-                        "peerComponent": "32",
-                        "emojiSpawner": "194"
-                    }
-                }
             ]
         },
         "a62a61ce-4c4b-4cf0-804a-4a8aca4da075": {
@@ -2307,7 +2278,7 @@
                             ]
                         }
                     },
-                    "active": false
+                    "active": true
                 }
             ],
             "translation": [
@@ -2372,7 +2343,7 @@
                 }
             ],
             "translation": [
-                0.3057223,
+                0.3057222,
                 -0.4626171,
                 0.1300344
             ],
@@ -2430,7 +2401,7 @@
                     "type": "mesh",
                     "imported": true,
                     "mesh": {
-                        "material": "c3579765-127f-4cd3-9741-bf59300bc889",
+                        "material": "3c009ee0-fd8f-4b99-afe5-fe58c0093e1d",
                         "mesh": "f6f40c4b-506f-4c1e-bfb1-74e24ce28d10"
                     }
                 },
@@ -2458,6 +2429,34 @@
                 0.0299999,
                 0.0599999,
                 0.0099999
+            ]
+        },
+        "a466719d-6a86-42b3-8c30-9224989f30cb": {
+            "link": {
+                "name": "BubbleGun_Material.001_0",
+                "file": "glb\\UI assets\\gun_icon.glb"
+            },
+            "parent": "167",
+            "translation": [
+                0.1419925,
+                0.1550269,
+                0.1959304
+            ],
+            "rotation": [
+                0.5132488,
+                0.4865089,
+                0.5108371,
+                -0.4888048
+            ],
+            "scale": [
+                5.0003242,
+                5.0000009,
+                5.0000019
+            ],
+            "components": [
+                {
+                    "active": true
+                }
             ]
         }
     },
@@ -3271,18 +3270,25 @@
             "name": "White",
             "Phong": {
                 "specularColor": [
-                    9.999899930335232e-7,
-                    9.99993744699168e-7,
-                    9.999999974752427e-7,
-                    1.0
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.5882353
                 ],
-                "shininess": 1,
+                "shininess": 52,
                 "ambientColor": [
-                    0.6745097,
-                    0.5290272,
-                    0.5290272,
-                    1.0
-                ]
+                    0.6745098,
+                    0.5294117,
+                    0.5294117,
+                    0.5882353
+                ],
+                "diffuseColor": [
+                    0.5019608,
+                    0.5019608,
+                    0.5019608,
+                    0.5882353
+                ],
+                "ambientFactor": 3.75
             },
             "pipeline": "123"
         },
@@ -3435,6 +3441,15 @@
             "link": {
                 "name": "Material.010",
                 "file": "models\\moji_gun (1).glb"
+            },
+            "pipeline": "124",
+            "Phong": {
+                "ambientColor": [
+                    0.8627451,
+                    0.3431874,
+                    0.0879661,
+                    1.0
+                ]
             }
         },
         "209": {
