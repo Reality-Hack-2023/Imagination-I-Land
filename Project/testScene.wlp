@@ -172,7 +172,7 @@
                 {
                     "type": "SceneOnSwitchComponent",
                     "SceneOnSwitchComponent": {
-                        "scenefile": "TestSceneCopy.bin"
+                        "scenefile": "Scene-Switch.bin"
                     }
                 }
             ],
