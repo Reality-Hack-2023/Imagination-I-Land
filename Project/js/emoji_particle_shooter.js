@@ -24,9 +24,9 @@ WL.registerComponent('emoji_particle_shooter', {
     /* Material for spawned particles */
     think1mat: {type: WL.Type.Material, default: null},
     /* Mesh for spawned particles */
-    think1: {type: WL.Type.Mesh, default: null},
+    think2: {type: WL.Type.Mesh, default: null},
     /* Material for spawned particles */
-    think1mat: {type: WL.Type.Material, default: null},
+    think2mat: {type: WL.Type.Material, default: null},
     /* Delay between particle spawns. If below time of a frame, will spawn multiple particles in update. */
     delay: {type: WL.Type.Float, default: 0.04},
     /* Maximum number of particles, once limit is reached, particles are recycled first-in-first-out. */
