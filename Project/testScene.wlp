@@ -171,9 +171,9 @@
                 }
             ],
             "translation": [
-                -0.1353256,
-                0.4314947,
-                0.052002
+                -0.1353255,
+                -1.392677,
+                0.0520019
             ],
             "rotation": [
                 0.0,
@@ -496,80 +496,13 @@
                 1.0
             ]
         },
-        "163": {
-            "name": "Change SkyBox",
-            "parent": "165",
-            "components": [
-                {
-                    "type": "collision",
-                    "collision": {
-                        "collider": "aabb",
-                        "aabb": {
-                            "extents": [
-                                0.3,
-                                0.2,
-                                0.05
-                            ]
-                        },
-                        "groups": 2,
-                        "box": {
-                            "extents": [
-                                0.2,
-                                0.2,
-                                0.1
-                            ]
-                        }
-                    },
-                    "active": true
-                },
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "7",
-                        "material": "26"
-                    },
-                    "active": true
-                },
-                {
-                    "type": "changeColor",
-                    "changeColor": {
-                        "buttonMeshObject": "163",
-                        "hoverMaterial": "25",
-                        "peerComponent": "32"
-                    }
-                },
-                {
-                    "type": "skybox",
-                    "skybox": {
-                        "skyMat": "22"
-                    },
-                    "active": false
-                }
-            ],
-            "translation": [
-                -0.1445409,
-                -0.4642777,
-                0.052002
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.2,
-                0.4,
-                0.2
-            ]
-        },
         "165": {
             "name": "Panel",
             "parent": "150",
             "translation": [
                 0.0,
-                1.0414477,
-                0.0097027
+                1.7400299,
+                0.0097026
             ],
             "rotation": [
                 0.0,
@@ -581,16 +514,6 @@
                 1.0,
                 0.5,
                 1.0
-            ],
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "184",
-                        "material": "20"
-                    },
-                    "active": false
-                }
             ]
         },
         "167": {
@@ -665,23 +588,6 @@
                 2.0
             ]
         },
-        "170": {
-            "name": "Text.000",
-            "parent": "163",
-            "components": [
-                {
-                    "type": "text",
-                    "text": {
-                        "text": "Change Skybox\n"
-                    }
-                }
-            ],
-            "scale": [
-                2.0,
-                2.0,
-                2.0
-            ]
-        },
         "171": {
             "name": "Text.001",
             "parent": "69",
@@ -700,7 +606,7 @@
             ]
         },
         "173": {
-            "name": "Obj 2",
+            "name": "Angry Emoji",
             "parent": "165",
             "components": [
                 {
@@ -734,85 +640,30 @@
                     "mesh": {
                         "mesh": "7",
                         "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                0.3122028,
-                0.4314947,
-                0.052002
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scale": [
-                0.2,
-                0.4,
-                0.2
-            ]
-        },
-        "174": {
-            "name": "Text.001",
-            "parent": "173",
-            "components": [
-                {
-                    "type": "text",
-                    "text": {
-                        "text": "Change Emoji\non Gun"
-                    }
-                }
-            ],
-            "scale": [
-                2.5,
-                2.5,
-                2.5
-            ]
-        },
-        "175": {
-            "name": "Obj 3",
-            "parent": "165",
-            "components": [
-                {
-                    "type": "collision",
-                    "collision": {
-                        "collider": "aabb",
-                        "aabb": {
-                            "extents": [
-                                0.2,
-                                0.2,
-                                0.05
-                            ]
-                        },
-                        "groups": 2
-                    }
+                    },
+                    "active": false
                 },
                 {
-                    "type": "cursor-target",
-                    "active": true
-                },
-                {
-                    "type": "changeColor",
-                    "changeColor": {
-                        "buttonMeshObject": "175",
-                        "hoverMaterial": "25",
-                        "peerComponent": "32"
+                    "type": "mesh",
+                    "imported": true,
+                    "mesh": {
+                        "material": "f7c68e3b-e8d7-4f49-9298-9b2ca266a54f",
+                        "mesh": "c3490bd2-c501-460d-b543-1001eb5604db"
                     }
                 },
                 {
                     "type": "mesh",
+                    "imported": true,
                     "mesh": {
-                        "mesh": "7",
-                        "material": "26"
+                        "material": "2ff1fc94-9418-4fc1-ab65-d3f6de782b28",
+                        "mesh": "9bda6627-db07-40a6-b544-ea4437f7541b"
                     }
                 }
             ],
             "translation": [
-                0.7476474,
-                0.4314947,
-                0.052002
+                -0.1231804,
+                -0.4626171,
+                0.165955
             ],
             "rotation": [
                 0.0,
@@ -821,37 +672,9 @@
                 1.0
             ],
             "scale": [
-                0.2,
-                0.4,
-                0.2
-            ]
-        },
-        "176": {
-            "name": "Text.001",
-            "parent": "175",
-            "components": [
-                {
-                    "type": "text",
-                    "text": {
-                        "text": "OBJECT 1 "
-                    }
-                }
-            ],
-            "scale": [
-                2.0,
-                2.0,
-                2.0
-            ],
-            "translation": [
-                -2.384185791015625e-7,
-                -4.76837158203125e-7,
-                -0.0000038
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
+                0.0299999,
+                0.0599999,
+                0.0099999
             ]
         },
         "180": {
@@ -893,9 +716,9 @@
                 }
             ],
             "translation": [
-                0.6965444,
-                -0.5339138,
-                0.0451566
+                0.790762,
+                -1.4228775,
+                0.0500159
             ],
             "rotation": [
                 0.0,
@@ -966,8 +789,8 @@
             ],
             "translation": [
                 -0.670804,
-                0.5132911,
-                0.052002
+                -1.3828997,
+                0.0520019
             ],
             "rotation": [
                 0.0,
@@ -2486,27 +2309,132 @@
                 -346.8999938
             ]
         },
-        "3f3d562b-470a-4c6e-aabe-8e05153eeed0": {
-            "link": {
-                "name": "Sphere016_angry_emoji_0",
-                "file": "glb\\UI assets\\angry_icon.glb"
-            },
-            "parent": "173",
-            "scale": [
-                0.2,
-                0.2,
-                0.2
+        "e01e6dcf-9885-4a6e-bf0f-6b46eaee37a4": {
+            "name": "Love Emoji",
+            "parent": "165",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.2,
+                                0.2,
+                                0.05
+                            ]
+                        },
+                        "groups": 2
+                    }
+                },
+                {
+                    "type": "cursor-target",
+                    "active": true
+                },
+                {
+                    "type": "changeColor",
+                    "changeColor": {
+                        "buttonMeshObject": "173",
+                        "hoverMaterial": "25",
+                        "peerComponent": "32"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "imported": true,
+                    "mesh": {
+                        "material": "52503d6f-906c-4d6c-935c-38ee68b9de45",
+                        "mesh": "0a205b4d-89f1-4430-9041-4e13729f3085"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "imported": true,
+                    "mesh": {
+                        "material": "3c009ee0-fd8f-4b99-afe5-fe58c0093e1d",
+                        "mesh": "20c85b5a-6e88-4336-ae48-ad1b5fe16fbb"
+                    }
+                }
             ],
             "translation": [
-                0.4586714,
-                -9.5367431640625e-7,
-                3.5506935
+                0.3057223,
+                -0.4626171,
+                0.1176877
             ],
             "rotation": [
                 0.0,
                 0.0,
                 0.0,
                 1.0
+            ],
+            "scale": [
+                0.0299999,
+                0.0599999,
+                0.0099999
+            ]
+        },
+        "25bc18e1-390f-4eda-87b3-973e521b8558": {
+            "name": "Smile Emoji",
+            "parent": "165",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.2,
+                                0.2,
+                                0.05
+                            ]
+                        },
+                        "groups": 2
+                    }
+                },
+                {
+                    "type": "cursor-target",
+                    "active": true
+                },
+                {
+                    "type": "changeColor",
+                    "changeColor": {
+                        "buttonMeshObject": "173",
+                        "hoverMaterial": "25",
+                        "peerComponent": "32"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "imported": true,
+                    "mesh": {
+                        "material": "c3579765-127f-4cd3-9741-bf59300bc889",
+                        "mesh": "5a51e6c2-2bc5-445d-90c0-a352e71e0ea7"
+                    }
+                },
+                {
+                    "type": "mesh",
+                    "imported": true,
+                    "mesh": {
+                        "material": "2fecebe3-7645-40f5-a4b4-3a597af718e9",
+                        "mesh": "f6f40c4b-506f-4c1e-bfb1-74e24ce28d10"
+                    }
+                }
+            ],
+            "translation": [
+                0.7571566,
+                -0.4626171,
+                0.1176877
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                0.0299999,
+                0.0599999,
+                0.0099999
             ]
         }
     },
@@ -2813,6 +2741,90 @@
                 "name": "Sphere016_angry_emoji_0.001-uv1.0",
                 "file": "glb\\UI assets\\angry_icon.glb"
             }
+        },
+        "b3cb65e3-f580-4119-bff4-a35b10e72704": {
+            "link": {
+                "name": "mesh_0_Material.001_0.002",
+                "file": "models\\devil_emoji (2).glb"
+            }
+        },
+        "26480116-ec87-4ce3-a4a2-a1fbd22e08d7": {
+            "link": {
+                "name": "Sphere016_angry_emoji_0",
+                "file": "glb\\UI assets\\angry_moji.glb"
+            }
+        },
+        "0a205b4d-89f1-4430-9041-4e13729f3085": {
+            "link": {
+                "name": "Sphere014_love_emoji_0.001",
+                "file": "glb\\UI assets\\love_icon.glb"
+            }
+        },
+        "703ebc7d-4208-4e72-87fe-624a23dbe568": {
+            "link": {
+                "name": "Sphere014_love_emoji_0.001-uv1",
+                "file": "glb\\UI assets\\love_icon.glb"
+            }
+        },
+        "20c85b5a-6e88-4336-ae48-ad1b5fe16fbb": {
+            "link": {
+                "name": "Sphere014_love_emoji_0.001.0",
+                "file": "glb\\UI assets\\love_icon.glb"
+            }
+        },
+        "d1e4cf14-bc9f-45ff-8b7c-48c526f2d0bb": {
+            "link": {
+                "name": "Sphere014_love_emoji_0.001-uv1.0",
+                "file": "glb\\UI assets\\love_icon.glb"
+            }
+        },
+        "d04a2ec2-6b3d-4b3b-a031-f6dd381e67e0": {
+            "link": {
+                "name": "BubbleGun_Material.001_0.001",
+                "file": "glb\\UI assets\\gun_icon.glb"
+            }
+        },
+        "3ff931b1-b64b-44f8-ade8-85b3536aacbd": {
+            "link": {
+                "name": "BubbleGun_Material.001_0.001-uv1",
+                "file": "glb\\UI assets\\gun_icon.glb"
+            }
+        },
+        "f96a2869-3d11-4502-a08e-51150dbdb73d": {
+            "link": {
+                "name": "BubbleGun_Material.001_0.001.0",
+                "file": "glb\\UI assets\\gun_icon.glb"
+            }
+        },
+        "b85acf26-9494-4e25-81b1-4f3a32c7b60a": {
+            "link": {
+                "name": "BubbleGun_Material.001_0.001-uv1.0",
+                "file": "glb\\UI assets\\gun_icon.glb"
+            }
+        },
+        "5a51e6c2-2bc5-445d-90c0-a352e71e0ea7": {
+            "link": {
+                "name": "Sphere0013_shinny_emoji_0",
+                "file": "glb\\UI assets\\smile_icon.glb"
+            }
+        },
+        "d806d896-78c5-42fe-b5d1-14b4330da6e1": {
+            "link": {
+                "name": "Sphere0013_shinny_emoji_0-uv1",
+                "file": "glb\\UI assets\\smile_icon.glb"
+            }
+        },
+        "f6f40c4b-506f-4c1e-bfb1-74e24ce28d10": {
+            "link": {
+                "name": "Sphere0013_shinny_emoji_0.0",
+                "file": "glb\\UI assets\\smile_icon.glb"
+            }
+        },
+        "414b24e0-4242-455d-a82e-361fc09e4abc": {
+            "link": {
+                "name": "Sphere0013_shinny_emoji_0-uv1.0",
+                "file": "glb\\UI assets\\smile_icon.glb"
+            }
         }
     },
     "textures": {
@@ -2984,6 +2996,48 @@
                 "name": "texture_0",
                 "file": "glb\\UI assets\\angry_icon.glb"
             }
+        },
+        "85c586bf-14b1-44df-84aa-57e7ab83db86": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\devil_emoji (2).glb"
+            }
+        },
+        "ba6c25a2-c6e9-48d7-8915-7c81c8224ec3": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\devil_emoji (2).glb"
+            }
+        },
+        "e4e99ba2-7c4f-4b38-8dc8-9d06aa977b25": {
+            "link": {
+                "name": "texture_0",
+                "file": "glb\\UI assets\\angry_moji.glb"
+            }
+        },
+        "b0c788a7-0848-4308-ba59-e2729c782bc8": {
+            "link": {
+                "name": "texture_0",
+                "file": "glb\\UI assets\\love_icon.glb"
+            }
+        },
+        "295a8f10-9550-4c63-834d-96325974aea0": {
+            "link": {
+                "name": "texture_0",
+                "file": "glb\\UI assets\\gun_icon.glb"
+            }
+        },
+        "eb39c3f8-20ee-440f-9319-44c586a82361": {
+            "link": {
+                "name": "texture_1",
+                "file": "glb\\UI assets\\gun_icon.glb"
+            }
+        },
+        "ea742dd2-23da-42e9-a48c-c8b9c4d3858e": {
+            "link": {
+                "name": "texture_0",
+                "file": "glb\\UI assets\\smile_icon.glb"
+            }
         }
     },
     "images": {
@@ -3135,6 +3189,48 @@
             "link": {
                 "name": "Image_1",
                 "file": "glb\\UI assets\\angry_icon.glb"
+            }
+        },
+        "27813bed-5c9c-438b-a6be-4f5267666b02": {
+            "link": {
+                "name": "Image_0",
+                "file": "models\\devil_emoji (2).glb"
+            }
+        },
+        "b43bb7a9-a1ec-4c33-847e-1360e7536b7d": {
+            "link": {
+                "name": "Image_1",
+                "file": "models\\devil_emoji (2).glb"
+            }
+        },
+        "7da9654b-3856-4bdb-8c5a-8790370d93e1": {
+            "link": {
+                "name": "Image_1",
+                "file": "glb\\UI assets\\angry_moji.glb"
+            }
+        },
+        "f9cf79bc-94fd-482e-a1f2-cb6e30f9989a": {
+            "link": {
+                "name": "Image_5",
+                "file": "glb\\UI assets\\love_icon.glb"
+            }
+        },
+        "2c9f2974-f801-4c0a-a16f-f0c8483c85d0": {
+            "link": {
+                "name": "Image_2",
+                "file": "glb\\UI assets\\gun_icon.glb"
+            }
+        },
+        "031ba726-a9c6-4c77-9853-6344abf236b5": {
+            "link": {
+                "name": "Image_1",
+                "file": "glb\\UI assets\\gun_icon.glb"
+            }
+        },
+        "8ce58211-0534-4fd4-a6b2-aa3aaa536856": {
+            "link": {
+                "name": "Image_6",
+                "file": "glb\\UI assets\\smile_icon.glb"
             }
         }
     },
@@ -3465,6 +3561,54 @@
                 "name": "lambert1.002",
                 "file": "glb\\UI assets\\angry_icon.glb"
             }
+        },
+        "396d6dfd-fab4-478b-a9f4-a15257f396a6": {
+            "link": {
+                "name": "deveil_mogi.001",
+                "file": "models\\devil_emoji (2).glb"
+            }
+        },
+        "367ce0be-4630-4551-b22a-98a7428189d4": {
+            "link": {
+                "name": "angry_emoji",
+                "file": "glb\\UI assets\\angry_moji.glb"
+            }
+        },
+        "52503d6f-906c-4d6c-935c-38ee68b9de45": {
+            "link": {
+                "name": "love_emoji.001",
+                "file": "glb\\UI assets\\love_icon.glb"
+            }
+        },
+        "3c009ee0-fd8f-4b99-afe5-fe58c0093e1d": {
+            "link": {
+                "name": "lambert1.002",
+                "file": "glb\\UI assets\\love_icon.glb"
+            }
+        },
+        "ec8fb288-cdba-4a0b-b3fa-394f9812435c": {
+            "link": {
+                "name": "Material.002",
+                "file": "glb\\UI assets\\gun_icon.glb"
+            }
+        },
+        "d2d40260-ebc5-44b2-a218-9be98e853186": {
+            "link": {
+                "name": "lambert1.001",
+                "file": "glb\\UI assets\\gun_icon.glb"
+            }
+        },
+        "c3579765-127f-4cd3-9741-bf59300bc889": {
+            "link": {
+                "name": "shinny_emoji",
+                "file": "glb\\UI assets\\smile_icon.glb"
+            }
+        },
+        "2fecebe3-7645-40f5-a4b4-3a597af718e9": {
+            "link": {
+                "name": "lambert1.002",
+                "file": "glb\\UI assets\\smile_icon.glb"
+            }
         }
     },
     "shaders": {
@@ -3730,7 +3874,12 @@
         "models/ceiling.glb",
         "models/think_emoji.glb",
         "models/love_emoji.glb",
-        "glb/UI assets/angry_icon.glb"
+        "glb/UI assets/angry_icon.glb",
+        "models/devil_emoji (2).glb",
+        "glb/UI assets/angry_moji.glb",
+        "glb/UI assets/love_icon.glb",
+        "glb/UI assets/gun_icon.glb",
+        "glb/UI assets/smile_icon.glb"
     ],
     "pipelines": {
         "114": {
