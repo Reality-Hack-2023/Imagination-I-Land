@@ -72,18 +72,18 @@
                         "playerRightHand": "61",
                         "playerLeftHand": "62",
                         "voiceEnabled": true,
-                        "serverId": "Yiting"
+                        "serverId": "Yitingadsadsd"
                     }
                 },
                 {
                     "type": "peer-networked-player-spawner",
                     "peer-networked-player-spawner": {
-                        "headMesh": "8",
-                        "leftHandMesh": "8",
-                        "headMaterial": "20",
-                        "leftHandMaterial": "25",
-                        "rightHandMesh": "8",
-                        "rightHandMaterial": "26"
+                        "headMesh": "9",
+                        "leftHandMesh": "71335794-a148-4edb-a1d7-1e9434a23035",
+                        "headMaterial": "DefaultFontMaterial",
+                        "leftHandMaterial": "20",
+                        "rightHandMesh": "45970128-3ffd-4040-8094-613be6dc8696",
+                        "rightHandMaterial": "20"
                     }
                 }
             ],
@@ -99,9 +99,9 @@
                 1.0
             ],
             "scale": [
-                1.0,
-                1.0,
-                1.0
+                0.5,
+                0.5,
+                0.5
             ]
         },
         "68": {
@@ -170,7 +170,10 @@
                     }
                 },
                 {
-                    "type": "PeerTest"
+                    "type": "SceneOnSwitchComponent",
+                    "SceneOnSwitchComponent": {
+                        "scenefile": "TestSceneCopy.bin"
+                    }
                 }
             ],
             "translation": [
@@ -288,7 +291,8 @@
                     "skybox": {
                         "skyMat": "146",
                         "light1": "21",
-                        "light2": "23"
+                        "light2": "23",
+                        "peerComponent": "32"
                     }
                 },
                 {
@@ -296,7 +300,8 @@
                     "collision": {
                         "sphere": {
                             "radius": 0.4
-                        }
+                        },
+                        "groups": 2
                     }
                 },
                 {
@@ -306,28 +311,21 @@
                         "hoverMaterial": "26",
                         "peerComponent": "32"
                     }
-                },
-                {
-                    "type": "emojiReceiver",
-                    "emojiReceiver": {
-                        "peerComponent": "32",
-                        "emojiSpawner": "194"
-                    }
                 }
             ],
             "translation": [
-                -0.4652587,
-                0.8536036,
-                2.5080609
+                -2.0166954,
+                0.8431437,
+                0.2058098
             ],
             "rotation": [
                 0.0,
                 -0.2360143,
                 0.0,
-                0.9717495
+                0.9717496
             ],
             "scale": [
-                0.1674444,
+                0.1674443,
                 0.349783,
                 0.3497835
             ]
@@ -367,7 +365,8 @@
                             ]
                         },
                         "groups": 2
-                    }
+                    },
+                    "active": false
                 },
                 {
                     "type": "cursor-target"
@@ -399,13 +398,15 @@
                     "mesh": {
                         "mesh": "7",
                         "material": "20"
-                    }
+                    },
+                    "active": false
                 },
                 {
                     "type": "text",
                     "text": {
                         "text": "HOST"
-                    }
+                    },
+                    "active": false
                 }
             ],
             "translation": [
@@ -441,7 +442,8 @@
                             ]
                         },
                         "groups": 2
-                    }
+                    },
+                    "active": false
                 },
                 {
                     "type": "cursor-target"
@@ -473,19 +475,21 @@
                     "mesh": {
                         "mesh": "7",
                         "material": "20"
-                    }
+                    },
+                    "active": false
                 },
                 {
                     "type": "text",
                     "text": {
                         "text": "JOIN"
-                    }
+                    },
+                    "active": false
                 }
             ],
             "translation": [
-                0.0,
-                0.0,
-                -0.0104874
+                0.0012184,
+                0.0046026,
+                -0.0111911
             ],
             "rotation": [
                 0.0,
@@ -554,6 +558,12 @@
                     "mesh": {
                         "mesh": "12",
                         "material": "25"
+                    },
+                    "active": false
+                },
+                {
+                    "mesh": {
+                        "material": "4f2069a0-690f-474e-9136-9e5c31937b90"
                     }
                 }
             ],
@@ -572,23 +582,6 @@
                 0.25,
                 0.5,
                 0.25
-            ]
-        },
-        "169": {
-            "name": "Text",
-            "parent": "167",
-            "components": [
-                {
-                    "type": "text",
-                    "text": {
-                        "text": "WAND"
-                    }
-                }
-            ],
-            "scale": [
-                2.0,
-                2.0,
-                2.0
             ]
         },
         "171": {
@@ -623,8 +616,9 @@
                                 0.05
                             ]
                         },
-                        "groups": 2
-                    }
+                        "groups": 128
+                    },
+                    "active": true
                 },
                 {
                     "type": "cursor-target",
@@ -706,15 +700,24 @@
                     "type": "changeColor",
                     "changeColor": {
                         "buttonMeshObject": "180",
-                        "hoverMaterial": "20"
+                        "hoverMaterial": "20",
+                        "peerComponent": "32"
                     },
-                    "active": false
+                    "active": true
                 },
                 {
                     "type": "mesh",
                     "mesh": {
                         "mesh": "12",
                         "material": "25"
+                    }
+                },
+                {
+                    "type": "muteVoice",
+                    "muteVoice": {
+                        "peerComponent": "32",
+                        "muteUI": "180",
+                        "mutedColor": "20"
                     }
                 }
             ],
@@ -832,14 +835,14 @@
                     "type": "mesh",
                     "mesh": {
                         "mesh": "184",
-                        "material": "20"
+                        "material": "cf754284-6162-456f-ab6f-e652ce029521"
                     }
                 }
             ],
             "translation": [
-                0.0,
-                0.0,
-                -1.043081283569336e-7
+                0.0000324,
+                -0.953324,
+                -0.0000019
             ],
             "rotation": [
                 0.5,
@@ -848,9 +851,9 @@
                 0.4999999
             ],
             "scale": [
-                0.6,
-                0.3499999,
-                2.0
+                0.5999999,
+                0.3499998,
+                1.9999998
             ]
         },
         "194": {
@@ -1109,7 +1112,7 @@
                         "cursorObject": "87",
                         "handedness": "right"
                     },
-                    "active": true
+                    "active": false
                 },
                 {
                     "type": "controller-teleport-component",
@@ -1122,7 +1125,7 @@
                         "cam": "17",
                         "floorGroup": 7
                     },
-                    "active": false
+                    "active": true
                 },
                 {
                     "type": "teleport",
@@ -1133,7 +1136,8 @@
                         "eyeLeft": "18",
                         "eyeRight": "19",
                         "floorGroup": 7
-                    }
+                    },
+                    "active": false
                 },
                 {
                     "type": "muteVoice",
@@ -1141,7 +1145,8 @@
                         "peerComponent": "32",
                         "muteUI": "180",
                         "mutedColor": "20"
-                    }
+                    },
+                    "active": false
                 }
             ],
             "translation": [
@@ -1170,29 +1175,30 @@
                     "mesh": {
                         "mesh": "8",
                         "material": "25"
-                    }
+                    },
+                    "active": true
                 }
             ],
             "translation": [
-                -0.0005297,
-                0.0,
-                0.6920895
+                -0.0005407,
+                0.0000083,
+                0.0831196
             ],
             "rotation": [
                 0.0,
-                0.0,
+                -5.8210570585970345e-8,
                 0.0,
                 1.0
             ],
             "scale": [
-                0.0019999,
+                0.0019998,
                 0.002,
                 0.4999999
             ]
         },
         "86": {
             "name": "Indicator",
-            "parent": null,
+            "parent": "61",
             "components": [
                 {
                     "type": "mesh",
@@ -1209,13 +1215,14 @@
                         "sphere": {
                             "radius": 0.075
                         }
-                    }
+                    },
+                    "active": false
                 }
             ],
             "translation": [
-                0.0,
-                0.0,
-                0.0
+                1.1070834,
+                -0.3167249,
+                -3.5331232
             ],
             "rotation": [
                 0.0,
@@ -1224,33 +1231,34 @@
                 0.9262865
             ],
             "scale": [
-                0.075,
-                0.075,
-                0.075
+                0.0001499,
+                0.00015,
+                0.0375
             ]
         },
         "87": {
             "name": "CursorDot",
-            "parent": null,
+            "parent": "61",
             "components": [
                 {
                     "type": "mesh",
                     "mesh": {
                         "mesh": "9",
                         "material": "25"
-                    }
+                    },
+                    "active": true
                 }
             ],
             "translation": [
-                0.0,
-                0.0,
-                0.0
+                1.1070837,
+                -0.3167248,
+                -3.5331203
             ],
             "rotation": [
                 0.0,
-                -0.3768199,
+                2.3283289962705573e-8,
                 0.0,
-                0.9262865
+                1.0
             ],
             "scale": [
                 0.0099999,
@@ -1305,7 +1313,8 @@
                     "cursor": {
                         "cursorRayObject": "30e72ee4-8bf5-4860-b0bf-0a86a3f26f36",
                         "cursorObject": "87"
-                    }
+                    },
+                    "active": false
                 },
                 {
                     "type": "teleport",
@@ -1316,7 +1325,8 @@
                         "eyeLeft": "18",
                         "eyeRight": "19",
                         "floorGroup": 7
-                    }
+                    },
+                    "active": false
                 },
                 {
                     "type": "muteVoice",
@@ -1324,24 +1334,25 @@
                         "peerComponent": "32",
                         "muteUI": "180",
                         "mutedColor": "20"
-                    }
+                    },
+                    "active": false
                 }
             ],
             "translation": [
-                1.1920928955078125e-7,
-                -2.9802322387695313e-8,
+                0.0,
+                -5.960464477539065e-8,
                 -2.384185791015625e-7
             ],
             "rotation": [
                 0.0,
-                0.0,
+                -4.967060363014753e-8,
                 0.0,
                 1.0
             ],
             "scale": [
-                0.0749999,
+                0.0749998,
                 0.075,
-                0.0749999
+                0.0749998
             ]
         },
         "daa805a5-c9ea-405b-a951-26b331bfe1b6": {
@@ -1946,7 +1957,8 @@
                     "mesh": {
                         "mesh": "9",
                         "material": "25"
-                    }
+                    },
+                    "active": true
                 }
             ],
             "parent": null,
@@ -1975,7 +1987,8 @@
                     "mesh": {
                         "mesh": "9",
                         "material": "25"
-                    }
+                    },
+                    "active": true
                 }
             ],
             "parent": null,
@@ -2006,7 +2019,7 @@
                         "mesh": "8",
                         "material": "25"
                     },
-                    "active": false
+                    "active": true
                 }
             ],
             "translation": [
@@ -2166,8 +2179,10 @@
                                 8.1000003,
                                 7.4
                             ]
-                        }
-                    }
+                        },
+                        "groups": 128
+                    },
+                    "active": true
                 }
             ],
             "name": "wall ring",
@@ -2200,32 +2215,11 @@
                     "mesh": {
                         "material": "cf754284-6162-456f-ab6f-e652ce029521"
                     }
-                },
-                {
-                    "type": "changeColor",
-                    "changeColor": {
-                        "buttonMeshObject": "df4d5830-aa94-43f7-9304-9724357cc397",
-                        "hoverMaterial": "20",
-                        "peerComponent": "32"
-                    }
-                },
-                {
-                    "type": "collision",
-                    "collision": {
-                        "collider": "aabb",
-                        "aabb": {
-                            "extents": [
-                                9.3000001,
-                                0.1,
-                                7.3000001
-                            ]
-                        }
-                    }
                 }
             ],
             "parent": "88",
             "translation": [
-                0.0,
+                2.9802322387695313e-8,
                 0.0,
                 0.0
             ],
@@ -2259,7 +2253,8 @@
                         "buttonMeshObject": "90ab31d9-aca7-4d07-84ee-49e4e294b22b",
                         "hoverMaterial": "20",
                         "peerComponent": "32"
-                    }
+                    },
+                    "active": false
                 }
             ],
             "parent": "88",
@@ -2273,18 +2268,6 @@
                 0.0,
                 0.0,
                 0.7071067
-            ]
-        },
-        "7d61dfd1-7992-41db-9125-e970e2e6257b": {
-            "name": "EmojiReceiver",
-            "components": [
-                {
-                    "type": "emojiReceiver",
-                    "emojiReceiver": {
-                        "peerComponent": "32",
-                        "emojiSpawner": "194"
-                    }
-                }
             ]
         },
         "a62a61ce-4c4b-4cf0-804a-4a8aca4da075": {
@@ -2303,7 +2286,7 @@
                             ]
                         }
                     },
-                    "active": false
+                    "active": true
                 }
             ],
             "translation": [
@@ -2324,7 +2307,7 @@
                             "extents": [
                                 0.2,
                                 0.2,
-                                0.05
+                                0.1
                             ]
                         },
                         "groups": 2
@@ -2357,12 +2340,20 @@
                         "material": "3c009ee0-fd8f-4b99-afe5-fe58c0093e1d",
                         "mesh": "20c85b5a-6e88-4336-ae48-ad1b5fe16fbb"
                     }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "25"
+                    },
+                    "active": false
                 }
             ],
             "translation": [
-                0.3057223,
+                0.3057222,
                 -0.4626171,
-                0.1176877
+                0.1300344
             ],
             "rotation": [
                 0.0,
@@ -2388,7 +2379,7 @@
                             "extents": [
                                 0.2,
                                 0.2,
-                                0.05
+                                0.1
                             ]
                         },
                         "groups": 2
@@ -2418,15 +2409,23 @@
                     "type": "mesh",
                     "imported": true,
                     "mesh": {
-                        "material": "2fecebe3-7645-40f5-a4b4-3a597af718e9",
+                        "material": "3c009ee0-fd8f-4b99-afe5-fe58c0093e1d",
                         "mesh": "f6f40c4b-506f-4c1e-bfb1-74e24ce28d10"
                     }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "26"
+                    },
+                    "active": false
                 }
             ],
             "translation": [
                 0.7571566,
                 -0.4626171,
-                0.1176877
+                0.1463475
             ],
             "rotation": [
                 0.0,
@@ -2440,32 +2439,90 @@
                 0.0099999
             ]
         },
-        "057198d4-32c8-4642-a954-98cc487547a3": {
-            "name": "Mesh",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "188"
-                    }
-                }
-            ],
+        "a466719d-6a86-42b3-8c30-9224989f30cb": {
+            "link": {
+                "name": "BubbleGun_Material.001_0",
+                "file": "glb\\UI assets\\gun_icon.glb"
+            },
+            "parent": "167",
             "translation": [
-                -1.6931731,
-                1.4255506,
-                -2.9202728
+                0.1419925,
+                0.1550269,
+                0.1959304
             ],
             "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
+                0.5132488,
+                0.4865089,
+                0.5108371,
+                -0.4888048
             ],
             "scale": [
-                1.0,
-                1.0,
+                5.0003242,
+                5.0000009,
+                5.0000019
+            ],
+            "components": [
+                {
+                    "active": true
+                }
+            ]
+        },
+        "d1ea55a7-5c5e-48eb-b1ad-e9a8e6df202d": {
+            "link": {
+                "name": "Object_Material_0",
+                "file": "models\\think_emoji.glb"
+            },
+            "scale": [
+                0.7000157,
+                0.7000058,
+                0.7000066
+            ],
+            "translation": [
+                1.6986737,
+                0.7219133,
+                4.9598741
+            ],
+            "rotation": [
+                0.1901942,
+                0.727241,
+                0.6207185,
+                -0.2228338
+            ],
+            "components": [
+                {
+                    "mesh": {
+                        "material": "25"
+                    }
+                }
+            ]
+        },
+        "4e46412e-7401-486a-9033-64fe79a211de": {
+            "link": {
+                "name": "Box002_default_0",
+                "file": "models\\shibainu.glb"
+            },
+            "translation": [
+                -3.7391278,
+                -0.0033774,
+                -3.2315917
+            ],
+            "rotation": [
+                -0.6867931,
+                0.1506696,
+                0.1488228,
+                0.6953169
+            ],
+            "scale": [
+                0.9999996,
+                0.9999997,
                 1.0
+            ],
+            "components": [
+                {
+                    "mesh": {
+                        "material": "20"
+                    }
+                }
             ]
         }
     },
@@ -2856,6 +2913,12 @@
                 "name": "Sphere0013_shinny_emoji_0-uv1.0",
                 "file": "glb\\UI assets\\smile_icon.glb"
             }
+        },
+        "a5835b1d-dfb6-43a1-9e35-c282e0c6dff3": {
+            "link": {
+                "name": "Box002_default_0",
+                "file": "models\\shibainu.glb"
+            }
         }
     },
     "textures": {
@@ -3069,6 +3132,12 @@
                 "name": "texture_0",
                 "file": "glb\\UI assets\\smile_icon.glb"
             }
+        },
+        "a0da869a-d623-4d7f-a664-45d0df1ae170": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\shibainu.glb"
+            }
         }
     },
     "images": {
@@ -3263,6 +3332,12 @@
                 "name": "Image_6",
                 "file": "glb\\UI assets\\smile_icon.glb"
             }
+        },
+        "de76780d-f991-4bb1-ab31-494f10779558": {
+            "link": {
+                "name": "Image_0",
+                "file": "models\\shibainu.glb"
+            }
         }
     },
     "materials": {
@@ -3279,18 +3354,25 @@
             "name": "White",
             "Phong": {
                 "specularColor": [
-                    9.999899930335232e-7,
-                    9.99993744699168e-7,
-                    9.999999974752427e-7,
-                    1.0
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.5882353
                 ],
-                "shininess": 1,
+                "shininess": 52,
                 "ambientColor": [
-                    0.6745097,
-                    0.5290272,
-                    0.5290272,
-                    1.0
-                ]
+                    0.6745098,
+                    0.5294117,
+                    0.5294117,
+                    0.5882353
+                ],
+                "diffuseColor": [
+                    0.5019608,
+                    0.5019608,
+                    0.5019608,
+                    0.5882353
+                ],
+                "ambientFactor": 3.75
             },
             "pipeline": "123"
         },
@@ -3443,6 +3525,15 @@
             "link": {
                 "name": "Material.010",
                 "file": "models\\moji_gun (1).glb"
+            },
+            "pipeline": "124",
+            "Phong": {
+                "ambientColor": [
+                    0.8627451,
+                    0.3431874,
+                    0.0879661,
+                    1.0
+                ]
             }
         },
         "209": {
@@ -3640,6 +3731,12 @@
                 "name": "lambert1.002",
                 "file": "glb\\UI assets\\smile_icon.glb"
             }
+        },
+        "30683449-0aba-4d0a-b4c0-aa3e51956b92": {
+            "link": {
+                "name": "default",
+                "file": "models\\shibainu.glb"
+            }
         }
     },
     "shaders": {
@@ -3748,7 +3845,7 @@
     },
     "settings": {
         "project": {
-            "name": "TestSceneCopy",
+            "name": "Scene-Switch",
             "version": [
                 0,
                 9,
@@ -3790,7 +3887,8 @@
                     "bounded-floor": false
                 }
             },
-            "visualizePhysX": true
+            "visualizePhysX": false,
+            "visualizeColliders": false
         },
         "editor": {
             "ids": "uuid"
@@ -3882,6 +3980,39 @@
                 "1aa1ad6d-27be-428f-a733-1cf6efd38b0d",
                 "212eff78-902c-4205-b1d4-dd29fd3d12a4"
             ]
+        },
+        "94577dcc-31e1-43b5-97df-fed9655efe41": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "joints": [
+                "ed6832d1-72c2-4bdd-9b93-da7b8381e12f",
+                "19ddc7af-f390-46c1-a14a-4a190b775734",
+                "e1f3baac-daf2-4c13-980b-83bd93e62819",
+                "e58b5a47-b2b7-463c-a4eb-76eb609e8742",
+                "f1c8bf3e-8a82-4d12-a468-eca636788757",
+                "40c4b21a-5e55-4072-9576-f524092b33e2",
+                "b5cbb896-3658-4816-b066-6f27d076a668",
+                "3b6918c5-e1bf-4cce-8b60-3f24b7eae7c6",
+                "c365f5db-838d-4463-b7e4-d6f612774f85",
+                "ac97439d-abd8-4de6-b535-0bcd2beba7ef",
+                "e7a46867-74f8-4297-988c-b76a6f9770e2",
+                "24cdbd3a-959e-4760-a5f4-ff744dd244bc",
+                "975957da-7b47-4f39-9b88-0b1266d08420",
+                "407e2de8-3a50-4356-8b51-c54bf7d7fb75",
+                "a1f7fac5-6a26-4bbb-8a08-d15f0d07555c",
+                "5bf86114-a755-444d-ae34-43563560d5eb",
+                "306ea57e-626c-4e82-94c6-6c0404c56468",
+                "9e62452c-11e2-4eb0-9ab6-2530feec7f18",
+                "d8711286-a477-461b-9172-be8102b5713d",
+                "52b11fa1-f69b-440d-a5a3-674859e300f6",
+                "ac43106b-b00d-4402-8bd7-c8120f2186bc",
+                "b2579da1-f2f4-409e-897b-158a27abaafa",
+                "9d94874f-f601-41fd-a858-e843e5abc131",
+                "deda10b0-005a-4890-bfe5-40086a15f921",
+                "e39b92c4-1e69-4fc9-b289-d7630c6b20e7"
+            ]
         }
     },
     "files": [
@@ -3910,7 +4041,8 @@
         "glb/UI assets/angry_moji.glb",
         "glb/UI assets/love_icon.glb",
         "glb/UI assets/gun_icon.glb",
-        "glb/UI assets/smile_icon.glb"
+        "glb/UI assets/smile_icon.glb",
+        "models/shibainu.glb"
     ],
     "pipelines": {
         "114": {

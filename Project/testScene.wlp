@@ -172,7 +172,7 @@
                 {
                     "type": "SceneOnSwitchComponent",
                     "SceneOnSwitchComponent": {
-                        "scenefile": "TestSceneCopy.bin"
+                        "scenefile": "Scene-Switch.bin"
                     }
                 }
             ],
@@ -1340,12 +1340,12 @@
             ],
             "translation": [
                 0.0,
-                -5.960464477539063e-8,
+                -5.960464477539064e-8,
                 -2.384185791015625e-7
             ],
             "rotation": [
                 0.0,
-                -4.9670603630147525e-8,
+                -4.967060363014753e-8,
                 0.0,
                 1.0
             ],
