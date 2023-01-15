@@ -12,21 +12,13 @@ WL.registerComponent('emoji_particle_shooter', {
     /* Material for spawned particles */
     devilmat: {type: WL.Type.Material, default: null},
     /* Mesh for spawned particles */
-    love1: {type: WL.Type.Mesh, default: null},
+    love: {type: WL.Type.Mesh, default: null},
     /* Material for spawned particles */
-    love1mat: {type: WL.Type.Material, default: null},
+    lovemat: {type: WL.Type.Material, default: null},
     /* Mesh for spawned particles */
-    love2: {type: WL.Type.Mesh, default: null},
+    think: {type: WL.Type.Mesh, default: null},
     /* Material for spawned particles */
-    love2mat: {type: WL.Type.Material, default: null},
-    /* Mesh for spawned particles */
-    think1: {type: WL.Type.Mesh, default: null},
-    /* Material for spawned particles */
-    think1mat: {type: WL.Type.Material, default: null},
-    /* Mesh for spawned particles */
-    think2: {type: WL.Type.Mesh, default: null},
-    /* Material for spawned particles */
-    think2mat: {type: WL.Type.Material, default: null},
+    thinkmat: {type: WL.Type.Material, default: null},
     /* Delay between particle spawns. If below time of a frame, will spawn multiple particles in update. */
     delay: {type: WL.Type.Float, default: 0.04},
     /* Maximum number of particles, once limit is reached, particles are recycled first-in-first-out. */
@@ -50,7 +42,7 @@ WL.registerComponent('emoji_particle_shooter', {
 
         this.objects = WL.scene.addObjects(this.maxParticles, null, this.maxParticles);
 
-        this.changeEmojiButton.addClickFunction(function(){})
+        
 
         for(let i = 0; i < this.maxParticles; ++i) {
             this.velocities.push([0, 0, 0]);
@@ -63,6 +55,14 @@ WL.registerComponent('emoji_particle_shooter', {
             /* Most efficient way to hide the mesh */
             obj.scale([0, 0, 0]);
         }
+
+        this.changeEmojiButton.addClickFunction(function(){if (mesh.mesh==this.devil){
+            mesh.mesh=this.love; mesh.material=this.lovemat;
+        } if(mesh.mesh==this.love){
+            mesh.mesh = this.think; mesh.material = this.thinkmat;
+        }else{
+            mesh.mesh = this.devil; mesh.material =this.devilmat;
+        }});
     },
     update: function(dt) {
         this.time += dt;
