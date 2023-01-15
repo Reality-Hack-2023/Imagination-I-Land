@@ -1833,7 +1833,10 @@
                         "material": "209",
                         "particleScale": 0.0049999,
                         "gun": "204",
-                        "initialSpeed": 8.0
+                        "initialSpeed": 8.0,
+                        "mesh1": "210",
+                        "material1": "209",
+                        "changeEmojiButton": "173"
                     },
                     "active": false
                 }
