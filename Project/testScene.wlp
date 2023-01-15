@@ -1017,93 +1017,6 @@
                 0.3497835
             ]
         },
-        "92": {
-            "name": "Cube",
-            "parent": "88",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "20"
-                    }
-                }
-            ],
-            "translation": [
-                -10.422388,
-                2.2617559,
-                -9.3290882
-            ],
-            "rotation": [
-                0.0000119,
-                -0.0691339,
-                0.0001722,
-                0.9976073
-            ],
-            "scale": [
-                3.0000002,
-                3.0000002,
-                3.0
-            ]
-        },
-        "94": {
-            "name": "Cube",
-            "parent": "88",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "20"
-                    }
-                }
-            ],
-            "translation": [
-                9.7103681,
-                1.2538591,
-                -1.1148992
-            ],
-            "rotation": [
-                -0.0059012,
-                0.325418,
-                0.0170088,
-                0.9453988
-            ],
-            "scale": [
-                1.9999872,
-                1.9999998,
-                1.9999872
-            ]
-        },
-        "95": {
-            "name": "Cube",
-            "parent": "88",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "25"
-                    }
-                }
-            ],
-            "translation": [
-                5.3232851,
-                1.2538601,
-                -10.9547767
-            ],
-            "rotation": [
-                0.0006869,
-                0.6468836,
-                0.0179904,
-                0.7623761
-            ],
-            "scale": [
-                1.9999873,
-                1.9999985,
-                1.9999877
-            ]
-        },
         "150": {
             "name": "UI",
             "translation": [
@@ -1484,7 +1397,7 @@
                 {
                     "type": "text",
                     "text": {
-                        "text": "RESET CUPS"
+                        "text": "SPAWN CUP"
                     }
                 }
             ],
@@ -1555,14 +1468,14 @@
                 {
                     "type": "text",
                     "text": {
-                        "text": "Change Emoji\non Gun"
+                        "text": "OBJECT 2"
                     }
                 }
             ],
             "scale": [
-                2.5,
-                2.5,
-                2.5
+                2.0,
+                2.0,
+                2.0
             ]
         },
         "175": {
@@ -1634,17 +1547,6 @@
                 2.0,
                 2.0,
                 2.0
-            ],
-            "translation": [
-                -2.384185791015625e-7,
-                -4.76837158203125e-7,
-                -0.0000038
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
             ]
         },
         "180": {
@@ -1847,11 +1749,7 @@
                         "think1": "31c9c6bc-ea8e-481c-a349-21dad933560f",
                         "think1mat": "2187889c-9347-4511-adef-fde134323b27",
                         "think2": "fb5c47ef-a184-44a3-a1c7-66aa5dc0bbba",
-                        "think2mat": "aac9e2ad-29fa-4782-85cf-b43a65337d08",
-                        "love": "9",
-                        "lovemat": "25",
-                        "think": "9",
-                        "thinkmat": "26"
+                        "think2mat": "aac9e2ad-29fa-4782-85cf-b43a65337d08"
                     },
                     "active": false
                 }
@@ -1895,19 +1793,19 @@
             },
             "translation": [
                 0.0,
-                1.3049197,
+                1.3049198,
                 -5.960464477539063e-8
             ],
             "rotation": [
-                -0.7241397,
-                -1.4901203826411802e-8,
-                8.940701690107744e-8,
+                -0.7241396,
+                -1.490118251012973e-8,
+                8.940699558479537e-8,
                 0.6896533
             ],
             "scale": [
-                1.7842526,
-                1.7842541,
-                1.7842539
+                1.7842527,
+                1.7842544,
+                1.784254
             ],
             "components": [
                 null,
@@ -1926,7 +1824,7 @@
                     }
                 }
             ],
-            "parent": null
+            "parent": "61"
         },
         "14": {
             "name": "Player",
@@ -2968,15 +2866,15 @@
         "e91add45-b049-4530-807a-7e3e8c30dc2c": {
             "name": "BlockSpawner",
             "translation": [
-                -6.0467815,
-                0.1000002,
-                2.1756296
+                -0.3249813,
+                2.7837145,
+                0.0448411
             ],
             "rotation": [
-                -0.696887,
                 0.0,
                 0.0,
-                0.7171809
+                0.0,
+                1.0
             ],
             "components": [
                 {
@@ -2986,19 +2884,7 @@
                         "cupSpawnButton": "69",
                         "cupMaterial": "14e5f7a0-35a3-4714-8593-67c08457f201"
                     }
-                },
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "0fcbd590-5e9b-4e78-99bb-4849c573289f",
-                        "material": "14e5f7a0-35a3-4714-8593-67c08457f201"
-                    }
                 }
-            ],
-            "scale": [
-                1.0,
-                1.0000003,
-                1.0000003
             ]
         },
         "30e72ee4-8bf5-4860-b0bf-0a86a3f26f36": {
@@ -3063,25 +2949,28 @@
             },
             "scale": [
                 0.0149999,
-                0.0149999,
-                0.0099999
+                0.0149998,
+                0.0099998
             ],
+            "name": "table",
             "components": [
-                null,
                 {
-                    "type": "physx",
-                    "physx": {
-                        "shape": "box",
-                        "box": {
-                            "extents": [
-                                1.0,
-                                1.0,
-                                1.0299999
-                            ]
-                        },
-                        "static": true
+                    "mesh": {
+                        "material": "26"
                     }
                 }
+            ],
+            "parent": "88",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.7071068,
+                0.0,
+                0.0,
+                0.7071067
             ]
         },
         "74d8161b-3a38-445e-84f6-dc5428bb1d07": {
@@ -3093,6 +2982,34 @@
                 1.46,
                 1.46,
                 1.46
+            ],
+            "name": "wall ring",
+            "components": [
+                {
+                    "active": true,
+                    "mesh": {
+                        "material": "5320be9b-4a61-463a-bb30-fc63131c101f"
+                    }
+                },
+                {
+                    "type": "changeColor",
+                    "changeColor": {
+                        "buttonMeshObject": "74d8161b-3a38-445e-84f6-dc5428bb1d07",
+                        "hoverMaterial": "25"
+                    }
+                }
+            ],
+            "parent": "88",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
             ]
         },
         "df4d5830-aa94-43f7-9304-9724357cc397": {
@@ -3104,7 +3021,35 @@
                 1.46,
                 1.46,
                 1.46
-            ]
+            ],
+            "components": [
+                {
+                    "active": true,
+                    "mesh": {
+                        "material": "4f2069a0-690f-474e-9136-9e5c31937b90"
+                    }
+                },
+                {
+                    "type": "changeColor",
+                    "changeColor": {
+                        "buttonMeshObject": "df4d5830-aa94-43f7-9304-9724357cc397",
+                        "hoverMaterial": "25"
+                    }
+                }
+            ],
+            "name": "floor",
+            "translation": [
+                0.0,
+                5.960464477539063e-8,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "parent": "88"
         },
         "90ab31d9-aca7-4d07-84ee-49e4e294b22b": {
             "link": {
@@ -3113,8 +3058,35 @@
             },
             "scale": [
                 0.0149999,
-                0.0149999,
-                0.0149999
+                0.0149998,
+                0.0149998
+            ],
+            "name": "ceiling",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "107"
+                    }
+                },
+                {
+                    "type": "changeColor",
+                    "changeColor": {
+                        "buttonMeshObject": "90ab31d9-aca7-4d07-84ee-49e4e294b22b",
+                        "hoverMaterial": "25"
+                    }
+                }
+            ],
+            "parent": "88",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.7071068,
+                0.0,
+                0.0,
+                0.7071067
             ]
         }
     },
@@ -3373,30 +3345,6 @@
                 "name": "Mesh.015-uv1",
                 "file": "models\\ceiling.glb"
             }
-        },
-        "57ed2710-dffd-458f-a798-521dec6ccfa0": {
-            "link": {
-                "name": "Object_Material_0",
-                "file": "models\\think_emoji.glb"
-            }
-        },
-        "121c0184-aef9-43c4-8af3-6ee9ebee5efc": {
-            "link": {
-                "name": "Object_2",
-                "file": "models\\love_emoji.glb"
-            }
-        },
-        "31c9c6bc-ea8e-481c-a349-21dad933560f": {
-            "link": {
-                "name": "Object_2.0",
-                "file": "models\\love_emoji.glb"
-            }
-        },
-        "fb5c47ef-a184-44a3-a1c7-66aa5dc0bbba": {
-            "link": {
-                "name": "Object_2.1",
-                "file": "models\\love_emoji.glb"
-            }
         }
     },
     "textures": {
@@ -3550,18 +3498,6 @@
                 "name": "texture_0",
                 "file": "models\\ceiling.glb"
             }
-        },
-        "dd8e87c5-ee09-48cf-8509-a508a8e78941": {
-            "link": {
-                "name": "texture_0",
-                "file": "models\\think_emoji.glb"
-            }
-        },
-        "47d68398-afe0-4dc7-957e-c97b721e657a": {
-            "link": {
-                "name": "texture_1",
-                "file": "models\\think_emoji.glb"
-            }
         }
     },
     "images": {
@@ -3695,18 +3631,6 @@
             "link": {
                 "name": "Baked",
                 "file": "models\\ceiling.glb"
-            }
-        },
-        "4938a4cf-f609-4de5-9e2b-4dcc3cca2353": {
-            "link": {
-                "name": "Image_0",
-                "file": "models\\think_emoji.glb"
-            }
-        },
-        "79e777da-b96e-4f71-8491-d1802fb962b1": {
-            "link": {
-                "name": "Image_1",
-                "file": "models\\think_emoji.glb"
             }
         }
     },
@@ -3966,6 +3890,11 @@
             "link": {
                 "name": "Baked.005",
                 "file": "models\\roundtable.glb"
+            },
+            "Phong": {
+                "ambientFactor": 0.0049999,
+                "emissiveTexture": "187",
+                "diffuseTexture": "187"
             }
         },
         "6fa45081-701f-4be8-a0f5-9f2ae4bc0101": {
@@ -3984,31 +3913,11 @@
             "link": {
                 "name": "Baked.008",
                 "file": "models\\ceiling.glb"
-            }
-        },
-        "b6105489-aebc-49be-813e-45085739c9bf": {
-            "link": {
-                "name": "Material.027",
-                "file": "models\\think_emoji.glb"
-            }
-        },
-        "416e51bf-3848-4ce2-b499-06893b0374b0": {
-            "link": {
-                "name": "Eye_Lid",
-                "file": "models\\love_emoji.glb"
-            }
-        },
-        "2187889c-9347-4511-adef-fde134323b27": {
-            "link": {
-                "name": "Emoji",
-                "file": "models\\love_emoji.glb"
-            }
-        },
-        "aac9e2ad-29fa-4782-85cf-b43a65337d08": {
-            "link": {
-                "name": "Heart",
-                "file": "models\\love_emoji.glb"
-            }
+            },
+            "Phong": {
+                "diffuseTexture": "t0"
+            },
+            "pipeline": "123"
         }
     },
     "shaders": {
@@ -4271,9 +4180,7 @@
         "models/roundtable.glb",
         "models/thewall.glb",
         "models/floor.glb",
-        "models/ceiling.glb",
-        "models/think_emoji.glb",
-        "models/love_emoji.glb"
+        "models/ceiling.glb"
     ],
     "pipelines": {
         "114": {
