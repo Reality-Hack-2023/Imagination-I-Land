@@ -79,11 +79,11 @@
                     "type": "peer-networked-player-spawner",
                     "peer-networked-player-spawner": {
                         "headMesh": "8",
-                        "leftHandMesh": "8",
+                        "leftHandMesh": "71335794-a148-4edb-a1d7-1e9434a23035",
                         "headMaterial": "20",
-                        "leftHandMaterial": "25",
-                        "rightHandMesh": "8",
-                        "rightHandMaterial": "26"
+                        "leftHandMaterial": "20",
+                        "rightHandMesh": "45970128-3ffd-4040-8094-613be6dc8696",
+                        "rightHandMaterial": "20"
                     }
                 }
             ],
@@ -364,7 +364,8 @@
                             ]
                         },
                         "groups": 2
-                    }
+                    },
+                    "active": false
                 },
                 {
                     "type": "cursor-target"
@@ -396,13 +397,15 @@
                     "mesh": {
                         "mesh": "7",
                         "material": "20"
-                    }
+                    },
+                    "active": false
                 },
                 {
                     "type": "text",
                     "text": {
                         "text": "HOST"
-                    }
+                    },
+                    "active": false
                 }
             ],
             "translation": [
@@ -438,7 +441,8 @@
                             ]
                         },
                         "groups": 2
-                    }
+                    },
+                    "active": false
                 },
                 {
                     "type": "cursor-target"
@@ -470,19 +474,21 @@
                     "mesh": {
                         "mesh": "7",
                         "material": "20"
-                    }
+                    },
+                    "active": false
                 },
                 {
                     "type": "text",
                     "text": {
                         "text": "JOIN"
-                    }
+                    },
+                    "active": false
                 }
             ],
             "translation": [
-                0.0,
-                0.0,
-                -0.0104874
+                0.0012184,
+                0.0046026,
+                -0.0111911
             ],
             "rotation": [
                 0.0,
@@ -830,14 +836,14 @@
                     "type": "mesh",
                     "mesh": {
                         "mesh": "184",
-                        "material": "20"
+                        "material": "cf754284-6162-456f-ab6f-e652ce029521"
                     }
                 }
             ],
             "translation": [
-                0.0,
-                0.0,
-                -1.043081283569336e-7
+                0.0000324,
+                -0.953324,
+                -0.0000019
             ],
             "rotation": [
                 0.5,
@@ -846,9 +852,9 @@
                 0.4999999
             ],
             "scale": [
-                0.6,
-                0.3499999,
-                2.0
+                0.5999999,
+                0.3499998,
+                1.9999998
             ]
         },
         "194": {
@@ -2355,6 +2361,14 @@
                         "material": "3c009ee0-fd8f-4b99-afe5-fe58c0093e1d",
                         "mesh": "20c85b5a-6e88-4336-ae48-ad1b5fe16fbb"
                     }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "25"
+                    },
+                    "active": false
                 }
             ],
             "translation": [
@@ -2416,9 +2430,17 @@
                     "type": "mesh",
                     "imported": true,
                     "mesh": {
-                        "material": "2fecebe3-7645-40f5-a4b4-3a597af718e9",
+                        "material": "c3579765-127f-4cd3-9741-bf59300bc889",
                         "mesh": "f6f40c4b-506f-4c1e-bfb1-74e24ce28d10"
                     }
+                },
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "26"
+                    },
+                    "active": false
                 }
             ],
             "translation": [
@@ -3852,6 +3874,39 @@
                 "ec2637e0-1036-42d8-864c-d6f41acac378",
                 "1aa1ad6d-27be-428f-a733-1cf6efd38b0d",
                 "212eff78-902c-4205-b1d4-dd29fd3d12a4"
+            ]
+        },
+        "94577dcc-31e1-43b5-97df-fed9655efe41": {
+            "link": {
+                "name": "Armature",
+                "file": "models\\hand-left.glb"
+            },
+            "joints": [
+                "ed6832d1-72c2-4bdd-9b93-da7b8381e12f",
+                "19ddc7af-f390-46c1-a14a-4a190b775734",
+                "e1f3baac-daf2-4c13-980b-83bd93e62819",
+                "e58b5a47-b2b7-463c-a4eb-76eb609e8742",
+                "f1c8bf3e-8a82-4d12-a468-eca636788757",
+                "40c4b21a-5e55-4072-9576-f524092b33e2",
+                "b5cbb896-3658-4816-b066-6f27d076a668",
+                "3b6918c5-e1bf-4cce-8b60-3f24b7eae7c6",
+                "c365f5db-838d-4463-b7e4-d6f612774f85",
+                "ac97439d-abd8-4de6-b535-0bcd2beba7ef",
+                "e7a46867-74f8-4297-988c-b76a6f9770e2",
+                "24cdbd3a-959e-4760-a5f4-ff744dd244bc",
+                "975957da-7b47-4f39-9b88-0b1266d08420",
+                "407e2de8-3a50-4356-8b51-c54bf7d7fb75",
+                "a1f7fac5-6a26-4bbb-8a08-d15f0d07555c",
+                "5bf86114-a755-444d-ae34-43563560d5eb",
+                "306ea57e-626c-4e82-94c6-6c0404c56468",
+                "9e62452c-11e2-4eb0-9ab6-2530feec7f18",
+                "d8711286-a477-461b-9172-be8102b5713d",
+                "52b11fa1-f69b-440d-a5a3-674859e300f6",
+                "ac43106b-b00d-4402-8bd7-c8120f2186bc",
+                "b2579da1-f2f4-409e-897b-158a27abaafa",
+                "9d94874f-f601-41fd-a858-e843e5abc131",
+                "deda10b0-005a-4890-bfe5-40086a15f921",
+                "e39b92c4-1e69-4fc9-b289-d7630c6b20e7"
             ]
         }
     },
