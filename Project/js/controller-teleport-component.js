@@ -1,4 +1,3 @@
-let defaultMat;
 WL.registerComponent("controller-teleport-component", {
     peerComponent: {type:WL.Type.Object},
     muteUI: {type:WL.Type.Object},
@@ -40,7 +39,6 @@ WL.registerComponent("controller-teleport-component", {
         WL.onXRSessionStart.push(this.setupVREvents.bind(this));
         this.mesh = this.muteUI.getComponent('mesh');
         this.defaultMaterial = this.mesh.material;
-        defaultMat =   this.defaultMaterial; 
     },
     update: function() {
         let thumbstickXAxisInput = 0;

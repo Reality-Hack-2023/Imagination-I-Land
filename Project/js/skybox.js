@@ -20,7 +20,7 @@ WL.registerComponent('skybox', {
 
 
         this.peerManager.addNetworkDataRecievedCallback("change-light-sky" + this.object.name, (d)=>{
-            this.sendColor(d); 
+            this.sendColor(d.color[0],d.color[1],d.color[2]); 
             console.log("set color");
         });
 
@@ -38,7 +38,8 @@ WL.registerComponent('skybox', {
         this.skyMat.colorStop1 = [e, d, c, 1];
         this.skyMat.colorStop0 = [1, 1, 1, 1];
 
-     
+        this.lightComponent.color.set([e, d, c]);
+        this.lightComponent2.color.set([d, e, c]);
     },
     onClick: function () {
 
@@ -47,8 +48,7 @@ WL.registerComponent('skybox', {
         const e = Math.random() * d;
         
         this.sendColor(e,d,c);
-        this.lightComponent.color.set([e, d, c]);
-        this.lightComponent2.color.set([d, e, c]);
+      
         this.peerManager.sendPackageImmediately("change-light-sky" + this.object.name, {type:"sky", color: [e, d, c] });
 
 
