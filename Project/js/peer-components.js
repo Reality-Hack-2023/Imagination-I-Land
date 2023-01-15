@@ -360,7 +360,9 @@ WL.registerComponent("peer-manager", {
 
         for (let con of this.connections) con.send(package);
     },
-
+    getMute: function() {
+        return this.localStream.getTracks()[0].enabled;
+    },
     toggleMute: function() {
         this.localStream.getTracks()[0].enabled =
             !this.localStream.getTracks()[0].enabled;
