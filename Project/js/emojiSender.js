@@ -10,8 +10,6 @@ WL.registerComponent('emojiSender', {
         let peerManager=  this.peerComponent.getComponent('peer-manager');
         let emoSpawner=  this.peerComponent.emojiSpawner('emoji_particle_shooter');
         
-        // send message when you are interacting in XR 
-        peerManager.sendPackage("emoji","heart");
         
       /*  peerManager.addNetworkDataRecievedCallback("emoji",()=>{
             console.log("data received, needs to spawn");
