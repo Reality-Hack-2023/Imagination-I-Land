@@ -172,7 +172,7 @@
                 {
                     "type": "SceneOnSwitchComponent",
                     "SceneOnSwitchComponent": {
-                        "scenefile": "Scene-Switch.bin"
+                        "scenefile": "TestSceneCopy.bin"
                     }
                 }
             ],
@@ -928,14 +928,14 @@
                 "file": "models\\moji_gun (1).glb"
             },
             "translation": [
-                1.1175856684531027e-8,
+                1.1175856684531029e-8,
                 1.3049199,
-                -5.960464477539063e-8
+                -5.960464477539064e-8
             ],
             "rotation": [
                 -0.7241398,
-                -1.490118428648657e-8,
-                8.940705953364159e-8,
+                -1.4901184286486572e-8,
+                8.94070595336416e-8,
                 0.6896531
             ],
             "scale": [
@@ -1340,7 +1340,7 @@
             ],
             "translation": [
                 0.0,
-                -5.960464477539064e-8,
+                -5.960464477539065e-8,
                 -2.384185791015625e-7
             ],
             "rotation": [
