@@ -1115,7 +1115,7 @@
                         "cursorObject": "87",
                         "handedness": "right"
                     },
-                    "active": false
+                    "active": true
                 },
                 {
                     "type": "controller-teleport-component",
@@ -1317,7 +1317,7 @@
                         "cursorRayObject": "30e72ee4-8bf5-4860-b0bf-0a86a3f26f36",
                         "cursorObject": "87"
                     },
-                    "active": false
+                    "active": true
                 },
                 {
                     "type": "teleport",
