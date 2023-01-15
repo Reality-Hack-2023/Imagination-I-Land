@@ -970,6 +970,9 @@
                     "wasd-controls": {
                         "headObject": "17"
                     }
+                },
+                {
+                    "type": "fixed-foveation"
                 }
             ],
             "translation": [
