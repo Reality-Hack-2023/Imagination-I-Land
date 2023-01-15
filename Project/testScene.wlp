@@ -1255,7 +1255,7 @@
             ],
             "rotation": [
                 0.0,
-                2.328328996270557e-8,
+                2.3283289962705573e-8,
                 0.0,
                 1.0
             ],
@@ -2464,6 +2464,50 @@
                     "active": true
                 }
             ]
+        },
+        "d1ea55a7-5c5e-48eb-b1ad-e9a8e6df202d": {
+            "link": {
+                "name": "Object_Material_0",
+                "file": "models\\think_emoji.glb"
+            },
+            "scale": [
+                0.7000157,
+                0.7000059,
+                0.7000066
+            ],
+            "translation": [
+                1.6967334,
+                0.7080535,
+                4.9596948
+            ],
+            "rotation": [
+                0.1901942,
+                0.7272411,
+                0.6207185,
+                -0.2228338
+            ]
+        },
+        "4e46412e-7401-486a-9033-64fe79a211de": {
+            "link": {
+                "name": "Box002_default_0",
+                "file": "models\\shibainu.glb"
+            },
+            "translation": [
+                -3.7391278,
+                -0.0033774,
+                -3.2315917
+            ],
+            "rotation": [
+                -0.6867931,
+                0.1506696,
+                0.1488228,
+                0.6953169
+            ],
+            "scale": [
+                0.9999996,
+                0.9999997,
+                1.0
+            ]
         }
     },
     "meshes": {
@@ -2853,6 +2897,12 @@
                 "name": "Sphere0013_shinny_emoji_0-uv1.0",
                 "file": "glb\\UI assets\\smile_icon.glb"
             }
+        },
+        "a5835b1d-dfb6-43a1-9e35-c282e0c6dff3": {
+            "link": {
+                "name": "Box002_default_0",
+                "file": "models\\shibainu.glb"
+            }
         }
     },
     "textures": {
@@ -3066,6 +3116,12 @@
                 "name": "texture_0",
                 "file": "glb\\UI assets\\smile_icon.glb"
             }
+        },
+        "a0da869a-d623-4d7f-a664-45d0df1ae170": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\shibainu.glb"
+            }
         }
     },
     "images": {
@@ -3259,6 +3315,12 @@
             "link": {
                 "name": "Image_6",
                 "file": "glb\\UI assets\\smile_icon.glb"
+            }
+        },
+        "de76780d-f991-4bb1-ab31-494f10779558": {
+            "link": {
+                "name": "Image_0",
+                "file": "models\\shibainu.glb"
             }
         }
     },
@@ -3653,6 +3715,12 @@
                 "name": "lambert1.002",
                 "file": "glb\\UI assets\\smile_icon.glb"
             }
+        },
+        "30683449-0aba-4d0a-b4c0-aa3e51956b92": {
+            "link": {
+                "name": "default",
+                "file": "models\\shibainu.glb"
+            }
         }
     },
     "shaders": {
@@ -3803,8 +3871,8 @@
                     "bounded-floor": false
                 }
             },
-            "visualizePhysX": true,
-            "visualizeColliders": true
+            "visualizePhysX": false,
+            "visualizeColliders": false
         },
         "editor": {
             "ids": "uuid"
@@ -3957,7 +4025,8 @@
         "glb/UI assets/angry_moji.glb",
         "glb/UI assets/love_icon.glb",
         "glb/UI assets/gun_icon.glb",
-        "glb/UI assets/smile_icon.glb"
+        "glb/UI assets/smile_icon.glb",
+        "models/shibainu.glb"
     ],
     "pipelines": {
         "114": {
